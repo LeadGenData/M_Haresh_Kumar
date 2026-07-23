@@ -153,7 +153,7 @@ Created a responsive web diagnostic calculator where business owners input opera
 
 * **Status:** ✅ Completed
 * **Tech Stack:** `Power BI` | `DAX` | `Power Query ETL` | `SQL`
-* **Links:** 📂 [Source Code](https://github.com/LeadGenData/hospital-emergency-room-dashboard-Power-BI-) | 📄 [Documentation](https://github.com/LeadGenData/M_Haresh_Kumar)
+* **Links:** 📂 [Source Code & Dashboard Files](https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis) | 📄 [Documentation](https://github.com/LeadGenData/M_Haresh_Kumar)
 
 #### Business Problem
 Hospital administrators needed clear visibility into Emergency Department patient flow to understand peak arrival hours, triage wait times, and department bottleneck trends.
