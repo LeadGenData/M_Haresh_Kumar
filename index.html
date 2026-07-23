@@ -6,45 +6,42 @@
   <title>M. Haresh Kumar | Data Operations Professional | SQL | Power BI | Snowflake | AI Automation</title>
   <meta name="description" content="14+ years improving business operations through analytics, reporting, and workflow automation. Building practical AI-assisted data solutions." />
   
-  <!-- Premium Typography -->
+  <!-- Premium Modern Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <style>
     :root {
-      --bg-dark: #0b0f19;
-      --bg-card: #111827;
-      --bg-card-hover: #1f2937;
-      --border: #1f2937;
-      --border-accent: #3b82f6;
+      --bg-black: #09090b;
+      --bg-card: #18181b;
+      --bg-card-hover: #27272a;
+      --border: #27272a;
+      --border-light: #3f3f46;
       
-      --text-main: #ffffff;
-      --text-muted: #9ca3af;
-      --text-dim: #6b7280;
+      --text-main: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --text-dim: #71717a;
       
-      --blue: #3b82f6;
-      --sky: #60a5fa;
-      --emerald: #10b981;
-      --amber: #f59e0b;
-      --purple: #a855f7;
+      --gpt-green: #10a37f;
+      --gpt-green-hover: #1a7f64;
+      --white: #ffffff;
       
-      --gradient-accent: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #a855f7 100%);
-      --shadow-glow: 0 0 25px rgba(59, 130, 246, 0.2);
+      --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-dark);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-black);
       color: var(--text-main);
       line-height: 1.6;
       overflow-x: hidden;
     }
 
     .container {
-      max-width: 1140px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 0 24px;
     }
@@ -54,9 +51,9 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      background: rgba(11, 15, 25, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(9, 9, 11, 0.9);
       border-bottom: 1px solid var(--border);
       padding: 16px 0;
     }
@@ -67,14 +64,24 @@
     }
     .logo {
       font-weight: 800;
-      font-size: 1.25rem;
-      color: var(--text-main);
+      font-size: 1.2rem;
+      color: var(--white);
       letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    .logo span {
-      background: var(--gradient-accent);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .logo-icon {
+      width: 24px;
+      height: 24px;
+      background: var(--gpt-green);
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-weight: 800;
+      font-size: 0.8rem;
     }
     .nav-links {
       display: flex;
@@ -85,79 +92,75 @@
     .nav-links a {
       color: var(--text-muted);
       text-decoration: none;
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       font-weight: 500;
-      transition: all 0.2s;
+      transition: color 0.2s;
     }
     .nav-links a:hover {
-      color: var(--sky);
+      color: var(--white);
     }
     .btn-nav {
-      background: rgba(59, 130, 246, 0.12);
-      border: 1px solid rgba(59, 130, 246, 0.35);
-      color: var(--sky) !important;
+      background: var(--white);
+      color: #000000 !important;
       padding: 8px 16px;
-      border-radius: 8px;
+      border-radius: 6px;
       font-weight: 600 !important;
+      transition: background 0.2s;
     }
     .btn-nav:hover {
-      background: var(--blue) !important;
-      color: #ffffff !important;
+      background: #e4e4e7 !important;
     }
 
     /* Hero Section */
     .hero {
-      padding: 60px 0 30px;
+      padding: 70px 0 40px;
       text-align: center;
     }
     .hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 6px 16px;
-      border-radius: 30px;
-      background: rgba(59, 130, 246, 0.1);
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      color: var(--sky);
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: #18181b;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
       font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 20px;
+      font-weight: 500;
+      margin-bottom: 24px;
     }
     .hero-badge span {
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: var(--emerald);
-      box-shadow: 0 0 10px var(--emerald);
+      background: var(--gpt-green);
     }
     .hero h1 {
-      font-size: 3.3rem;
+      font-size: 3.4rem;
       font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -1px;
-      margin-bottom: 12px;
-      color: #ffffff;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin-bottom: 14px;
+      color: var(--white);
     }
     .hero-tagline {
-      font-size: 1.35rem;
-      font-weight: 700;
-      background: var(--gradient-accent);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 18px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 20px;
     }
     .hero-story {
-      font-size: 1.1rem;
+      font-size: 1.08rem;
       color: var(--text-muted);
-      max-width: 820px;
-      margin: 0 auto 28px;
+      max-width: 800px;
+      margin: 0 auto 32px;
       line-height: 1.7;
     }
     .hero-story em {
-      color: var(--amber);
+      color: var(--white);
       font-style: normal;
       font-weight: 700;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       display: block;
       margin-bottom: 6px;
     }
@@ -168,35 +171,35 @@
       justify-content: center;
       gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
     .pill {
-      background: #111827;
-      border: 1px solid #1f2937;
-      color: var(--sky);
+      background: #18181b;
+      border: 1px solid var(--border);
+      color: var(--text-main);
       padding: 8px 16px;
-      border-radius: 20px;
+      border-radius: 8px;
       font-size: 0.85rem;
-      font-weight: 600;
+      font-weight: 500;
       font-family: 'JetBrains Mono', monospace;
     }
     .pill:hover {
-      border-color: var(--blue);
-      box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
+      border-color: var(--border-light);
+      background: #27272a;
     }
 
     .hero-cta {
       display: flex;
       justify-content: center;
       gap: 16px;
-      margin-bottom: 36px;
+      margin-bottom: 40px;
     }
     .btn-primary {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: #2563eb;
-      color: #ffffff;
+      background: var(--white);
+      color: #000000;
       text-decoration: none;
       padding: 10px 22px;
       border-radius: 8px;
@@ -205,14 +208,13 @@
       transition: all 0.2s;
     }
     .btn-primary:hover {
-      background: #1d4ed8;
-      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+      background: #e4e4e7;
     }
     .btn-secondary {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: transparent;
+      background: #18181b;
       border: 1px solid var(--border);
       color: var(--text-main);
       text-decoration: none;
@@ -223,33 +225,33 @@
       transition: all 0.2s;
     }
     .btn-secondary:hover {
-      border-color: var(--blue);
-      color: var(--sky);
+      background: #27272a;
+      border-color: var(--border-light);
     }
 
-    /* Interactive Terminal Console Widget */
+    /* ChatGPT Terminal Console Widget */
     .terminal-card {
-      background: #030712;
-      border: 1px solid #1f2937;
-      border-radius: 14px;
+      background: #000000;
+      border: 1px solid var(--border);
+      border-radius: 12px;
       max-width: 850px;
       margin: 0 auto 40px;
       text-align: left;
       overflow: hidden;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+      box-shadow: var(--shadow-subtle);
     }
     .terminal-header {
-      background: #111827;
+      background: #18181b;
       padding: 10px 16px;
       display: flex;
       align-items: center;
       gap: 8px;
-      border-bottom: 1px solid #1f2937;
+      border-bottom: 1px solid var(--border);
     }
-    .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
     .dot-red { background: #ef4444; }
-    .dot-yellow { background: #f59e0b; }
-    .dot-green { background: #10b981; }
+    .dot-yellow { background: #eab308; }
+    .dot-green { background: #22c55e; }
     .terminal-title {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.8rem;
@@ -262,22 +264,23 @@
       font-size: 0.85rem;
       color: var(--text-muted);
     }
-    .cmd-line { color: var(--sky); margin-bottom: 8px; font-weight: 600; }
-    .status-ok { color: var(--emerald); margin-bottom: 4px; }
+    .cmd-line { color: var(--gpt-green); margin-bottom: 8px; font-weight: 600; }
+    .status-ok { color: var(--text-main); margin-bottom: 4px; }
+    .status-ok span { color: var(--gpt-green); font-weight: 700; }
 
     /* Section Styling */
     .section-block {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 18px;
+      border-radius: 16px;
       padding: 36px;
-      margin-bottom: 40px;
+      margin-bottom: 36px;
     }
     .section-title {
-      font-size: 1.6rem;
-      font-weight: 800;
+      font-size: 1.5rem;
+      font-weight: 700;
       margin-bottom: 16px;
-      color: #ffffff;
+      color: var(--white);
       display: flex;
       align-items: center;
       gap: 12px;
@@ -291,21 +294,21 @@
       margin-top: 20px;
     }
     .role-card {
-      background: #0b0f19;
+      background: #09090b;
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 10px;
       padding: 16px;
       text-align: center;
       transition: border-color 0.2s;
     }
     .role-card:hover {
-      border-color: var(--blue);
+      border-color: var(--border-light);
     }
     .role-badge {
       font-size: 0.75rem;
       font-weight: 700;
-      color: var(--emerald);
-      background: rgba(16, 185, 129, 0.12);
+      color: var(--gpt-green);
+      background: rgba(16, 163, 127, 0.12);
       padding: 2px 8px;
       border-radius: 12px;
       display: inline-block;
@@ -314,7 +317,7 @@
     .role-title {
       font-size: 0.95rem;
       font-weight: 700;
-      color: #ffffff;
+      color: var(--white);
       margin-bottom: 6px;
     }
     .role-skills {
@@ -331,15 +334,15 @@
       margin-top: 20px;
     }
     .skills-col {
-      background: #0b0f19;
+      background: #09090b;
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 10px;
       padding: 20px;
     }
     .skills-col-title {
       font-size: 0.95rem;
       font-weight: 700;
-      color: var(--sky);
+      color: var(--white);
       margin-bottom: 12px;
       border-bottom: 1px solid var(--border);
       padding-bottom: 8px;
@@ -359,13 +362,13 @@
       margin-top: 20px;
     }
     .exp-card {
-      background: #0b0f19;
+      background: #09090b;
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 10px;
       padding: 20px;
     }
     .exp-card h4 {
-      color: var(--sky);
+      color: var(--white);
       font-size: 1rem;
       margin-bottom: 8px;
     }
@@ -382,19 +385,18 @@
       margin-top: 24px;
     }
     .project-card {
-      background: #0b0f19;
+      background: #09090b;
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 14px;
       padding: 28px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: all 0.3s ease;
+      transition: all 0.2s ease;
     }
     .project-card:hover {
-      border-color: var(--border-accent);
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-glow);
+      border-color: var(--border-light);
+      transform: translateY(-2px);
     }
     .project-header {
       display: flex;
@@ -405,12 +407,12 @@
     .project-title {
       font-size: 1.2rem;
       font-weight: 700;
-      color: #ffffff;
+      color: var(--white);
     }
     .status-tag {
-      background: rgba(16, 185, 129, 0.12);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      color: var(--emerald);
+      background: rgba(16, 163, 127, 0.15);
+      border: 1px solid rgba(16, 163, 127, 0.3);
+      color: var(--gpt-green);
       padding: 4px 10px;
       border-radius: 20px;
       font-size: 0.75rem;
@@ -428,9 +430,9 @@
       margin-bottom: 20px;
     }
     .tech-tag {
-      background: #111827;
+      background: #18181b;
       border: 1px solid var(--border);
-      color: var(--sky);
+      color: var(--text-main);
       padding: 4px 8px;
       border-radius: 6px;
       font-size: 0.78rem;
@@ -445,11 +447,11 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: #2563eb;
-      color: #ffffff;
+      background: var(--white);
+      color: #000000;
       text-decoration: none;
       padding: 8px 14px;
-      border-radius: 8px;
+      border-radius: 6px;
       font-size: 0.85rem;
       font-weight: 600;
       transition: all 0.2s;
@@ -457,7 +459,7 @@
       border: none;
     }
     .btn-action:hover {
-      background: #1d4ed8;
+      background: #e4e4e7;
     }
     .btn-outline {
       background: transparent;
@@ -465,8 +467,8 @@
       color: var(--text-main);
     }
     .btn-outline:hover {
-      border-color: var(--blue);
-      color: var(--sky);
+      background: #18181b;
+      border-color: var(--border-light);
     }
 
     /* Pipeline Visual Flow */
@@ -479,9 +481,9 @@
       margin: 14px 0;
     }
     .pipe-node {
-      background: #111827;
-      border: 1px solid var(--border-accent);
-      border-radius: 10px;
+      background: #18181b;
+      border: 1px solid var(--border);
+      border-radius: 8px;
       padding: 10px 14px;
       min-width: 120px;
       text-align: center;
@@ -489,35 +491,35 @@
     .pipe-title {
       font-size: 0.82rem;
       font-weight: 700;
-      color: var(--sky);
+      color: var(--white);
     }
     .pipe-sub {
       font-size: 0.7rem;
       color: var(--text-muted);
     }
     .pipe-arrow {
-      color: var(--blue);
+      color: var(--text-dim);
       font-weight: 800;
       font-size: 1.1rem;
     }
 
     /* AI Statement Block */
     .ai-box {
-      background: rgba(59, 130, 246, 0.08);
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      border-radius: 12px;
+      background: #09090b;
+      border: 1px solid var(--border);
+      border-radius: 10px;
       padding: 20px;
       color: var(--text-muted);
       font-size: 0.95rem;
       margin-top: 16px;
     }
-    .ai-box strong { color: var(--sky); }
+    .ai-box strong { color: var(--white); }
 
     /* Modal Overlay */
     .modal-overlay {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(3, 7, 18, 0.9);
+      background: rgba(0, 0, 0, 0.85);
       backdrop-filter: blur(8px);
       z-index: 1000;
       display: flex;
@@ -526,7 +528,7 @@
       padding: 20px;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.3s ease;
+      transition: opacity 0.2s ease;
     }
     .modal-overlay.active {
       opacity: 1;
@@ -534,8 +536,8 @@
     }
     .modal-card {
       background: var(--bg-card);
-      border: 1px solid var(--border-accent);
-      border-radius: 20px;
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
       max-width: 750px;
       width: 100%;
       max-height: 85vh;
@@ -546,7 +548,7 @@
     .modal-close {
       position: absolute;
       top: 20px; right: 20px;
-      background: #0b0f19;
+      background: #09090b;
       border: 1px solid var(--border);
       color: var(--text-muted);
       width: 36px; height: 36px;
@@ -554,23 +556,23 @@
       display: flex; align-items: center; justify-content: center;
       cursor: pointer;
     }
-    .modal-close:hover { color: #fff; border-color: var(--blue); }
+    .modal-close:hover { color: #fff; border-color: var(--border-light); }
     .modal-section-title {
       font-size: 0.95rem;
       font-weight: 700;
-      color: var(--sky);
+      color: var(--white);
       margin: 16px 0 6px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
     .code-block {
-      background: #030712;
+      background: #000000;
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 14px;
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.8rem;
-      color: var(--sky);
+      color: var(--gpt-green);
       overflow-x: auto;
       margin: 10px 0;
     }
@@ -602,7 +604,10 @@
   <!-- Top Navigation -->
   <nav>
     <div class="container nav-inner">
-      <div class="logo">M. Haresh <span>Kumar</span></div>
+      <div class="logo">
+        <span class="logo-icon">HK</span>
+        M. Haresh Kumar
+      </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Portfolio</a></li>
@@ -646,7 +651,7 @@
         <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="btn-secondary">Explore GitHub Repo</a>
       </div>
 
-      <!-- Interactive Terminal Widget -->
+      <!-- ChatGPT Terminal Console Widget -->
       <div class="terminal-card">
         <div class="terminal-header">
           <span class="dot dot-red"></span>
@@ -656,11 +661,11 @@
         </div>
         <div class="terminal-body">
           <div class="cmd-line">$ system_initialize --target=haresh_portfolio</div>
-          <div class="status-ok">✔ Data Ingestion Staging running (Snowflake integration active)</div>
-          <div class="status-ok">✔ Power BI DAX semantic connector: ONLINE</div>
-          <div class="status-ok">✔ Python COM API Rotator: IDLE (100 email cap/day active)</div>
-          <div class="status-ok">✔ 4-Tier Honest Skills Matrix: LOADED</div>
-          <div style="color: var(--sky); margin-top: 6px;">ℹ️ Ready for Data Analyst, BI Developer, and Data Operations Lead requisitions.</div>
+          <div class="status-ok"><span>✔</span> Data Ingestion Staging running (Snowflake integration active)</div>
+          <div class="status-ok"><span>✔</span> Power BI DAX semantic connector: ONLINE</div>
+          <div class="status-ok"><span>✔</span> Python COM API Rotator: IDLE (100 email cap/day active)</div>
+          <div class="status-ok"><span>✔</span> 4-Tier Honest Skills Matrix: LOADED</div>
+          <div style="color: var(--text-muted); margin-top: 6px;">ℹ️ Ready for Data Analyst, BI Developer, and Data Operations Lead requisitions.</div>
         </div>
       </div>
 
@@ -924,7 +929,7 @@
       <div class="modal-section-title">Challenges & Lessons Learned</div>
       <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">
         <strong>Challenge:</strong> Handling out-of-order raw JSON logs without creating duplicate Silver records.<br>
-        <strong>Lesson Learned:</strong> Utilizing Snowflake Streams combined with <code style="color: var(--sky);">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code> guarantees idempotency without expensive full-table scans.
+        <strong>Lesson Learned:</strong> Utilizing Snowflake Streams combined with <code style="color: var(--gpt-green);">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code> guarantees idempotency without expensive full-table scans.
       </div>
 
       <div class="modal-section-title">Snowflake Task CDC Code Sample</div>
@@ -985,7 +990,7 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
       <div class="modal-section-title">Challenges & Lessons Learned</div>
       <div style="color: var(--text-muted); font-size: 0.9rem;">
         <strong>Challenge:</strong> Managing multi-level triage severity calculations (Levels 1–5) with varying wait time baselines.<br>
-        <strong>Lesson Learned:</strong> Creating modular DAX measures with <code style="color: var(--sky); font-weight: bold;">CALCULATE()</code> and <code style="color: var(--sky); font-weight: bold;">FILTER()</code> parameters keeps reporting clear and fast for hospital managers.
+        <strong>Lesson Learned:</strong> Creating modular DAX measures with <code style="color: var(--gpt-green); font-weight: bold;">CALCULATE()</code> and <code style="color: var(--gpt-green); font-weight: bold;">FILTER()</code> parameters keeps reporting clear and fast for hospital managers.
       </div>
     </div>
   </div>
@@ -995,7 +1000,7 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
     <div class="container">
       <p>© 2026 M. Haresh Kumar — Data Operations Professional | SQL | Power BI | Snowflake | AI Automation</p>
       <p style="margin-top: 8px;">
-        <a href="https://github.com/LeadGenData/M_Haresh_Kumar" style="color: var(--sky); text-decoration: none; font-weight: 600;" target="_blank">
+        <a href="https://github.com/LeadGenData/M_Haresh_Kumar" style="color: var(--text-main); text-decoration: none; font-weight: 600;" target="_blank">
           github.com/LeadGenData/M_Haresh_Kumar
         </a>
       </p>
