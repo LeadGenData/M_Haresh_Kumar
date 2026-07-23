@@ -32,12 +32,12 @@ Rather than relying on marketing copy or overhyped claims, I focus on building r
 
 ---
 
-## 🛠️ Technical Stack & Skill Levels
+## 🛠️ Honest Technical Skills Assessment Matrix
 
-* **SQL & Data Warehousing:** SQL (Complex Queries, Window Functions, Star Schema Data Modeling), Snowflake (Medallion Architecture: Bronze/Silver/Gold, Streams & Tasks, Dynamic Data Masking)
-* **Business Intelligence & Reporting:** Power BI (DAX, Data Modeling, Power Query ETL, Operational KPI Dashboards), Advanced Excel (Pivot Tables, Macros, Formula Automation)
-* **Scripting & Process Automation:** Python (*Practical Application / Learning* — `pandas`, `pywin32`, Outlook COM API, `gspread`), Google Apps Script, REST APIs, Git/GitHub
-* **AI-Assisted Development:** Snowflake Cortex AI, Claude, ChatGPT, Prompt Engineering, Code Auditing & Business Rules Validation
+* **🟢 Advanced Experience:** Excel (Pivot Tables, Macros, Formula Automation), Data Validation, Data Cleansing, Quality Control & MIS Reporting, Operational Process Improvement, Team Leadership (15+ Members)
+* **🔵 Intermediate Competency:** SQL (Complex CTEs, Window Functions, Star Schema Data Modeling), Power BI (DAX Calculated Measures, Power Query ETL, Operational KPI Dashboards), REST API Integration
+* **🟡 Practical Learning:** Snowflake (Medallion Architecture: Bronze/Silver/Gold, Streams & Tasks, Dynamic Data Masking), Python (`pandas`, `pywin32`, Outlook COM API, `gspread`), AI Workflow Automation, Microsoft Fabric Concepts
+* **⚪ Conceptual Understanding:** Azure Data Factory, SSIS ETL Pipelines, Informatica Data Integration
 
 ---
 

@@ -263,6 +263,36 @@
       line-height: 1.4;
     }
 
+    /* Honest Skills Matrix Grid */
+    .skills-matrix-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .skills-col {
+      background: #090d16;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .skills-col-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--cyan);
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .skills-col-list {
+      list-style: none;
+    }
+    .skills-col-list li {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
     /* Commercial Experience Grid */
     .exp-grid {
       display: grid;
@@ -403,7 +433,6 @@
       font-size: 0.85rem;
       font-weight: 700;
       color: var(--cyan);
-
     }
     .pipe-sub {
       font-size: 0.72rem;
@@ -501,6 +530,7 @@
 
     @media (max-width: 900px) {
       .roles-grid { grid-template-columns: repeat(2, 1fr); }
+      .skills-matrix-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.2rem; }
@@ -508,6 +538,7 @@
       .exp-grid { grid-template-columns: 1fr; }
       .projects-grid { grid-template-columns: 1fr; }
       .roles-grid { grid-template-columns: 1fr; }
+      .skills-matrix-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
     }
   </style>
@@ -521,6 +552,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#roles">Target Roles</a></li>
+        <li><a href="#skills">Honest Matrix</a></li>
         <li><a href="#commercial">Experience</a></li>
         <li><a href="#projects">Personal Projects</a></li>
         <li><a href="#ai-statement">AI Policy</a></li>
@@ -608,6 +640,54 @@
       </div>
     </div>
 
+    <!-- Honest Skills Assessment Matrix -->
+    <div class="section-block" id="skills">
+      <h2 class="section-title">📊 Honest Technical Skills Assessment</h2>
+      <p style="color: var(--text-muted);">
+        Clear, defensible skill categorization reflecting real operational depth and ongoing technical growth:
+      </p>
+
+      <div class="skills-matrix-grid">
+        <div class="skills-col">
+          <div class="skills-col-title">🟢 Advanced Experience</div>
+          <ul class="skills-col-list">
+            <li>• Excel (Pivot, Macros, Formulas)</li>
+            <li>• Operational Data Validation</li>
+            <li>• Quality Control & MIS Reporting</li>
+            <li>• Team Leadership (15+ Members)</li>
+            <li>• Process Automation</li>
+          </ul>
+        </div>
+        <div class="skills-col">
+          <div class="skills-col-title">🔵 Intermediate Competency</div>
+          <ul class="skills-col-list">
+            <li>• SQL (CTEs, Window Functions)</li>
+            <li>• Power BI (DAX, Modeling)</li>
+            <li>• Power Query Data Cleansing</li>
+            <li>• Star Schema Dimensionality</li>
+            <li>• REST & Sheets API Integration</li>
+          </ul>
+        </div>
+        <div class="skills-col">
+          <div class="skills-col-title">🟡 Practical Learning</div>
+          <ul class="skills-col-list">
+            <li>• Snowflake (Medallion, Streams)</li>
+            <li>• Python (`pandas`, `pywin32`)</li>
+            <li>• AI Automation & Workflows</li>
+            <li>• Microsoft Fabric Concepts</li>
+          </ul>
+        </div>
+        <div class="skills-col">
+          <div class="skills-col-title">⚪ Conceptual Understanding</div>
+          <ul class="skills-col-list">
+            <li>• Azure Data Factory</li>
+            <li>• SSIS ETL Pipelines</li>
+            <li>• Informatica Data Integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <!-- Commercial Experience Section -->
     <div class="section-block" id="commercial">
       <h2 class="section-title">💼 Professional Commercial Experience</h2>
@@ -681,7 +761,7 @@
             <span class="tech-tag">Power BI</span>
           </div>
           <div class="project-actions">
-            <button class="btn-action" onclick="openModal('modal-1')">🔍 View SQL Code & Details</button>
+            <button class="btn-action" onclick="openModal('modal-1')">🔍 View SQL & Lessons Learned</button>
             <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="btn-action btn-outline">📂 GitHub Docs</a>
           </div>
         </div>
@@ -702,7 +782,7 @@
             <span class="tech-tag">Pandas</span>
           </div>
           <div class="project-actions">
-            <button class="btn-action" onclick="openModal('modal-2')">🔍 My Contribution</button>
+            <button class="btn-action" onclick="openModal('modal-2')">🔍 Lessons Learned & Code</button>
             <a href="https://github.com/LeadGenData/bdl-leads-pro" target="_blank" class="btn-action btn-outline">📂 Source Code</a>
           </div>
         </div>
@@ -743,7 +823,7 @@
             <span class="tech-tag">SQL</span>
           </div>
           <div class="project-actions">
-            <button class="btn-action" onclick="openModal('modal-4')">🔍 My Contribution</button>
+            <button class="btn-action" onclick="openModal('modal-4')">🔍 DAX & Lessons Learned</button>
             <a href="https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis" target="_blank" class="btn-action btn-outline">📂 Dashboard Files</a>
           </div>
         </div>
@@ -775,6 +855,12 @@
         <li><strong>Power BI Modeling:</strong> Built executive visual layouts connected directly to Gold layer views.</li>
         <li><strong>AI Collaboration:</strong> Used Snowflake Cortex AI & LLM assistance to generate query boilerplate while auditing join conditions and masking logic.</li>
       </ul>
+
+      <div class="modal-section-title">Challenges & Lessons Learned</div>
+      <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">
+        <strong>Challenge:</strong> Handling out-of-order raw JSON logs without creating duplicate Silver records.<br>
+        <strong>Lesson Learned:</strong> Utilizing Snowflake Streams combined with <code style="color: var(--cyan);">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code> guarantees idempotency without expensive full-table scans.
+      </div>
 
       <div class="modal-section-title">Snowflake Task CDC Code Sample</div>
       <div class="code-block">
@@ -809,6 +895,12 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
         <li><strong>Python Development:</strong> Wrote scripts connecting `win32com.client` with Google Sheets `gspread` API.</li>
         <li><strong>Validation & Testing:</strong> Used AI tools to draft API handling code while personally testing authentication, rate limits, and error handling.</li>
       </ul>
+
+      <div class="modal-section-title">Challenges & Lessons Learned</div>
+      <div style="color: var(--text-muted); font-size: 0.9rem;">
+        <strong>Challenge:</strong> Avoiding Outlook COM API thread locking (`pywin32`) during high-frequency dispatch runs.<br>
+        <strong>Lesson Learned:</strong> Implementing randomized human interval delays (15–45 seconds) and automatic sender profile rotation per 100 emails keeps accounts safe and prevents COM API crashes.
+      </div>
     </div>
   </div>
 
@@ -824,6 +916,12 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
         <li><strong>DAX Development:</strong> Wrote custom measures for Average Wait Time, Admission Rate %, and Hourly Patient Volumes.</li>
         <li><strong>Dashboard UX:</strong> Designed intuitive visual charts focused on operational clarity.</li>
       </ul>
+
+      <div class="modal-section-title">Challenges & Lessons Learned</div>
+      <div style="color: var(--text-muted); font-size: 0.9rem;">
+        <strong>Challenge:</strong> Managing multi-level triage severity calculations (Levels 1–5) with varying wait time baselines.<br>
+        <strong>Lesson Learned:</strong> Creating modular DAX measures with <code style="color: var(--cyan);">CALCULATE()</code> and <code style="color: var(--cyan);">FILTER()</code> parameters keeps reporting clear and fast for hospital managers.
+      </div>
     </div>
   </div>
 
