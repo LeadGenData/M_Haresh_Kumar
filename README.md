@@ -57,7 +57,7 @@ These are practical data engineering, analytics, and automation projects built t
 
 * **Status:** ✅ Completed
 * **Tech Stack:** `Snowflake` | `Streams & Tasks` | `SQL` | `Dynamic Data Masking` | `Power BI` | `Snowflake Cortex AI`
-* **Links:** 📂 [Source Code](https://github.com/LeadGenData/Data-Analytics-Portfolio/tree/main/Snowflake-Medallion-Pipeline) | 📄 [Documentation](https://github.com/LeadGenData/Data-Analytics-Portfolio/blob/main/Snowflake-Medallion-Pipeline/README.md)
+* **Links:** 📂 [Source Code & Documentation](https://github.com/LeadGenData/M_Haresh_Kumar)
 
 **Business Problem:**
 
@@ -196,7 +196,7 @@ Built an interactive Power BI dashboard aggregating patient admission records, t
 
 * **Status:** ✅ Completed
 * **Tech Stack:** `React` | `Tailwind CSS` | `Zustand` | `Python` | `Google Apps Script API`
-* **Links:** 📂 [Source Code](https://github.com/jamescluster35/bdl-leads-pro-targeting)
+* **Links:** 📂 [Source Code & Documentation](https://github.com/LeadGenData/M_Haresh_Kumar)
 
 **Business Problem:**
 
