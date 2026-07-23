@@ -9,7 +9,7 @@
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -19,8 +19,8 @@
     }
     body {
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-      background: radial-gradient(circle at top left, #ffb347 0%, #ff7e5f 40%, #0f172a 100%);
-      color: #f9fafb;
+      background: radial-gradient(circle at top left, #ff9f1c 0%, #ff5400 35%, #0f172a 90%);
+      color: #ffffff;
       overflow-x: hidden;
       position: relative;
       line-height: 1.6;
@@ -35,7 +35,7 @@
       position: fixed;
       inset: 0;
       z-index: -2;
-      background: radial-gradient(circle at top left, #ffb347 0%, #ff7e5f 35%, #0f172a 90%);
+      background: radial-gradient(circle at top left, #ff9f1c 0%, #ff5400 35%, #0f172a 90%);
       transform: translateY(0);
       animation: parallaxMove 18s ease-in-out infinite;
     }
@@ -51,7 +51,7 @@
       width: 140px;
       height: 140px;
       border-radius: 32px;
-      background: linear-gradient(135deg, rgba(255, 180, 71, 0.35), rgba(255, 126, 95, 0.35));
+      background: linear-gradient(135deg, rgba(255, 159, 28, 0.4), rgba(255, 84, 0, 0.4));
       filter: blur(2px);
       z-index: -1;
       animation: floatShape 16s ease-in-out infinite;
@@ -60,7 +60,7 @@
       border-radius: 50%;
       width: 90px;
       height: 90px;
-      background: radial-gradient(circle, rgba(255, 180, 71, 0.4), rgba(255, 126, 95, 0.2));
+      background: radial-gradient(circle, rgba(255, 159, 28, 0.5), rgba(255, 84, 0, 0.3));
       animation: floatShape2 14s ease-in-out infinite;
     }
     @keyframes floatShape {
@@ -74,51 +74,30 @@
       100% { transform: translate(0, 0); }
     }
 
-    /* DUAL GLOW BORDER CONTAINER */
-    .dual-glow {
-      background: rgba(15, 23, 42, 0.92);
-      border-radius: 1.2rem;
-      position: relative;
-      overflow: hidden;
-      backdrop-filter: blur(16px);
-    }
-    .dual-glow::before {
-      content: "";
-      position: absolute;
-      inset: -2px;
-      background: linear-gradient(135deg, #ffb347, #ff7e5f);
-      z-index: -2;
-    }
-    .dual-glow::after {
-      content: "";
-      position: absolute;
-      inset: 2px;
-      border-radius: 1rem;
-      background: rgba(15, 23, 42, 0.95);
-      z-index: -1;
-    }
-
     /* NAVBAR */
     .nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5rem 8vw;
+      padding: 1.2rem 8vw;
       color: #fff;
       position: sticky;
       top: 0;
       z-index: 100;
       backdrop-filter: blur(20px);
-      background: rgba(15, 23, 42, 0.75);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(15, 23, 42, 0.9);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
     .nav-left {
       font-weight: 800;
-      font-size: 1.25rem;
-      background: linear-gradient(135deg, #ffb347, #ff7e5f);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 1.3rem;
+      color: #ffffff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
       letter-spacing: -0.5px;
+    }
+    .nav-left span {
+      color: #ff9f1c;
     }
     .nav-right {
       display: flex;
@@ -128,29 +107,29 @@
       list-style: none;
     }
     .nav-link {
-      opacity: 0.9;
+      color: #f1f5f9;
+      font-weight: 600;
       transition: 0.2s;
-      font-weight: 500;
     }
     .nav-link:hover {
-      opacity: 1;
-      color: #ffb347;
+      color: #ff9f1c;
     }
     .nav-btn {
       padding: 0.6rem 1.3rem;
       border-radius: 999px;
       border: none;
-      background: linear-gradient(135deg, #ffb347, #ff7e5f);
-      color: #111827;
-      font-weight: 700;
+      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      color: #ffffff;
+      font-weight: 800;
       cursor: pointer;
-      box-shadow: 0 0 18px rgba(255, 180, 71, 0.6);
+      box-shadow: 0 0 20px rgba(255, 159, 28, 0.6);
       transition: 0.3s;
       text-decoration: none;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
     .nav-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 26px rgba(255, 126, 95, 0.9);
+      box-shadow: 0 0 28px rgba(255, 84, 0, 0.9);
     }
 
     /* HERO */
@@ -178,31 +157,52 @@
       font-size: 0.85rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      font-weight: 700;
-      color: #ffb347;
-      background: rgba(255, 179, 71, 0.15);
-      border: 1px solid rgba(255, 179, 71, 0.3);
-      padding: 4px 14px;
+      font-weight: 800;
+      color: #ffffff;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 6px 16px;
       border-radius: 20px;
       display: inline-block;
       width: fit-content;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     .hero-title {
-      font-size: clamp(2.8rem, 5vw, 3.6rem);
+      font-size: clamp(2.8rem, 5vw, 3.8rem);
       font-weight: 800;
       line-height: 1.1;
       letter-spacing: -1px;
+      color: #ffffff;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+    .hero-title span {
+      color: #ffbe5c;
     }
     .hero-role {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: #ff7e5f;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #ffffff;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(255, 190, 92, 0.4);
+      padding: 8px 18px;
+      border-radius: 12px;
+      width: fit-content;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .hero-subtitle-box {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 14px;
+      padding: 18px 22px;
+      max-width: 34rem;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     }
     .hero-subtitle {
       font-size: 1.05rem;
-      max-width: 32rem;
-      color: #cbd5e1;
+      color: #f8fafc;
       line-height: 1.7;
+      font-weight: 500;
     }
     .hero-actions {
       display: flex;
@@ -211,93 +211,96 @@
       margin-top: 0.5rem;
     }
     .hero-btn-main {
-      padding: 0.8rem 1.8rem;
+      padding: 0.85rem 1.8rem;
       border-radius: 999px;
       border: none;
-      background: linear-gradient(135deg, #ffb347, #ff7e5f);
-      color: #111827;
-      font-weight: 700;
+      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1rem;
       cursor: pointer;
-      box-shadow: 0 0 20px rgba(255, 180, 71, 0.7);
+      box-shadow: 0 0 22px rgba(255, 159, 28, 0.8);
       transition: 0.3s;
       text-decoration: none;
       display: inline-block;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
     .hero-btn-main:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 28px rgba(255, 126, 95, 0.9);
+      box-shadow: 0 0 30px rgba(255, 84, 0, 1);
     }
     .hero-btn-secondary {
-      padding: 0.8rem 1.6rem;
+      padding: 0.85rem 1.6rem;
       border-radius: 999px;
-      background: rgba(15, 23, 42, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      color: #fff;
-      font-weight: 600;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+      font-weight: 700;
       text-decoration: none;
       transition: 0.3s;
     }
     .hero-btn-secondary:hover {
-      border-color: #ffb347;
-      color: #ffb347;
+      border-color: #ffbe5c;
+      color: #ffbe5c;
     }
 
     /* TESTIMONIAL / STORY CARD */
     .testimonial {
-      margin-top: 1.5rem;
-      max-width: 32rem;
-      padding: 1.2rem 1.4rem;
+      margin-top: 1rem;
+      max-width: 34rem;
+      padding: 1.4rem 1.6rem;
       border-radius: 1rem;
-      background: rgba(15, 23, 42, 0.88);
-      border: 1px solid rgba(255, 179, 71, 0.25);
-      color: #e2e8f0;
-      font-size: 0.92rem;
-      box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
-      line-height: 1.6;
+      background: rgba(15, 23, 42, 0.92);
+      border: 1px solid rgba(255, 190, 92, 0.4);
+      color: #f8fafc;
+      font-size: 0.95rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      line-height: 1.65;
     }
     .testimonial-author {
-      margin-top: 0.6rem;
-      font-weight: 700;
-      font-size: 0.85rem;
-      color: #ffb347;
+      margin-top: 0.8rem;
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: #ffbe5c;
     }
 
     /* TERMINAL CONSOLE WIDGET */
     .terminal-card {
-      background: rgba(3, 7, 18, 0.9);
-      border: 1px solid rgba(255, 179, 71, 0.3);
+      background: rgba(3, 7, 18, 0.95);
+      border: 1px solid rgba(255, 190, 92, 0.4);
       border-radius: 12px;
-      margin-top: 1.2rem;
-      max-width: 32rem;
+      margin-top: 1rem;
+      max-width: 34rem;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.7);
     }
     .terminal-header {
-      background: rgba(15, 23, 42, 0.95);
-      padding: 8px 14px;
+      background: rgba(15, 23, 42, 0.98);
+      padding: 9px 16px;
       display: flex;
       align-items: center;
       gap: 6px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
-    .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
     .dot-red { background: #ef4444; }
     .dot-yellow { background: #f59e0b; }
     .dot-green { background: #10b981; }
     .terminal-title {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
-      color: #94a3b8;
+      font-size: 0.8rem;
+      color: #e2e8f0;
       margin-left: 6px;
+      font-weight: 600;
     }
     .terminal-body {
-      padding: 14px 16px;
+      padding: 16px 18px;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem;
-      color: #cbd5e1;
+      font-size: 0.82rem;
+      color: #f8fafc;
     }
-    .cmd-line { color: #ffb347; margin-bottom: 6px; font-weight: 600; }
-    .status-ok { color: #34d399; margin-bottom: 3px; }
+    .cmd-line { color: #ffbe5c; margin-bottom: 6px; font-weight: 700; }
+    .status-ok { color: #34d399; margin-bottom: 4px; font-weight: 600; }
 
     /* HERO RIGHT (TOOLS PANEL) */
     .hero-right {
@@ -308,8 +311,8 @@
     }
     .hero-panel {
       width: 100%;
-      max-width: 380px;
-      padding: 1.8rem;
+      max-width: 390px;
+      padding: 2rem;
       border-radius: 1.5rem;
       position: relative;
       overflow: hidden;
@@ -318,7 +321,7 @@
       content: "";
       position: absolute;
       inset: -2px;
-      background: linear-gradient(135deg, #ffb347, #ff7e5f);
+      background: linear-gradient(135deg, #ff9f1c, #ff5400);
       z-index: -2;
     }
     .hero-panel::after {
@@ -326,21 +329,21 @@
       position: absolute;
       inset: 2px;
       border-radius: 1.3rem;
-      background: rgba(15, 23, 42, 0.95);
+      background: rgba(15, 23, 42, 0.96);
       z-index: -1;
     }
     .hero-panel-title {
-      font-size: 1.15rem;
-      font-weight: 700;
+      font-size: 1.2rem;
+      font-weight: 800;
       margin-bottom: 0.6rem;
-      color: #f8fafc;
+      color: #ffffff;
       display: flex;
       align-items: center;
       gap: 8px;
     }
     .hero-panel-sub {
-      font-size: 0.88rem;
-      color: #94a3b8;
+      font-size: 0.9rem;
+      color: #cbd5e1;
       margin-bottom: 1.2rem;
     }
     .hero-icons {
@@ -349,15 +352,15 @@
       gap: 0.6rem;
     }
     .hero-icon-pill {
-      padding: 0.45rem 0.9rem;
+      padding: 0.5rem 1rem;
       border-radius: 999px;
-      background: rgba(15, 23, 42, 0.85);
-      border: 1px solid rgba(255, 179, 71, 0.3);
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #f8fafc;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(255, 190, 92, 0.4);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #ffffff;
       animation: floatIcon 4s ease-in-out infinite;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     }
     @keyframes floatIcon {
       0% { transform: translateY(0); }
@@ -367,38 +370,40 @@
 
     /* SECTION WRAPPER */
     .section {
-      padding: 3.5rem 8vw;
+      padding: 4rem 8vw;
       background: #0f172a;
-      color: #f9fafb;
+      color: #ffffff;
       position: relative;
       z-index: 1;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
     .section-title {
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 800;
       margin-bottom: 0.5rem;
-      background: linear-gradient(135deg, #ffffff 0%, #ffb347 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #ffffff;
+    }
+    .section-title span {
+      color: #ffbe5c;
     }
     .section-subtitle {
-      font-size: 0.98rem;
-      color: #94a3b8;
-      margin-bottom: 2.2rem;
+      font-size: 1.02rem;
+      color: #cbd5e1;
+      margin-bottom: 2.5rem;
+      font-weight: 500;
     }
 
     /* ROLES GRID */
     .roles-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.4rem;
+      gap: 1.5rem;
     }
     .role-card {
       background: rgba(15, 23, 42, 0.95);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 1rem;
-      padding: 1.2rem;
+      padding: 1.4rem;
       transition: 0.3s;
       position: relative;
       overflow: hidden;
@@ -407,81 +412,85 @@
       content: "";
       position: absolute;
       inset: -2px;
-      background: linear-gradient(135deg, #ffb347, #ff7e5f);
+      background: linear-gradient(135deg, #ff9f1c, #ff5400);
       opacity: 0;
       transition: 0.3s;
       z-index: -1;
     }
     .role-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
     }
     .role-card:hover::before {
       opacity: 1;
     }
     .role-badge {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #ffb347;
-      background: rgba(255, 179, 71, 0.15);
-      padding: 2px 8px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #ffbe5c;
+      background: rgba(255, 190, 92, 0.18);
+      border: 1px solid rgba(255, 190, 92, 0.4);
+      padding: 3px 10px;
       border-radius: 12px;
       display: inline-block;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     .role-name {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 6px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
     }
     .role-desc {
-      font-size: 0.8rem;
-      color: #94a3b8;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      line-height: 1.5;
     }
 
     /* SKILLS MATRIX */
     .skills-matrix-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
+      gap: 1.6rem;
     }
     .skills-col {
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(255, 179, 71, 0.2);
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(255, 190, 92, 0.3);
       border-radius: 1rem;
-      padding: 1.4rem;
+      padding: 1.5rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
     }
     .skills-col-title {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #ffb347;
+      font-size: 1rem;
+      font-weight: 800;
+      color: #ffbe5c;
       margin-bottom: 1rem;
-      border-bottom: 1px solid rgba(255, 179, 71, 0.2);
-      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(255, 190, 92, 0.3);
+      padding-bottom: 8px;
     }
     .skills-col-list {
       list-style: none;
     }
     .skills-col-list li {
-      font-size: 0.88rem;
-      color: #cbd5e1;
-      margin-bottom: 8px;
+      font-size: 0.9rem;
+      color: #f8fafc;
+      margin-bottom: 10px;
+      font-weight: 500;
     }
 
     /* PROJECTS */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 2rem;
     }
     .project-card {
       position: relative;
-      padding: 1.6rem;
-      border-radius: 1.2rem;
+      padding: 1.8rem;
+      border-radius: 1.3rem;
       background: rgba(15, 23, 42, 0.95);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.6);
       overflow: hidden;
       transition: 0.3s;
       display: flex;
@@ -492,44 +501,45 @@
       content: "";
       position: absolute;
       inset: -2px;
-      background: linear-gradient(135deg, #ffb347, #ff7e5f);
+      background: linear-gradient(135deg, #ff9f1c, #ff5400);
       opacity: 0;
       transition: 0.3s;
       z-index: -1;
     }
     .project-card:hover {
       transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8);
     }
     .project-card:hover::before {
       opacity: 1;
     }
     .project-name {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 0.6rem;
-      color: #f9fafb;
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+      color: #ffffff;
     }
     .project-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 1rem;
+      gap: 0.5rem;
+      margin-bottom: 1.2rem;
     }
     .project-tag {
-      padding: 0.25rem 0.6rem;
+      padding: 0.3rem 0.7rem;
       border-radius: 999px;
-      font-size: 0.78rem;
-      background: rgba(31, 41, 55, 0.9);
-      color: #ffb347;
-      border: 1px solid rgba(255, 179, 71, 0.25);
+      font-size: 0.8rem;
+      background: rgba(31, 41, 55, 0.95);
+      color: #ffbe5c;
+      border: 1px solid rgba(255, 190, 92, 0.35);
       font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
     }
     .project-desc {
-      font-size: 0.9rem;
-      color: #cbd5e1;
+      font-size: 0.93rem;
+      color: #f1f5f9;
       margin-bottom: 1rem;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     /* VISUAL PIPELINE */
@@ -542,105 +552,109 @@
       margin: 10px 0 14px;
     }
     .pipe-node {
-      background: rgba(31, 41, 55, 0.8);
-      border: 1px solid rgba(255, 179, 71, 0.25);
+      background: rgba(31, 41, 55, 0.95);
+      border: 1px solid rgba(255, 190, 92, 0.35);
       border-radius: 8px;
       padding: 8px 12px;
       min-width: 100px;
       text-align: center;
     }
     .pipe-title {
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: #ffb347;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #ffbe5c;
     }
     .pipe-sub {
-      font-size: 0.68rem;
-      color: #94a3b8;
+      font-size: 0.7rem;
+      color: #cbd5e1;
     }
     .pipe-arrow {
-      color: #ffb347;
+      color: #ffbe5c;
       font-weight: 800;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     .project-actions {
       display: flex;
-      gap: 8px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-top: 10px;
+      margin-top: 12px;
     }
     .btn-project {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 0.5rem 1rem;
+      padding: 0.6rem 1.2rem;
       border-radius: 999px;
-      background: linear-gradient(135deg, #ffb347, #ff7e5f);
-      color: #111827;
-      font-weight: 700;
-      font-size: 0.82rem;
+      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.85rem;
       cursor: pointer;
       border: none;
       transition: 0.2s;
       text-decoration: none;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
     .btn-project:hover {
-      box-shadow: 0 0 15px rgba(255, 180, 71, 0.8);
+      box-shadow: 0 0 20px rgba(255, 159, 28, 0.9);
     }
     .btn-project-outline {
-      background: transparent;
-      border: 1px solid rgba(255, 179, 71, 0.4);
-      color: #ffb347;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(255, 190, 92, 0.5);
+      color: #ffbe5c;
+      font-weight: 700;
     }
     .btn-project-outline:hover {
-      background: rgba(255, 179, 71, 0.15);
-      color: #fff;
+      background: rgba(255, 190, 92, 0.2);
+      color: #ffffff;
     }
 
     /* EXPERIENCE TIMELINE */
     .timeline {
-      border-left: 3px solid rgba(255, 179, 71, 0.4);
-      padding-left: 1.8rem;
+      border-left: 3px solid #ff9f1c;
+      padding-left: 2rem;
       position: relative;
     }
     .timeline-item {
-      margin-bottom: 2rem;
+      margin-bottom: 2.2rem;
       position: relative;
     }
     .timeline-item::before {
       content: "";
       position: absolute;
-      left: -35px;
-      top: 5px;
-      width: 15px;
-      height: 15px;
+      left: -40px;
+      top: 4px;
+      width: 17px;
+      height: 17px;
       border-radius: 50%;
-      background: radial-gradient(circle, #ffb347, #ff7e5f);
-      box-shadow: 0 0 16px rgba(255, 126, 95, 0.9);
+      background: radial-gradient(circle, #ffbe5c, #ff5400);
+      box-shadow: 0 0 18px rgba(255, 84, 0, 1);
     }
     .timeline-item h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #ffb347;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #ffbe5c;
     }
     .timeline-item p {
-      font-size: 0.92rem;
-      color: #cbd5e1;
-      margin-top: 0.4rem;
+      font-size: 0.95rem;
+      color: #f1f5f9;
+      margin-top: 0.5rem;
+      line-height: 1.65;
     }
 
     /* AI STATEMENT */
     .ai-box {
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(255, 179, 71, 0.3);
-      border-radius: 1.2rem;
-      padding: 1.8rem;
-      color: #cbd5e1;
-      font-size: 0.95rem;
-      line-height: 1.6;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(255, 190, 92, 0.4);
+      border-radius: 1.3rem;
+      padding: 2rem;
+      color: #f8fafc;
+      font-size: 1rem;
+      line-height: 1.75;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
-    .ai-box strong { color: #ffb347; }
+    .ai-box strong { color: #ffbe5c; font-size: 1.1rem; }
 
     /* CONTACT */
     .contact-center {
@@ -649,26 +663,27 @@
     .contact-btn {
       display: inline-block;
       margin-top: 1rem;
-      padding: 0.8rem 2rem;
+      padding: 0.9rem 2.2rem;
       border-radius: 999px;
-      background: linear-gradient(135deg, #ffb347, #ff7e5f);
-      color: #111827;
-      font-weight: 700;
-      font-size: 1rem;
-      box-shadow: 0 0 20px rgba(255, 126, 95, 0.8);
+      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.05rem;
+      box-shadow: 0 0 25px rgba(255, 84, 0, 0.9);
       transition: 0.3s;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
     .contact-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 28px rgba(255, 180, 71, 1);
+      box-shadow: 0 0 32px rgba(255, 159, 28, 1);
     }
 
     /* MODAL OVERLAY */
     .modal-overlay {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(15, 23, 42, 0.92);
-      backdrop-filter: blur(12px);
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(14px);
       z-index: 1000;
       display: flex;
       justify-content: center;
@@ -684,48 +699,51 @@
     }
     .modal-card {
       background: rgba(15, 23, 42, 0.98);
-      border: 1px solid rgba(255, 179, 71, 0.4);
+      border: 1px solid rgba(255, 190, 92, 0.5);
       border-radius: 1.5rem;
-      max-width: 750px;
+      max-width: 780px;
       width: 100%;
       max-height: 85vh;
       overflow-y: auto;
-      padding: 32px;
+      padding: 36px;
       position: relative;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.9);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.95);
+      color: #ffffff;
     }
     .modal-close {
       position: absolute;
       top: 20px; right: 20px;
-      background: rgba(31, 41, 55, 0.8);
-      border: 1px solid rgba(255, 179, 71, 0.3);
-      color: #ffb347;
-      width: 36px; height: 36px;
+      background: rgba(31, 41, 55, 0.9);
+      border: 1px solid rgba(255, 190, 92, 0.4);
+      color: #ffbe5c;
+      width: 38px; height: 38px;
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       cursor: pointer;
+      font-weight: 800;
     }
-    .modal-close:hover { color: #fff; border-color: #ffb347; }
+    .modal-close:hover { color: #fff; border-color: #ffbe5c; }
     .code-block {
-      background: rgba(3, 7, 18, 0.95);
-      border: 1px solid rgba(255, 179, 71, 0.25);
+      background: rgba(3, 7, 18, 0.98);
+      border: 1px solid rgba(255, 190, 92, 0.35);
       border-radius: 8px;
-      padding: 14px;
+      padding: 16px;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem;
-      color: #ffb347;
+      font-size: 0.85rem;
+      color: #ffbe5c;
       overflow-x: auto;
-      margin: 10px 0;
+      margin: 12px 0;
     }
 
     /* FOOTER */
     .footer {
-      padding: 2rem 8vw;
+      padding: 2.2rem 8vw;
       text-align: center;
-      font-size: 0.88rem;
-      color: #64748b;
-      background: #0b1120;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 0.92rem;
+      color: #cbd5e1;
+      background: #070a12;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-weight: 500;
     }
 
     @media (max-width: 900px) {
@@ -744,7 +762,7 @@
 
   <!-- NAVBAR -->
   <header class="nav">
-    <div class="nav-left">Haresh Mankar</div>
+    <div class="nav-left">Haresh <span>Mankar</span></div>
     <ul class="nav-right">
       <li><a href="#home" class="nav-link">Home</a></li>
       <li><a href="#roles" class="nav-link">Roles</a></li>
@@ -760,11 +778,15 @@
   <section class="hero" id="home">
     <div class="hero-left">
       <div class="hero-tag">Data Operations & Analytics</div>
-      <h1 class="hero-title">Hey, I am Haresh</h1>
-      <p class="hero-role">Data Operations Lead & BI Specialist</p>
-      <p class="hero-subtitle">
-        14+ years bridging the gap between business operations and data analytics. I design clean pipelines, Power BI dashboards, and automated Python workflows using SQL, Snowflake, and Power BI.
-      </p>
+      <h1 class="hero-title">Hey, I am <span>Haresh</span></h1>
+      <div class="hero-role">Data Operations Lead & BI Specialist</div>
+      
+      <div class="hero-subtitle-box">
+        <p class="hero-subtitle">
+          14+ years bridging the gap between business operations and data analytics. I design clean pipelines, Power BI dashboards, and automated Python workflows using SQL, Snowflake, and Power BI.
+        </p>
+      </div>
+
       <div class="hero-actions">
         <a href="#projects" class="hero-btn-main">View Projects</a>
         <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="hero-btn-secondary">GitHub Profile</a>
@@ -790,7 +812,7 @@
           <div class="status-ok">✔ Power BI DAX semantic connector: ONLINE</div>
           <div class="status-ok">✔ Python COM API Rotator: IDLE (100 email cap/day active)</div>
           <div class="status-ok">✔ 4-Tier Honest Skills Matrix: LOADED</div>
-          <div style="color: #ffb347; margin-top: 4px;">ℹ️ Ready for Data Analyst, BI Developer, and Data Operations Lead requisitions.</div>
+          <div style="color: #ffbe5c; margin-top: 4px; font-weight: 700;">ℹ️ Ready for Data Analyst, BI Developer, and Data Operations Lead requisitions.</div>
         </div>
       </div>
 
@@ -817,7 +839,7 @@
 
   <!-- TARGET ROLES -->
   <section class="section" id="roles">
-    <h2 class="section-title">Target Role Alignment</h2>
+    <h2 class="section-title">Target Role <span>Alignment</span></h2>
     <p class="section-subtitle">
       Directly mapping 14+ years of data operations leadership & modern technical stack to hiring manager requisitions:
     </p>
@@ -853,7 +875,7 @@
 
   <!-- SKILLS -->
   <section class="section" id="skills">
-    <h2 class="section-title">Honest Technical Skills Assessment</h2>
+    <h2 class="section-title">Honest Technical Skills <span>Assessment</span></h2>
     <p class="section-subtitle">
       Clear, defensible skill categorization reflecting real operational depth and ongoing technical growth:
     </p>
@@ -901,7 +923,7 @@
 
   <!-- PROJECTS -->
   <section class="section" id="projects">
-    <h2 class="section-title">Featured Personal Technical Projects</h2>
+    <h2 class="section-title">Featured Personal Technical <span>Projects</span></h2>
     <p class="section-subtitle">
       Practical data engineering, analytics, and automation systems built to demonstrate technical capabilities:
     </p>
@@ -1011,7 +1033,7 @@
 
   <!-- EXPERIENCE TIMELINE -->
   <section class="section" id="experience">
-    <h2 class="section-title">Commercial Experience Timeline</h2>
+    <h2 class="section-title">Commercial Experience <span>Timeline</span></h2>
     <p class="section-subtitle">
       Core operational leadership experience acquired over 14+ years managing data workflows and team performance:
     </p>
@@ -1042,7 +1064,7 @@
 
   <!-- AI ASSISTANCE STATEMENT -->
   <section class="section" id="ai-statement">
-    <h2 class="section-title">🤖 AI Assistance Statement</h2>
+    <h2 class="section-title">🤖 AI Assistance <span>Statement</span></h2>
     <div class="ai-box">
       <strong>Modern AI Collaboration:</strong><br>
       The portfolio reflects my own solution design, SQL logic, Power BI models, and implementation. AI tools such as Claude and Snowflake Cortex AI were used where appropriate to accelerate development, with all outputs reviewed, tested, and validated by me.
@@ -1052,7 +1074,7 @@
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="contact-center">
-      <h2 class="section-title">Let’s Connect</h2>
+      <h2 class="section-title">Let’s <span>Connect</span></h2>
       <p class="section-subtitle">
         Open to Data Analyst, BI Developer, and Data Operations Lead opportunities.
       </p>
@@ -1064,11 +1086,11 @@
   <div class="modal-overlay" id="modal-1">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('modal-1')">✕</button>
-      <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: #ffb347;">💳 1. Snowflake Medallion Pipeline</h3>
+      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #ffbe5c;">💳 1. Snowflake Medallion Pipeline</h3>
       
-      <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 12px;">
-        <strong>Challenges & Lessons Learned:</strong><br>
-        Handling out-of-order raw JSON logs without creating duplicate Silver records was solved using Snowflake Streams + <code style="color: #ffb347;">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code>.
+      <p style="color: #f8fafc; font-size: 0.95rem; margin-bottom: 14px; line-height: 1.6;">
+        <strong style="color: #ffbe5c;">Challenges & Lessons Learned:</strong><br>
+        Handling out-of-order raw JSON logs without creating duplicate Silver records was solved using Snowflake Streams + <code style="color: #ffbe5c; font-weight: bold;">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code>.
       </p>
 
       <div class="code-block">
@@ -1094,10 +1116,10 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
   <div class="modal-overlay" id="modal-2">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('modal-2')">✕</button>
-      <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: #ffb347;">📧 2. Multi-Account Outlook Email Automation</h3>
+      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #ffbe5c;">📧 2. Multi-Account Outlook Email Automation</h3>
       
-      <p style="color: #cbd5e1; font-size: 0.9rem;">
-        <strong>Challenges & Lessons Learned:</strong><br>
+      <p style="color: #f8fafc; font-size: 0.95rem; line-height: 1.6;">
+        <strong style="color: #ffbe5c;">Challenges & Lessons Learned:</strong><br>
         Avoiding Outlook COM API thread locking (`pywin32`) during high-frequency dispatch runs was solved by implementing randomized human interval delays (15–45 seconds) and sender rotation per 100 emails.
       </p>
     </div>
@@ -1107,11 +1129,11 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
   <div class="modal-overlay" id="modal-4">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('modal-4')">✕</button>
-      <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: #ffb347;">🏥 4. Hospital Emergency Room Capacity BI Dashboard</h3>
+      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #ffbe5c;">🏥 4. Hospital Emergency Room Capacity BI Dashboard</h3>
       
-      <p style="color: #cbd5e1; font-size: 0.9rem;">
-        <strong>Challenges & Lessons Learned:</strong><br>
-        Managing multi-level triage severity calculations (Levels 1–5) with varying wait time baselines was solved using modular DAX measures with <code style="color: #ffb347;">CALCULATE()</code> and <code style="color: #ffb347;">FILTER()</code>.
+      <p style="color: #f8fafc; font-size: 0.95rem; line-height: 1.6;">
+        <strong style="color: #ffbe5c;">Challenges & Lessons Learned:</strong><br>
+        Managing multi-level triage severity calculations (Levels 1–5) with varying wait time baselines was solved using modular DAX measures with <code style="color: #ffbe5c; font-weight: bold;">CALCULATE()</code> and <code style="color: #ffbe5c; font-weight: bold;">FILTER()</code>.
       </p>
     </div>
   </div>
