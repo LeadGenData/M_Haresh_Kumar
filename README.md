@@ -59,10 +59,12 @@ These are practical data engineering, analytics, and automation projects built t
 * **Tech Stack:** `Snowflake` | `Streams & Tasks` | `SQL` | `Dynamic Data Masking` | `Power BI` | `Snowflake Cortex AI`
 * **Links:** 📂 [Source Code](https://github.com/LeadGenData/Data-Analytics-Portfolio/tree/main/Snowflake-Medallion-Pipeline) | 📄 [Documentation](https://github.com/LeadGenData/Data-Analytics-Portfolio/blob/main/Snowflake-Medallion-Pipeline/README.md)
 
-**Business Problem:**  
+**Business Problem:**
+
 Financial teams face high volumes of raw credit card transaction logs across multiple file formats (JSON, CSV). Manual processing leads to delayed reporting, potential duplicate transactions, and risks around sensitive PII data.
 
-**Solution:**  
+**Solution:**
+
 Designed and deployed a **Medallion Data Architecture** in Snowflake. Raw data ingestion flows through Bronze (staging), Silver (cleaned & deduplicated), and Gold (Star Schema dimensional model) layers, powering a Power BI Dashboard for operational fraud monitoring.
 
 **Architecture Flow:**
@@ -87,13 +89,15 @@ Raw Transactions (JSON / CSV)
   └──────────────────┘
 ```
 
-**My Contribution:**  
+**My Contribution:**
+
 * **Solution Design:** Mapped out 3-layer Medallion structure and Star Schema dimensional model (Fact Transactions, Dim Customer, Dim Merchant).
 * **SQL Transformations:** Wrote DDL/DML scripts for Streams, Tasks, and Dynamic Data Masking policies.
 * **Power BI Modeling:** Built executive visual layouts connected directly to Gold layer views.
 * **AI Collaboration:** Used Snowflake Cortex AI & LLM assistance to generate query boilerplate while auditing join conditions, schema constraints, and masking logic.
 
-**Practical Outcomes:**  
+**Practical Outcomes:**
+
 * **Near Real-Time Processing:** Continuous automated ingestion via Snowflake Streams replaced manual batch file processing.
 * **Data Security Compliance:** Applied Dynamic Data Masking to anonymize sensitive account numbers for reporting analysts.
 * **Clean Data Integrity:** Applied deduplication rules (`QUALIFY ROW_NUMBER()`) in the Silver layer to remove duplicate log entries.
@@ -106,10 +110,12 @@ Raw Transactions (JSON / CSV)
 * **Tech Stack:** `Python` | `Outlook COM API` | `Google Sheets API` | `Pandas`
 * **Links:** 📂 [Source Code](https://github.com/LeadGenData/bdl-leads-pro) | 📄 [Documentation](https://github.com/LeadGenData/M_Haresh_Kumar)
 
-**Business Problem:**  
+**Business Problem:**
+
 Outbound prospecting required sending personalized emails daily across multiple Outlook accounts. Manual sending was slow, ran the risk of hitting email provider limits, left bounce emails unmonitored, and resulted in fragmented CRM records.
 
-**Solution:**  
+**Solution:**
+
 Built a Python desktop script using Outlook COM API (`pywin32`) and Google Sheets API. The script manages multiple Outlook sender profiles, automatically rotates accounts upon reaching daily limits (100 emails/day/account), records email bounce notifications, and updates campaign status in Google Sheets.
 
 **Architecture Flow:**
@@ -118,12 +124,14 @@ Built a Python desktop script using Outlook COM API (`pywin32`) and Google Sheet
 Target Contacts (Google Sheets API) ──> Python Rotator Engine ──> Outlook Accounts (1 & 2) ──> Bounce Logger ──> CRM Writeback
 ```
 
-**My Contribution:**  
+**My Contribution:**
+
 * **Workflow Architecture:** Designed sender rotation logic, random interval delays, and bounce detection regex patterns.
 * **Python Development:** Wrote scripts connecting `win32com.client` with Google Sheets `gspread` API.
 * **Validation & Testing:** Used AI tools to draft API handling code while personally testing authentication, rate limits, and error handling.
 
-**Practical Outcomes:**  
+**Practical Outcomes:**
+
 * **Manual Effort Reduced:** Automated repetitive email dispatch and CRM status updates.
 * **Account Safety:** Enforced daily caps per account with automatic sender rotation to respect email provider rules.
 * **Clean CRM Sync:** Automated delivery timestamp logging and bounce status tracking.
@@ -136,18 +144,22 @@ Target Contacts (Google Sheets API) ──> Python Rotator Engine ──> Outloo
 * **Tech Stack:** `HTML5` | `CSS3` | `JavaScript` | `Google Apps Script` | `Google Sheets API`
 * **Links:** 🌐 [Live Calculator](https://jamescluster35.github.io/revenue-leakage-calculator) | 📂 [Source Code](https://github.com/LeadGenData/revenue-leakage-calculator)
 
-**Business Problem:**  
+**Business Problem:**
+
 Small business owners (Dental, Legal, SaaS, Real Estate) often struggle to quantify missed revenue opportunities caused by delayed lead response and manual intake processes.
 
-**Solution:**  
+**Solution:**
+
 Created a responsive web diagnostic calculator where business owners input operational parameters (monthly leads, average deal value, follow-up speed) to calculate estimated monthly and annual revenue leakage, capturing contact details directly into a Google Sheets CRM.
 
-**My Contribution:**  
+**My Contribution:**
+
 * **Front-End Styling & Math:** Built the responsive UI and financial calculation formulas in JavaScript.
 * **Backend API:** Developed Google Apps Script POST handlers to save lead records securely.
 * **Testing:** Audited mathematical outputs and browser compatibility across mobile and desktop devices.
 
-**Practical Outcomes:**  
+**Practical Outcomes:**
+
 * **Instant Calculation:** Fast client-side formula execution without page reloads.
 * **Automated Lead Intake:** Direct web-to-sheet CRM integration for real-time sales follow-up.
 
@@ -159,18 +171,22 @@ Created a responsive web diagnostic calculator where business owners input opera
 * **Tech Stack:** `Power BI` | `DAX` | `Power Query ETL` | `SQL`
 * **Links:** 📂 [Source Code & Dashboard Files](https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis) | 📄 [Documentation](https://github.com/LeadGenData/M_Haresh_Kumar)
 
-**Business Problem:**  
+**Business Problem:**
+
 Hospital administrators needed clear visibility into Emergency Department patient flow to understand peak arrival hours, triage wait times, and department bottleneck trends.
 
-**Solution:**  
+**Solution:**
+
 Built an interactive Power BI dashboard aggregating patient admission records, triage severity levels (1-5), age demographics, and hourly arrival trends to assist in shift planning and resource allocation.
 
-**My Contribution:**  
+**My Contribution:**
+
 * **Data Cleansing:** Prepared and normalized patient timestamps and triage categories in Power Query.
 * **DAX Development:** Wrote custom measures for Average Wait Time, Admission Rate %, and Hourly Patient Volumes.
 * **Dashboard UX:** Designed intuitive visual charts focused on operational clarity.
 
-**Practical Outcomes:**  
+**Practical Outcomes:**
+
 * **Shift Allocation Insights:** Highlighted peak arrival windows (6 PM - 10 PM) to assist shift scheduling.
 * **Operational Visibility:** Clear visual breakdown of wait times across triage priority levels.
 
@@ -182,17 +198,21 @@ Built an interactive Power BI dashboard aggregating patient admission records, t
 * **Tech Stack:** `React` | `Tailwind CSS` | `Zustand` | `Python` | `Google Apps Script API`
 * **Links:** 📂 [Source Code](https://github.com/jamescluster35/bdl-leads-pro-targeting)
 
-**Business Problem:**  
+**Business Problem:**
+
 Lead generation teams were spending extra budget running scrapers on unverified target areas, consuming API credits on duplicate or recently cached business listings.
 
-**Solution:**  
+**Solution:**
+
 Built a target selection matrix application in React with an integrated credit wallet system that checks local API cache (0 credits for data cached $\le$7 days) before initiating new scraping runs.
 
-**My Contribution:**  
+**My Contribution:**
+
 * **Frontend Component Design:** Built the territory filter UI and Zustand state store.
 * **Caching Rules Logic:** Authored the credit deduction rules and 7-day cache validation checks.
 
-**Practical Outcomes:**  
+**Practical Outcomes:**
+
 * **Cost Efficiency:** Prevented redundant API expenditure on previously searched zip codes.
 * **Faster Retrieval:** Instant delivery of cached target datasets.
 
