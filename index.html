@@ -276,43 +276,37 @@
       color: #fbd5a5;
     }
 
-    /* TERMINAL CONSOLE WIDGET */
-    .terminal-card {
-      background: rgba(3, 7, 18, 0.95);
-      border: 1px solid rgba(254, 215, 170, 0.3);
-      border-radius: 12px;
+    /* EXECUTIVE METRICS CARD (REPLACES TERMINAL WIDGET) */
+    .metrics-card {
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(254, 215, 170, 0.35);
+      border-radius: 1rem;
       margin-top: 1rem;
       max-width: 34rem;
-      overflow: hidden;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.7);
+      padding: 1.4rem 1.6rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
     }
-    .terminal-header {
-      background: rgba(15, 23, 42, 0.98);
-      padding: 9px 16px;
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+    .metric-item {
       display: flex;
-      align-items: center;
-      gap: 6px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      flex-direction: column;
+      gap: 4px;
     }
-    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
-    .dot-red { background: #ef4444; }
-    .dot-yellow { background: #f59e0b; }
-    .dot-green { background: #10b981; }
-    .terminal-title {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem;
+    .metric-number {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #fbd5a5;
+      line-height: 1;
+    }
+    .metric-label {
+      font-size: 0.85rem;
       color: #e2e8f0;
-      margin-left: 6px;
       font-weight: 600;
     }
-    .terminal-body {
-      padding: 16px 18px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.82rem;
-      color: #f8fafc;
-    }
-    .cmd-line { color: #fbd5a5; margin-bottom: 6px; font-weight: 700; }
-    .status-ok { color: #34d399; margin-bottom: 4px; font-weight: 600; }
 
     /* HERO RIGHT (TOOLS PANEL) */
     .hero-right {
@@ -813,21 +807,25 @@
         <div class="testimonial-author">— M. Haresh Kumar</div>
       </div>
 
-      <!-- Terminal Console Widget -->
-      <div class="terminal-card">
-        <div class="terminal-header">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-          <span class="terminal-title">system_initialize --target=haresh_portfolio</span>
-        </div>
-        <div class="terminal-body">
-          <div class="cmd-line">$ system_initialize --target=haresh_portfolio</div>
-          <div class="status-ok">✔ Data Ingestion Staging running (Snowflake integration active)</div>
-          <div class="status-ok">✔ Power BI DAX semantic connector: ONLINE</div>
-          <div class="status-ok">✔ Python COM API Rotator: IDLE (100 email cap/day active)</div>
-          <div class="status-ok">✔ 4-Tier Honest Skills Matrix: LOADED</div>
-          <div style="color: #fbd5a5; margin-top: 4px; font-weight: 700;">ℹ️ Ready for Data Analyst, BI Developer, and Data Operations Lead requisitions.</div>
+      <!-- EXECUTIVE METRICS CARD (Replaces Terminal Block) -->
+      <div class="metrics-card">
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <div class="metric-number">14+</div>
+            <div class="metric-label">Years Experience</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">300K</div>
+            <div class="metric-label">Records Managed Monthly</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">15+</div>
+            <div class="metric-label">Team Members Led</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number" style="font-size: 1.1rem; color: #fbd5a5; margin-top: 4px;">SQL | Power BI | Snowflake</div>
+            <div class="metric-label">Core Technical Stack</div>
+          </div>
         </div>
       </div>
 
