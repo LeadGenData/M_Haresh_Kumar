@@ -19,7 +19,8 @@
     }
     body {
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-      background: radial-gradient(circle at top left, #ff9f1c 0%, #ff5400 35%, #0f172a 90%);
+      background: radial-gradient(circle at top left, rgba(254, 215, 170, 0.28) 0%, rgba(251, 146, 60, 0.15) 35%, #0f172a 85%);
+      background-color: #0f172a;
       color: #ffffff;
       overflow-x: hidden;
       position: relative;
@@ -35,13 +36,13 @@
       position: fixed;
       inset: 0;
       z-index: -2;
-      background: radial-gradient(circle at top left, #ff9f1c 0%, #ff5400 35%, #0f172a 90%);
+      background: radial-gradient(circle at top left, rgba(254, 215, 170, 0.25) 0%, rgba(251, 146, 60, 0.15) 35%, #0f172a 85%);
       transform: translateY(0);
       animation: parallaxMove 18s ease-in-out infinite;
     }
     @keyframes parallaxMove {
       0% { transform: translateY(0); }
-      50% { transform: translateY(-40px); }
+      50% { transform: translateY(-30px); }
       100% { transform: translateY(0); }
     }
 
@@ -51,8 +52,8 @@
       width: 140px;
       height: 140px;
       border-radius: 32px;
-      background: linear-gradient(135deg, rgba(255, 159, 28, 0.4), rgba(255, 84, 0, 0.4));
-      filter: blur(2px);
+      background: linear-gradient(135deg, rgba(254, 215, 170, 0.15), rgba(251, 146, 60, 0.15));
+      filter: blur(4px);
       z-index: -1;
       animation: floatShape 16s ease-in-out infinite;
     }
@@ -60,7 +61,7 @@
       border-radius: 50%;
       width: 90px;
       height: 90px;
-      background: radial-gradient(circle, rgba(255, 159, 28, 0.5), rgba(255, 84, 0, 0.3));
+      background: radial-gradient(circle, rgba(254, 215, 170, 0.2), rgba(251, 146, 60, 0.1));
       animation: floatShape2 14s ease-in-out infinite;
     }
     @keyframes floatShape {
@@ -86,7 +87,7 @@
       z-index: 100;
       backdrop-filter: blur(20px);
       background: rgba(15, 23, 42, 0.9);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      border-bottom: 1px solid rgba(254, 215, 170, 0.2);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
     .nav-left {
@@ -97,7 +98,7 @@
       letter-spacing: -0.5px;
     }
     .nav-left span {
-      color: #ff9f1c;
+      color: #fbd5a5;
     }
     .nav-right {
       display: flex;
@@ -112,24 +113,24 @@
       transition: 0.2s;
     }
     .nav-link:hover {
-      color: #ff9f1c;
+      color: #fbd5a5;
     }
     .nav-btn {
       padding: 0.6rem 1.3rem;
       border-radius: 999px;
-      border: none;
-      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      border: 1px solid rgba(254, 215, 170, 0.4);
+      background: linear-gradient(135deg, rgba(251, 146, 60, 0.8), rgba(217, 119, 6, 0.8));
       color: #ffffff;
-      font-weight: 800;
+      font-weight: 700;
       cursor: pointer;
-      box-shadow: 0 0 20px rgba(255, 159, 28, 0.6);
+      box-shadow: 0 0 15px rgba(251, 146, 60, 0.3);
       transition: 0.3s;
       text-decoration: none;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
     .nav-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 28px rgba(255, 84, 0, 0.9);
+      box-shadow: 0 0 22px rgba(251, 146, 60, 0.5);
+      border-color: #fbd5a5;
     }
 
     /* HERO */
@@ -158,9 +159,9 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       font-weight: 800;
-      color: #ffffff;
-      background: rgba(15, 23, 42, 0.75);
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fbd5a5;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(254, 215, 170, 0.35);
       padding: 6px 16px;
       border-radius: 20px;
       display: inline-block;
@@ -176,14 +177,14 @@
       text-shadow: 0 4px 20px rgba(0,0,0,0.6);
     }
     .hero-title span {
-      color: #ffbe5c;
+      color: #fbd5a5;
     }
     .hero-role {
       font-size: 1.15rem;
       font-weight: 800;
       color: #ffffff;
       background: rgba(15, 23, 42, 0.85);
-      border: 1px solid rgba(255, 190, 92, 0.4);
+      border: 1px solid rgba(254, 215, 170, 0.3);
       padding: 8px 18px;
       border-radius: 12px;
       width: fit-content;
@@ -191,7 +192,7 @@
     }
     .hero-subtitle-box {
       background: rgba(15, 23, 42, 0.85);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(254, 215, 170, 0.25);
       border-radius: 14px;
       padding: 18px 22px;
       max-width: 34rem;
@@ -213,35 +214,35 @@
     .hero-btn-main {
       padding: 0.85rem 1.8rem;
       border-radius: 999px;
-      border: none;
-      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      border: 1px solid rgba(254, 215, 170, 0.4);
+      background: linear-gradient(135deg, rgba(251, 146, 60, 0.85), rgba(217, 119, 6, 0.85));
       color: #ffffff;
       font-weight: 800;
       font-size: 1rem;
       cursor: pointer;
-      box-shadow: 0 0 22px rgba(255, 159, 28, 0.8);
+      box-shadow: 0 0 18px rgba(251, 146, 60, 0.35);
       transition: 0.3s;
       text-decoration: none;
       display: inline-block;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
     .hero-btn-main:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 30px rgba(255, 84, 0, 1);
+      box-shadow: 0 0 25px rgba(251, 146, 60, 0.6);
+      border-color: #fbd5a5;
     }
     .hero-btn-secondary {
       padding: 0.85rem 1.6rem;
       border-radius: 999px;
       background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(254, 215, 170, 0.3);
       color: #ffffff;
       font-weight: 700;
       text-decoration: none;
       transition: 0.3s;
     }
     .hero-btn-secondary:hover {
-      border-color: #ffbe5c;
-      color: #ffbe5c;
+      border-color: #fbd5a5;
+      color: #fbd5a5;
     }
 
     /* TESTIMONIAL / STORY CARD */
@@ -251,7 +252,7 @@
       padding: 1.4rem 1.6rem;
       border-radius: 1rem;
       background: rgba(15, 23, 42, 0.92);
-      border: 1px solid rgba(255, 190, 92, 0.4);
+      border: 1px solid rgba(254, 215, 170, 0.3);
       color: #f8fafc;
       font-size: 0.95rem;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -261,13 +262,13 @@
       margin-top: 0.8rem;
       font-weight: 800;
       font-size: 0.9rem;
-      color: #ffbe5c;
+      color: #fbd5a5;
     }
 
     /* TERMINAL CONSOLE WIDGET */
     .terminal-card {
       background: rgba(3, 7, 18, 0.95);
-      border: 1px solid rgba(255, 190, 92, 0.4);
+      border: 1px solid rgba(254, 215, 170, 0.3);
       border-radius: 12px;
       margin-top: 1rem;
       max-width: 34rem;
@@ -299,7 +300,7 @@
       font-size: 0.82rem;
       color: #f8fafc;
     }
-    .cmd-line { color: #ffbe5c; margin-bottom: 6px; font-weight: 700; }
+    .cmd-line { color: #fbd5a5; margin-bottom: 6px; font-weight: 700; }
     .status-ok { color: #34d399; margin-bottom: 4px; font-weight: 600; }
 
     /* HERO RIGHT (TOOLS PANEL) */
@@ -321,7 +322,7 @@
       content: "";
       position: absolute;
       inset: -2px;
-      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      background: linear-gradient(135deg, rgba(254, 215, 170, 0.6), rgba(251, 146, 60, 0.6));
       z-index: -2;
     }
     .hero-panel::after {
@@ -355,7 +356,7 @@
       padding: 0.5rem 1rem;
       border-radius: 999px;
       background: rgba(15, 23, 42, 0.95);
-      border: 1px solid rgba(255, 190, 92, 0.4);
+      border: 1px solid rgba(254, 215, 170, 0.35);
       font-size: 0.88rem;
       font-weight: 700;
       color: #ffffff;
@@ -384,7 +385,7 @@
       color: #ffffff;
     }
     .section-title span {
-      color: #ffbe5c;
+      color: #fbd5a5;
     }
     .section-subtitle {
       font-size: 1.02rem;
@@ -412,7 +413,7 @@
       content: "";
       position: absolute;
       inset: -2px;
-      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      background: linear-gradient(135deg, rgba(254, 215, 170, 0.6), rgba(251, 146, 60, 0.6));
       opacity: 0;
       transition: 0.3s;
       z-index: -1;
@@ -427,9 +428,9 @@
     .role-badge {
       font-size: 0.75rem;
       font-weight: 800;
-      color: #ffbe5c;
-      background: rgba(255, 190, 92, 0.18);
-      border: 1px solid rgba(255, 190, 92, 0.4);
+      color: #fbd5a5;
+      background: rgba(254, 215, 170, 0.15);
+      border: 1px solid rgba(254, 215, 170, 0.35);
       padding: 3px 10px;
       border-radius: 12px;
       display: inline-block;
@@ -455,7 +456,7 @@
     }
     .skills-col {
       background: rgba(15, 23, 42, 0.95);
-      border: 1px solid rgba(255, 190, 92, 0.3);
+      border: 1px solid rgba(254, 215, 170, 0.25);
       border-radius: 1rem;
       padding: 1.5rem;
       box-shadow: 0 8px 25px rgba(0,0,0,0.4);
@@ -463,9 +464,9 @@
     .skills-col-title {
       font-size: 1rem;
       font-weight: 800;
-      color: #ffbe5c;
+      color: #fbd5a5;
       margin-bottom: 1rem;
-      border-bottom: 1px solid rgba(255, 190, 92, 0.3);
+      border-bottom: 1px solid rgba(254, 215, 170, 0.25);
       padding-bottom: 8px;
     }
     .skills-col-list {
@@ -501,7 +502,7 @@
       content: "";
       position: absolute;
       inset: -2px;
-      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      background: linear-gradient(135deg, rgba(254, 215, 170, 0.6), rgba(251, 146, 60, 0.6));
       opacity: 0;
       transition: 0.3s;
       z-index: -1;
@@ -530,8 +531,8 @@
       border-radius: 999px;
       font-size: 0.8rem;
       background: rgba(31, 41, 55, 0.95);
-      color: #ffbe5c;
-      border: 1px solid rgba(255, 190, 92, 0.35);
+      color: #fbd5a5;
+      border: 1px solid rgba(254, 215, 170, 0.3);
       font-family: 'JetBrains Mono', monospace;
       font-weight: 600;
     }
@@ -553,7 +554,7 @@
     }
     .pipe-node {
       background: rgba(31, 41, 55, 0.95);
-      border: 1px solid rgba(255, 190, 92, 0.35);
+      border: 1px solid rgba(254, 215, 170, 0.3);
       border-radius: 8px;
       padding: 8px 12px;
       min-width: 100px;
@@ -562,14 +563,14 @@
     .pipe-title {
       font-size: 0.8rem;
       font-weight: 800;
-      color: #ffbe5c;
+      color: #fbd5a5;
     }
     .pipe-sub {
       font-size: 0.7rem;
       color: #cbd5e1;
     }
     .pipe-arrow {
-      color: #ffbe5c;
+      color: #fbd5a5;
       font-weight: 800;
       font-size: 1.1rem;
     }
@@ -586,33 +587,33 @@
       gap: 6px;
       padding: 0.6rem 1.2rem;
       border-radius: 999px;
-      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      border: 1px solid rgba(254, 215, 170, 0.4);
+      background: linear-gradient(135deg, rgba(251, 146, 60, 0.85), rgba(217, 119, 6, 0.85));
       color: #ffffff;
       font-weight: 800;
       font-size: 0.85rem;
       cursor: pointer;
-      border: none;
       transition: 0.2s;
       text-decoration: none;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
     .btn-project:hover {
-      box-shadow: 0 0 20px rgba(255, 159, 28, 0.9);
+      box-shadow: 0 0 18px rgba(251, 146, 60, 0.5);
+      border-color: #fbd5a5;
     }
     .btn-project-outline {
       background: rgba(15, 23, 42, 0.8);
-      border: 1px solid rgba(255, 190, 92, 0.5);
-      color: #ffbe5c;
+      border: 1px solid rgba(254, 215, 170, 0.4);
+      color: #fbd5a5;
       font-weight: 700;
     }
     .btn-project-outline:hover {
-      background: rgba(255, 190, 92, 0.2);
+      background: rgba(254, 215, 170, 0.15);
       color: #ffffff;
     }
 
     /* EXPERIENCE TIMELINE */
     .timeline {
-      border-left: 3px solid #ff9f1c;
+      border-left: 3px solid #fbd5a5;
       padding-left: 2rem;
       position: relative;
     }
@@ -628,13 +629,13 @@
       width: 17px;
       height: 17px;
       border-radius: 50%;
-      background: radial-gradient(circle, #ffbe5c, #ff5400);
-      box-shadow: 0 0 18px rgba(255, 84, 0, 1);
+      background: radial-gradient(circle, #fbd5a5, #fb923c);
+      box-shadow: 0 0 15px rgba(251, 146, 60, 0.7);
     }
     .timeline-item h3 {
       font-size: 1.15rem;
       font-weight: 800;
-      color: #ffbe5c;
+      color: #fbd5a5;
     }
     .timeline-item p {
       font-size: 0.95rem;
@@ -646,7 +647,7 @@
     /* AI STATEMENT */
     .ai-box {
       background: rgba(15, 23, 42, 0.95);
-      border: 1px solid rgba(255, 190, 92, 0.4);
+      border: 1px solid rgba(254, 215, 170, 0.35);
       border-radius: 1.3rem;
       padding: 2rem;
       color: #f8fafc;
@@ -654,7 +655,7 @@
       line-height: 1.75;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
-    .ai-box strong { color: #ffbe5c; font-size: 1.1rem; }
+    .ai-box strong { color: #fbd5a5; font-size: 1.1rem; }
 
     /* CONTACT */
     .contact-center {
@@ -665,17 +666,18 @@
       margin-top: 1rem;
       padding: 0.9rem 2.2rem;
       border-radius: 999px;
-      background: linear-gradient(135deg, #ff9f1c, #ff5400);
+      border: 1px solid rgba(254, 215, 170, 0.4);
+      background: linear-gradient(135deg, rgba(251, 146, 60, 0.85), rgba(217, 119, 6, 0.85));
       color: #ffffff;
       font-weight: 800;
       font-size: 1.05rem;
-      box-shadow: 0 0 25px rgba(255, 84, 0, 0.9);
+      box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
       transition: 0.3s;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
     .contact-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 32px rgba(255, 159, 28, 1);
+      box-shadow: 0 0 28px rgba(251, 146, 60, 0.8);
+      border-color: #fbd5a5;
     }
 
     /* MODAL OVERLAY */
@@ -699,7 +701,7 @@
     }
     .modal-card {
       background: rgba(15, 23, 42, 0.98);
-      border: 1px solid rgba(255, 190, 92, 0.5);
+      border: 1px solid rgba(254, 215, 170, 0.4);
       border-radius: 1.5rem;
       max-width: 780px;
       width: 100%;
@@ -714,23 +716,23 @@
       position: absolute;
       top: 20px; right: 20px;
       background: rgba(31, 41, 55, 0.9);
-      border: 1px solid rgba(255, 190, 92, 0.4);
-      color: #ffbe5c;
+      border: 1px solid rgba(254, 215, 170, 0.35);
+      color: #fbd5a5;
       width: 38px; height: 38px;
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       cursor: pointer;
       font-weight: 800;
     }
-    .modal-close:hover { color: #fff; border-color: #ffbe5c; }
+    .modal-close:hover { color: #fff; border-color: #fbd5a5; }
     .code-block {
       background: rgba(3, 7, 18, 0.98);
-      border: 1px solid rgba(255, 190, 92, 0.35);
+      border: 1px solid rgba(254, 215, 170, 0.3);
       border-radius: 8px;
       padding: 16px;
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.85rem;
-      color: #ffbe5c;
+      color: #fbd5a5;
       overflow-x: auto;
       margin: 12px 0;
     }
@@ -812,7 +814,7 @@
           <div class="status-ok">✔ Power BI DAX semantic connector: ONLINE</div>
           <div class="status-ok">✔ Python COM API Rotator: IDLE (100 email cap/day active)</div>
           <div class="status-ok">✔ 4-Tier Honest Skills Matrix: LOADED</div>
-          <div style="color: #ffbe5c; margin-top: 4px; font-weight: 700;">ℹ️ Ready for Data Analyst, BI Developer, and Data Operations Lead requisitions.</div>
+          <div style="color: #fbd5a5; margin-top: 4px; font-weight: 700;">ℹ️ Ready for Data Analyst, BI Developer, and Data Operations Lead requisitions.</div>
         </div>
       </div>
 
@@ -1086,11 +1088,11 @@
   <div class="modal-overlay" id="modal-1">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('modal-1')">✕</button>
-      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #ffbe5c;">💳 1. Snowflake Medallion Pipeline</h3>
+      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #fbd5a5;">💳 1. Snowflake Medallion Pipeline</h3>
       
       <p style="color: #f8fafc; font-size: 0.95rem; margin-bottom: 14px; line-height: 1.6;">
-        <strong style="color: #ffbe5c;">Challenges & Lessons Learned:</strong><br>
-        Handling out-of-order raw JSON logs without creating duplicate Silver records was solved using Snowflake Streams + <code style="color: #ffbe5c; font-weight: bold;">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code>.
+        <strong style="color: #fbd5a5;">Challenges & Lessons Learned:</strong><br>
+        Handling out-of-order raw JSON logs without creating duplicate Silver records was solved using Snowflake Streams + <code style="color: #fbd5a5; font-weight: bold;">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code>.
       </p>
 
       <div class="code-block">
@@ -1116,10 +1118,10 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
   <div class="modal-overlay" id="modal-2">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('modal-2')">✕</button>
-      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #ffbe5c;">📧 2. Multi-Account Outlook Email Automation</h3>
+      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #fbd5a5;">📧 2. Multi-Account Outlook Email Automation</h3>
       
       <p style="color: #f8fafc; font-size: 0.95rem; line-height: 1.6;">
-        <strong style="color: #ffbe5c;">Challenges & Lessons Learned:</strong><br>
+        <strong style="color: #fbd5a5;">Challenges & Lessons Learned:</strong><br>
         Avoiding Outlook COM API thread locking (`pywin32`) during high-frequency dispatch runs was solved by implementing randomized human interval delays (15–45 seconds) and sender rotation per 100 emails.
       </p>
     </div>
@@ -1129,11 +1131,11 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
   <div class="modal-overlay" id="modal-4">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('modal-4')">✕</button>
-      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #ffbe5c;">🏥 4. Hospital Emergency Room Capacity BI Dashboard</h3>
+      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #fbd5a5;">🏥 4. Hospital Emergency Room Capacity BI Dashboard</h3>
       
       <p style="color: #f8fafc; font-size: 0.95rem; line-height: 1.6;">
-        <strong style="color: #ffbe5c;">Challenges & Lessons Learned:</strong><br>
-        Managing multi-level triage severity calculations (Levels 1–5) with varying wait time baselines was solved using modular DAX measures with <code style="color: #ffbe5c; font-weight: bold;">CALCULATE()</code> and <code style="color: #ffbe5c; font-weight: bold;">FILTER()</code>.
+        <strong style="color: #fbd5a5;">Challenges & Lessons Learned:</strong><br>
+        Managing multi-level triage severity calculations (Levels 1–5) with varying wait time baselines was solved using modular DAX measures with <code style="color: #fbd5a5; font-weight: bold;">CALCULATE()</code> and <code style="color: #fbd5a5; font-weight: bold;">FILTER()</code>.
       </p>
     </div>
   </div>
