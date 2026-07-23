@@ -3,46 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haresh Kumar | Data Operations Professional | SQL | Power BI | Snowflake | AI Automation</title>
+  <title>M. Haresh Kumar | Data Operations Professional | SQL | Power BI | Snowflake | AI Automation</title>
   <meta name="description" content="14+ years improving business operations through analytics, reporting, and workflow automation. Building practical AI-assisted data solutions." />
   
-  <!-- Modern Typography -->
+  <!-- Premium Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <style>
     :root {
-      --bg-dark: #090d16;
-      --bg-card: #131b2e;
-      --border: #263354;
-      --border-accent: rgba(56, 189, 248, 0.4);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
+      --bg-dark: #0b0f19;
+      --bg-card: #111827;
+      --bg-card-hover: #1f2937;
+      --border: #1f2937;
+      --border-accent: #3b82f6;
       
-      --cyan: #38bdf8;
-      --indigo: #818cf8;
-      --purple: #c084fc;
-      --emerald: #34d399;
-      --amber: #fbbf24;
+      --text-main: #ffffff;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
       
-      --gradient-brand: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
-      --shadow-glow: 0 0 25px rgba(56, 189, 248, 0.15);
+      --blue: #3b82f6;
+      --sky: #60a5fa;
+      --emerald: #10b981;
+      --amber: #f59e0b;
+      --purple: #a855f7;
+      
+      --gradient-accent: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #a855f7 100%);
+      --shadow-glow: 0 0 25px rgba(59, 130, 246, 0.2);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: var(--bg-dark);
       color: var(--text-main);
       line-height: 1.6;
       overflow-x: hidden;
-      background-image: 
-        radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 85% 65%, rgba(192, 132, 252, 0.08) 0%, transparent 40%);
-      background-attachment: fixed;
     }
 
     .container {
@@ -58,7 +56,7 @@
       z-index: 100;
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      background: rgba(9, 13, 22, 0.88);
+      background: rgba(11, 15, 25, 0.92);
       border-bottom: 1px solid var(--border);
       padding: 16px 0;
     }
@@ -70,10 +68,13 @@
     .logo {
       font-weight: 800;
       font-size: 1.25rem;
-      background: var(--gradient-brand);
+      color: var(--text-main);
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      background: var(--gradient-accent);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      letter-spacing: -0.5px;
     }
     .nav-links {
       display: flex;
@@ -89,19 +90,19 @@
       transition: all 0.2s;
     }
     .nav-links a:hover {
-      color: var(--cyan);
+      color: var(--sky);
     }
     .btn-nav {
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid var(--border-accent);
-      color: var(--cyan) !important;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      color: var(--sky) !important;
       padding: 8px 16px;
       border-radius: 8px;
       font-weight: 600 !important;
     }
     .btn-nav:hover {
-      background: var(--cyan) !important;
-      color: var(--bg-dark) !important;
+      background: var(--blue) !important;
+      color: #ffffff !important;
     }
 
     /* Hero Section */
@@ -115,12 +116,12 @@
       gap: 8px;
       padding: 6px 16px;
       border-radius: 30px;
-      background: rgba(56, 189, 248, 0.08);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      color: var(--cyan);
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: var(--sky);
       font-size: 0.85rem;
       font-weight: 600;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
     .hero-badge span {
       width: 8px;
@@ -130,17 +131,20 @@
       box-shadow: 0 0 10px var(--emerald);
     }
     .hero h1 {
-      font-size: 3.2rem;
+      font-size: 3.3rem;
       font-weight: 800;
       line-height: 1.15;
       letter-spacing: -1px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      color: #ffffff;
     }
     .hero-tagline {
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       font-weight: 700;
-      color: var(--cyan);
-      margin-bottom: 16px;
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 18px;
     }
     .hero-story {
       font-size: 1.1rem;
@@ -167,14 +171,18 @@
       margin-bottom: 30px;
     }
     .pill {
-      background: #131b2e;
-      border: 1px solid var(--border-accent);
-      color: var(--cyan);
+      background: #111827;
+      border: 1px solid #1f2937;
+      color: var(--sky);
       padding: 8px 16px;
       border-radius: 20px;
       font-size: 0.85rem;
       font-weight: 600;
       font-family: 'JetBrains Mono', monospace;
+    }
+    .pill:hover {
+      border-color: var(--blue);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
     }
 
     .hero-cta {
@@ -188,17 +196,17 @@
       align-items: center;
       gap: 8px;
       background: #2563eb;
-      color: #fff;
+      color: #ffffff;
       text-decoration: none;
-      padding: 10px 20px;
+      padding: 10px 22px;
       border-radius: 8px;
-      font-size: 0.92rem;
+      font-size: 0.95rem;
       font-weight: 600;
       transition: all 0.2s;
     }
     .btn-primary:hover {
       background: #1d4ed8;
-      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
     }
     .btn-secondary {
       display: inline-flex;
@@ -208,35 +216,35 @@
       border: 1px solid var(--border);
       color: var(--text-main);
       text-decoration: none;
-      padding: 10px 20px;
+      padding: 10px 22px;
       border-radius: 8px;
-      font-size: 0.92rem;
+      font-size: 0.95rem;
       font-weight: 600;
       transition: all 0.2s;
     }
     .btn-secondary:hover {
-      border-color: var(--cyan);
-      color: var(--cyan);
+      border-color: var(--blue);
+      color: var(--sky);
     }
 
     /* Interactive Terminal Console Widget */
     .terminal-card {
-      background: #060911;
-      border: 1px solid var(--border);
+      background: #030712;
+      border: 1px solid #1f2937;
       border-radius: 14px;
       max-width: 850px;
       margin: 0 auto 40px;
       text-align: left;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.6);
     }
     .terminal-header {
-      background: #0d1424;
+      background: #111827;
       padding: 10px 16px;
       display: flex;
       align-items: center;
       gap: 8px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid #1f2937;
     }
     .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
     .dot-red { background: #ef4444; }
@@ -254,7 +262,7 @@
       font-size: 0.85rem;
       color: var(--text-muted);
     }
-    .cmd-line { color: var(--cyan); margin-bottom: 8px; }
+    .cmd-line { color: var(--sky); margin-bottom: 8px; font-weight: 600; }
     .status-ok { color: var(--emerald); margin-bottom: 4px; }
 
     /* Section Styling */
@@ -269,7 +277,7 @@
       font-size: 1.6rem;
       font-weight: 800;
       margin-bottom: 16px;
-      color: var(--text-main);
+      color: #ffffff;
       display: flex;
       align-items: center;
       gap: 12px;
@@ -283,7 +291,7 @@
       margin-top: 20px;
     }
     .role-card {
-      background: #090d16;
+      background: #0b0f19;
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 16px;
@@ -291,13 +299,13 @@
       transition: border-color 0.2s;
     }
     .role-card:hover {
-      border-color: var(--cyan);
+      border-color: var(--blue);
     }
     .role-badge {
       font-size: 0.75rem;
       font-weight: 700;
       color: var(--emerald);
-      background: rgba(52, 211, 153, 0.1);
+      background: rgba(16, 185, 129, 0.12);
       padding: 2px 8px;
       border-radius: 12px;
       display: inline-block;
@@ -306,7 +314,7 @@
     .role-title {
       font-size: 0.95rem;
       font-weight: 700;
-      color: var(--text-main);
+      color: #ffffff;
       margin-bottom: 6px;
     }
     .role-skills {
@@ -323,7 +331,7 @@
       margin-top: 20px;
     }
     .skills-col {
-      background: #090d16;
+      background: #0b0f19;
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 20px;
@@ -331,7 +339,7 @@
     .skills-col-title {
       font-size: 0.95rem;
       font-weight: 700;
-      color: var(--cyan);
+      color: var(--sky);
       margin-bottom: 12px;
       border-bottom: 1px solid var(--border);
       padding-bottom: 8px;
@@ -351,13 +359,13 @@
       margin-top: 20px;
     }
     .exp-card {
-      background: #090d16;
+      background: #0b0f19;
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 20px;
     }
     .exp-card h4 {
-      color: var(--cyan);
+      color: var(--sky);
       font-size: 1rem;
       margin-bottom: 8px;
     }
@@ -374,7 +382,7 @@
       margin-top: 24px;
     }
     .project-card {
-      background: #090d16;
+      background: #0b0f19;
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 28px;
@@ -397,11 +405,11 @@
     .project-title {
       font-size: 1.2rem;
       font-weight: 700;
-      color: var(--text-main);
+      color: #ffffff;
     }
     .status-tag {
-      background: rgba(52, 211, 153, 0.12);
-      border: 1px solid rgba(52, 211, 153, 0.3);
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
       color: var(--emerald);
       padding: 4px 10px;
       border-radius: 20px;
@@ -420,9 +428,9 @@
       margin-bottom: 20px;
     }
     .tech-tag {
-      background: #131b2e;
+      background: #111827;
       border: 1px solid var(--border);
-      color: var(--cyan);
+      color: var(--sky);
       padding: 4px 8px;
       border-radius: 6px;
       font-size: 0.78rem;
@@ -438,7 +446,7 @@
       align-items: center;
       gap: 6px;
       background: #2563eb;
-      color: #fff;
+      color: #ffffff;
       text-decoration: none;
       padding: 8px 14px;
       border-radius: 8px;
@@ -457,8 +465,8 @@
       color: var(--text-main);
     }
     .btn-outline:hover {
-      border-color: var(--cyan);
-      color: var(--cyan);
+      border-color: var(--blue);
+      color: var(--sky);
     }
 
     /* Pipeline Visual Flow */
@@ -471,7 +479,7 @@
       margin: 14px 0;
     }
     .pipe-node {
-      background: #131b2e;
+      background: #111827;
       border: 1px solid var(--border-accent);
       border-radius: 10px;
       padding: 10px 14px;
@@ -481,23 +489,35 @@
     .pipe-title {
       font-size: 0.82rem;
       font-weight: 700;
-      color: var(--cyan);
+      color: var(--sky);
     }
     .pipe-sub {
       font-size: 0.7rem;
       color: var(--text-muted);
     }
     .pipe-arrow {
-      color: var(--cyan);
+      color: var(--blue);
       font-weight: 800;
       font-size: 1.1rem;
     }
+
+    /* AI Statement Block */
+    .ai-box {
+      background: rgba(59, 130, 246, 0.08);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 12px;
+      padding: 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 16px;
+    }
+    .ai-box strong { color: var(--sky); }
 
     /* Modal Overlay */
     .modal-overlay {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(9, 13, 22, 0.88);
+      background: rgba(3, 7, 18, 0.9);
       backdrop-filter: blur(8px);
       z-index: 1000;
       display: flex;
@@ -526,7 +546,7 @@
     .modal-close {
       position: absolute;
       top: 20px; right: 20px;
-      background: #090d16;
+      background: #0b0f19;
       border: 1px solid var(--border);
       color: var(--text-muted);
       width: 36px; height: 36px;
@@ -534,23 +554,23 @@
       display: flex; align-items: center; justify-content: center;
       cursor: pointer;
     }
-    .modal-close:hover { color: #fff; border-color: var(--cyan); }
+    .modal-close:hover { color: #fff; border-color: var(--blue); }
     .modal-section-title {
       font-size: 0.95rem;
       font-weight: 700;
-      color: var(--cyan);
+      color: var(--sky);
       margin: 16px 0 6px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
     .code-block {
-      background: #090d16;
+      background: #030712;
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 14px;
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.8rem;
-      color: var(--cyan);
+      color: var(--sky);
       overflow-x: auto;
       margin: 10px 0;
     }
@@ -582,7 +602,7 @@
   <!-- Top Navigation -->
   <nav>
     <div class="container nav-inner">
-      <div class="logo">M. Haresh Kumar</div>
+      <div class="logo">M. Haresh <span>Kumar</span></div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Portfolio</a></li>
@@ -640,7 +660,7 @@
           <div class="status-ok">✔ Power BI DAX semantic connector: ONLINE</div>
           <div class="status-ok">✔ Python COM API Rotator: IDLE (100 email cap/day active)</div>
           <div class="status-ok">✔ 4-Tier Honest Skills Matrix: LOADED</div>
-          <div style="color: var(--cyan); margin-top: 6px;">ℹ️ Ready for Data Analyst, BI Developer, and Data Operations Lead requisitions.</div>
+          <div style="color: var(--sky); margin-top: 6px;">ℹ️ Ready for Data Analyst, BI Developer, and Data Operations Lead requisitions.</div>
         </div>
       </div>
 
@@ -904,7 +924,7 @@
       <div class="modal-section-title">Challenges & Lessons Learned</div>
       <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">
         <strong>Challenge:</strong> Handling out-of-order raw JSON logs without creating duplicate Silver records.<br>
-        <strong>Lesson Learned:</strong> Utilizing Snowflake Streams combined with <code style="color: var(--cyan);">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code> guarantees idempotency without expensive full-table scans.
+        <strong>Lesson Learned:</strong> Utilizing Snowflake Streams combined with <code style="color: var(--sky);">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code> guarantees idempotency without expensive full-table scans.
       </div>
 
       <div class="modal-section-title">Snowflake Task CDC Code Sample</div>
@@ -965,7 +985,7 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
       <div class="modal-section-title">Challenges & Lessons Learned</div>
       <div style="color: var(--text-muted); font-size: 0.9rem;">
         <strong>Challenge:</strong> Managing multi-level triage severity calculations (Levels 1–5) with varying wait time baselines.<br>
-        <strong>Lesson Learned:</strong> Creating modular DAX measures with <code style="color: var(--cyan); font-weight: bold;">CALCULATE()</code> and <code style="color: var(--cyan); font-weight: bold;">FILTER()</code> parameters keeps reporting clear and fast for hospital managers.
+        <strong>Lesson Learned:</strong> Creating modular DAX measures with <code style="color: var(--sky); font-weight: bold;">CALCULATE()</code> and <code style="color: var(--sky); font-weight: bold;">FILTER()</code> parameters keeps reporting clear and fast for hospital managers.
       </div>
     </div>
   </div>
@@ -975,7 +995,7 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
     <div class="container">
       <p>© 2026 M. Haresh Kumar — Data Operations Professional | SQL | Power BI | Snowflake | AI Automation</p>
       <p style="margin-top: 8px;">
-        <a href="https://github.com/LeadGenData/M_Haresh_Kumar" style="color: var(--cyan); text-decoration: none; font-weight: 600;" target="_blank">
+        <a href="https://github.com/LeadGenData/M_Haresh_Kumar" style="color: var(--sky); text-decoration: none; font-weight: 600;" target="_blank">
           github.com/LeadGenData/M_Haresh_Kumar
         </a>
       </p>
