@@ -142,7 +142,7 @@ Target Contacts (Google Sheets API) ──> Python Rotator Engine ──> Outloo
 
 * **Status:** ✅ Completed
 * **Tech Stack:** `HTML5` | `CSS3` | `JavaScript` | `Google Apps Script` | `Google Sheets API`
-* **Links:** 🌐 [Live Calculator](https://jamescluster35.github.io/revenue-leakage-calculator) | 📂 [Source Code](https://github.com/LeadGenData/revenue-leakage-calculator)
+* **Links:** 🌐 [Live Calculator](https://bdl.dataconnectmail.com/) | 📂 [Source Code](https://github.com/LeadGenData/revenue-leakage-calculator)
 
 **Business Problem:**
 
