@@ -23,7 +23,7 @@ Rather than relying on marketing copy or overhyped claims, I focus on building r
 ## 🎯 Target Role Alignment Matrix
 
 | Role Requisition | Portfolio Fit | Core Demonstrated Strengths |
-|---|---|---|
+| --- | --- | --- |
 | **Data Operations Lead** | 🟢 **Primary Fit** | 14+ Years Operational Data Intake (200K–300K records), Quality Control, 15+ Team Leadership, Excel/VBA Automation |
 | **BI Developer** | 🟢 **Strong Fit** | Power BI Dashboards, DAX Calculated Measures, Power Query ETL, Star Schema Dimensional Modeling |
 | **Data Analyst** | 🟢 **Strong Fit** | SQL CTEs & Window Functions, Financial Analytics, Data Cleansing, Operational Metric Reporting |
