@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - M. Haresh Kumar | Data Operations & BI Specialist</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #f8fafc;
+      line-height: 1.5;
+      font-size: 13.5px;
+    }
+
+    /* A4 PAGE CONTAINER */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 16mm 18mm;
+      margin: 20px auto;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      position: relative;
+      page-break-after: always;
+    }
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 100%;
+        min-height: 100vh;
+        padding: 12mm 15mm;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* PRINT ACTION BAR */
+    .print-bar {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 1000;
+      display: flex;
+      gap: 12px;
+    }
+    .print-btn {
+      background: #0f172a;
+      color: #ffffff;
+      border: 1px solid #334155;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      transition: 0.2s;
+    }
+    .print-btn:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+    }
+
+    /* HEADER */
+    .header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .name {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #2563eb;
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .contact-info {
+      text-align: right;
+      font-size: 11.5px;
+      color: #475569;
+      line-height: 1.5;
+    }
+    .contact-info a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* SECTION STYLES */
+    .section-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-title span {
+      color: #2563eb;
+    }
+
+    .summary-text {
+      color: #334155;
+      font-size: 12.5px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    /* SKILLS MATRIX TABLE */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 16px;
+      margin-bottom: 12px;
+    }
+    .skill-cat {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 12px;
+    }
+    .skill-cat-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .skill-cat-items {
+      font-size: 11.5px;
+      color: #475569;
+    }
+
+    /* EXPERIENCE & PROJECTS */
+    .item-block {
+      margin-bottom: 12px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+    .item-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .item-sub {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #2563eb;
+    }
+    .item-date {
+      font-size: 11px;
+      color: #64748b;
+      font-weight: 600;
+    }
+    .bullet-list {
+      list-style-type: square;
+      padding-left: 16px;
+      color: #334155;
+      font-size: 12px;
+    }
+    .bullet-list li {
+      margin-bottom: 4px;
+      line-height: 1.5;
+    }
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* AI TRANSPARENCY BOX */
+    .ai-statement-box {
+      background: #f1f5f9;
+      border-left: 3px solid #0f172a;
+      padding: 8px 12px;
+      font-size: 11px;
+      color: #475569;
+      margin-top: 14px;
+      border-radius: 0 6px 6px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="print-bar no-print">
+    <button class="print-btn" onclick="window.print()">🖨️ Download / Print PDF</button>
+  </div>
+
+  <!-- PAGE 1 -->
+  <div class="page">
+    
+    <!-- HEADER -->
+    <div class="header">
+      <div>
+        <div class="name">M. Haresh Kumar</div>
+        <div class="title">Data Operations Professional | SQL | Power BI | Snowflake | AI Automation</div>
+      </div>
+      <div class="contact-info">
+        <div>📧 <a href="mailto:lylemorgan.data@gmail.com">lylemorgan.data@gmail.com</a></div>
+        <div>🌐 Portfolio: <a href="https://leadgendata.github.io/M_Haresh_Kumar/" target="_blank">leadgendata.github.io/M_Haresh_Kumar</a></div>
+        <div>💻 GitHub: <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank">github.com/LeadGenData/M_Haresh_Kumar</a></div>
+        <div>💼 LinkedIn: <a href="https://www.linkedin.com/in/haresh-kumar-data-lead/" target="_blank">linkedin.com/in/haresh-kumar-data-lead</a></div>
+      </div>
+    </div>
+
+    <!-- PROFESSIONAL PROFILE -->
+    <div class="section-title"><span>01</span> Professional Summary</div>
+    <p class="summary-text">
+      <strong>Data Operations Lead & Analytics Specialist</strong> with over 14 years of commercial experience managing high-volume data intake workflows (200K–300K record datasets) and directing teams of 15+ members. Proven track record of bridging the gap between business operations and technical data teams. Specialized in transforming manual reporting into clean automated pipelines using SQL, Power BI, Snowflake, Python, and AI-assisted automation.
+    </p>
+
+    <!-- HONEST SKILLS ASSESSMENT MATRIX -->
+    <div class="section-title"><span>02</span> Technical Skills Assessment Matrix</div>
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <div class="skill-cat-title">🟢 ADVANCED EXPERT (14+ Yrs)</div>
+        <div class="skill-cat-items">Excel (Macros/Pivot/Formulas), Data Validation, Quality Control, MIS Reporting, Team Leadership (15+), Process Improvement</div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">🔵 INTERMEDIATE COMPETENCY</div>
+        <div class="skill-cat-items">SQL (CTEs, Window Functions, Joins), Power BI (DAX, Star Schema Modeling), Power Query ETL, REST & Sheets API Integration</div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">🟡 PRACTICAL LEARNING</div>
+        <div class="skill-cat-items">Snowflake (Medallion Architecture, Streams & Tasks), Python (`pandas`, `pywin32`), AI Automation Workflows, Microsoft Fabric</div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">⚪ CONCEPTUAL KNOWLEDGE</div>
+        <div class="skill-cat-items">Azure Data Factory, SSIS ETL Pipelines, Informatica Data Integration, Data Governance Frameworks</div>
+      </div>
+    </div>
+
+    <!-- TECHNICAL PROJECTS (PART 1) -->
+    <div class="section-title"><span>03</span> Featured Technical Personal Projects</div>
+    
+    <!-- Project 1 -->
+    <div class="item-block">
+      <div class="item-header">
+        <div class="item-title">💳 Snowflake 3-Layer Medallion Data Pipeline</div>
+        <div class="item-sub">Snowflake | Streams & Tasks | Power BI | PII Masking</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Designed a 3-tier Medallion Data Architecture (Bronze staging -> Silver deduplication -> Gold star schema) in Snowflake.</li>
+        <li>Implemented Snowflake Streams & Tasks for automated micro-batch ingestion and Dynamic Data Masking for PII compliance.</li>
+        <li>Created Power BI fraud detection dashboards connecting directly to Snowflake Gold tables via DirectQuery.</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tag">Snowflake</span>
+        <span class="tag">SQL CTEs</span>
+        <span class="tag">Streams & Tasks</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">PII Masking</span>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="item-block">
+      <div class="item-header">
+        <div class="item-title">📧 Multi-Account Outlook Email Automation & CRM Sync</div>
+        <div class="item-sub">Python (`pywin32`) | Outlook COM API | Google Sheets API</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Built Python automation script utilizing Outlook COM API to manage multi-account sender rotation (100 emails/day cap per sender).</li>
+        <li>Integrated Google Sheets API (`gspread`) for real-time sent email logging, bounce/NDR tracking, and CRM status synchronization.</li>
+        <li>Implemented randomized human-like delay intervals (15–45 seconds) to prevent ISP rate limiting and thread locking.</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tag">Python</span>
+        <span class="tag">pywin32</span>
+        <span class="tag">Outlook COM API</span>
+        <span class="tag">Google Sheets API</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    
+    <!-- TECHNICAL PROJECTS (PART 2) -->
+    <!-- Project 3 -->
+    <div class="item-block">
+      <div class="item-header">
+        <div class="item-title">📉 Business Revenue Leakage Calculator Web App</div>
+        <div class="item-sub">JavaScript | Web App | Web-to-Sheet CRM Intake</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Developed an interactive web-based diagnostic tool for prospective business clients to calculate financial loss from unmanaged leads.</li>
+        <li>Engineered real-time client intake script sending structured lead data directly into Google Sheets CRM databases.</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML5/CSS3</span>
+        <span class="tag">CRM Intake</span>
+        <span class="tag">Web Analytics</span>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="item-block">
+      <div class="item-header">
+        <div class="item-title">🏥 Hospital Emergency Room Capacity BI Dashboard</div>
+        <div class="item-sub">Power BI | DAX Calculated Measures | Healthcare Analytics</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Constructed an executive Power BI dashboard analyzing patient triage priority (Levels 1–5), admission wait times, and bed utilization.</li>
+        <li>Wrote modular DAX calculated measures (`CALCULATE`, `FILTER`, `DATEDIFF`) to identify peak emergency room bottlenecks.</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tag">Power BI</span>
+        <span class="tag">DAX</span>
+        <span class="tag">Power Query</span>
+        <span class="tag">Star Schema</span>
+      </div>
+    </div>
+
+    <!-- COMMERCIAL EXPERIENCE -->
+    <div class="section-title"><span>04</span> Commercial Experience Timeline</div>
+
+    <div class="item-block">
+      <div class="item-header">
+        <div class="item-title">🏢 Operational Data Management & Intake Lead</div>
+        <div class="item-date">14+ Years Experience</div>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>High-Volume Data Intake:</strong> Managed daily data intake, audit validation, and error reconciliation for datasets comprising 200K–300K records across operational business units.</li>
+        <li><strong>Team Leadership & Quality Control:</strong> Supervised and led 15+ data operations personnel, establishing standardized operational SOPs, SLA metrics, and strict quality control verification.</li>
+        <li><strong>MIS Reporting & Process Improvement:</strong> Designed custom Excel VBA tools and automated reporting models that reduced weekly manual reporting cycles by 15+ hours.</li>
+        <li><strong>Cross-Functional Stakeholder Communication:</strong> Served as the primary bridge between executive management, operational teams, and software vendors to ensure reporting requirements were delivered accurately.</li>
+      </ul>
+    </div>
+
+    <!-- TARGET ROLE ALIGNMENT -->
+    <div class="section-title"><span>05</span> Target Hiring Manager Alignment</div>
+    <ul class="bullet-list">
+      <li><strong>Data Operations Lead:</strong> 200K–300K Data Intake, Quality Control, SLA Enforcement, 15+ Member Team Leadership.</li>
+      <li><strong>BI Developer / Data Analyst:</strong> Power BI Dashboards, DAX Calculated Measures, Power Query ETL, SQL Window Functions.</li>
+      <li><strong>Analytics Engineer (Junior/Mid):</strong> Snowflake Medallion Pipelines, Automated Ingestion, PII Data Security.</li>
+    </ul>
+
+    <!-- AI TRANSPARENCY STATEMENT -->
+    <div class="ai-statement-box">
+      <strong>🤖 AI Assistance & Development Transparency:</strong><br>
+      Solution architecture, business logic, SQL scripts, and Power BI models reflect my own design and implementation. AI tools such as Claude and Snowflake Cortex AI were leveraged to accelerate technical iteration, with all outputs tested and validated by me.
+    </div>
+
+  </div>
+
+</body>
+</html>
