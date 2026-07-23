@@ -80,6 +80,7 @@
       display: flex;
       gap: 24px;
       list-style: none;
+      align-items: center;
     }
     .nav-links a {
       color: var(--text-muted);
@@ -105,7 +106,7 @@
 
     /* Hero Section */
     .hero {
-      padding: 70px 0 50px;
+      padding: 70px 0 40px;
       text-align: center;
     }
     .hero-badge {
@@ -162,13 +163,19 @@
       margin-bottom: 8px;
       font-size: 1.2rem;
     }
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
 
     /* Stats Grid */
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
-      margin: 30px 0 50px;
+      margin: 20px 0 40px;
     }
     .stat-card {
       background: var(--bg-card);
@@ -214,6 +221,46 @@
       display: flex;
       align-items: center;
       gap: 12px;
+    }
+
+    /* Role Alignment Matrix */
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .role-card {
+      background: #090d16;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      transition: border-color 0.2s;
+    }
+    .role-card:hover {
+      border-color: var(--cyan);
+    }
+    .role-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--emerald);
+      background: rgba(52, 211, 153, 0.1);
+      padding: 2px 8px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .role-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+    .role-skills {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
     }
 
     /* Commercial Experience Grid */
@@ -334,6 +381,40 @@
       color: var(--cyan);
     }
 
+    /* Visual Pipeline Flow */
+    .pipeline-visual {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 16px 0;
+      margin: 16px 0;
+    }
+    .pipe-node {
+      background: #131b2e;
+      border: 1px solid var(--border-accent);
+      border-radius: 10px;
+      padding: 12px 16px;
+      min-width: 130px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .pipe-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--cyan);
+
+    }
+    .pipe-sub {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    .pipe-arrow {
+      color: var(--cyan);
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+
     /* AI Statement Block */
     .ai-box {
       background: rgba(129, 140, 248, 0.08);
@@ -345,6 +426,19 @@
       margin-top: 16px;
     }
     .ai-box strong { color: var(--indigo); }
+
+    /* Code Block */
+    .code-block {
+      background: #090d16;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--cyan);
+      overflow-x: auto;
+      margin: 10px 0;
+    }
 
     /* Modal Overlay */
     .modal-overlay {
@@ -396,16 +490,6 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-    .diagram-block {
-      background: #090d16;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 14px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      overflow-x: auto;
-    }
 
     footer {
       border-top: 1px solid var(--border);
@@ -415,11 +499,15 @@
       font-size: 0.9rem;
     }
 
+    @media (max-width: 900px) {
+      .roles-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.2rem; }
       .stats-grid { grid-template-columns: repeat(2, 1fr); }
       .exp-grid { grid-template-columns: 1fr; }
       .projects-grid { grid-template-columns: 1fr; }
+      .roles-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
     }
   </style>
@@ -432,6 +520,7 @@
       <div class="logo">Haresh Kumar</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#roles">Target Roles</a></li>
         <li><a href="#commercial">Experience</a></li>
         <li><a href="#projects">Personal Projects</a></li>
         <li><a href="#ai-statement">AI Policy</a></li>
@@ -453,6 +542,11 @@
         <em>"I didn't start in a classroom. I started in the real world."</em>
         14+ years improving business operations through analytics, reporting, and workflow automation. Building practical AI-assisted data solutions.
       </p>
+
+      <div class="hero-cta">
+        <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="btn-action">📂 Explore GitHub Master Repo</a>
+        <a href="mailto:hareshmkumar9@gmail.com" class="btn-action btn-outline">✉️ Contact Candidate</a>
+      </div>
 
       <!-- Stats Grid -->
       <div class="stats-grid">
@@ -478,6 +572,42 @@
 
   <div class="container">
     
+    <!-- Target Role Alignment Matrix -->
+    <div class="section-block" id="roles">
+      <h2 class="section-title">🎯 Target Role Alignment Matrix</h2>
+      <p style="color: var(--text-muted);">
+        Directly mapping 14+ years of data operations leadership & modern technical stack to specific hiring manager requisitions:
+      </p>
+
+      <div class="roles-grid">
+        <div class="role-card">
+          <span class="role-badge">PRIMARY FIT</span>
+          <div class="role-title">Data Operations Lead</div>
+          <div class="role-skills">200K–300K Data Intake, Quality Control, 15+ Team Leadership, Excel/VBA Automation</div>
+        </div>
+        <div class="role-card">
+          <span class="role-badge">STRONG FIT</span>
+          <div class="role-title">BI Developer</div>
+          <div class="role-skills">Power BI Dashboards, DAX Calculated Measures, Power Query ETL, Star Schema Modeling</div>
+        </div>
+        <div class="role-card">
+          <span class="role-badge">STRONG FIT</span>
+          <div class="role-title">Data Analyst</div>
+          <div class="role-skills">Complex SQL CTEs & Window Functions, Financial Analytics, Operational Metrics</div>
+        </div>
+        <div class="role-card">
+          <span class="role-badge">STRONG FIT</span>
+          <div class="role-title">AI Automation Engineer</div>
+          <div class="role-skills">Python (`pywin32`, `gspread`), Multi-Account Outlook COM API, Claude & Cortex AI</div>
+        </div>
+        <div class="role-card">
+          <span class="role-badge">GOOD FIT</span>
+          <div class="role-title">Analytics Engineer</div>
+          <div class="role-skills">Snowflake Medallion Architecture (Bronze/Silver/Gold), Streams/Tasks, PII Masking</div>
+        </div>
+      </div>
+    </div>
+
     <!-- Commercial Experience Section -->
     <div class="section-block" id="commercial">
       <h2 class="section-title">💼 Professional Commercial Experience</h2>
@@ -519,6 +649,30 @@
           <p class="project-desc">
             3-layer Medallion Data Architecture (Bronze/Silver/Gold) in Snowflake with Streams & Tasks ingestion, Dynamic PII Data Masking, and Power BI fraud reporting.
           </p>
+
+          <!-- Visual Pipeline -->
+          <div class="pipeline-visual">
+            <div class="pipe-node">
+              <div class="pipe-title">Raw Logs</div>
+              <div class="pipe-sub">JSON / CSV</div>
+            </div>
+            <div class="pipe-arrow">➔</div>
+            <div class="pipe-node">
+              <div class="pipe-title">Bronze</div>
+              <div class="pipe-sub">Staging</div>
+            </div>
+            <div class="pipe-arrow">➔</div>
+            <div class="pipe-node">
+              <div class="pipe-title">Silver</div>
+              <div class="pipe-sub">Masked & De-duped</div>
+            </div>
+            <div class="pipe-arrow">➔</div>
+            <div class="pipe-node">
+              <div class="pipe-title">Gold</div>
+              <div class="pipe-sub">Star Schema</div>
+            </div>
+          </div>
+
           <div class="tech-tags">
             <span class="tech-tag">Snowflake</span>
             <span class="tech-tag">Streams & Tasks</span>
@@ -527,7 +681,7 @@
             <span class="tech-tag">Power BI</span>
           </div>
           <div class="project-actions">
-            <button class="btn-action" onclick="openModal('modal-1')">🔍 My Contribution</button>
+            <button class="btn-action" onclick="openModal('modal-1')">🔍 View SQL Code & Details</button>
             <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="btn-action btn-outline">📂 GitHub Docs</a>
           </div>
         </div>
@@ -622,9 +776,23 @@
         <li><strong>AI Collaboration:</strong> Used Snowflake Cortex AI & LLM assistance to generate query boilerplate while auditing join conditions and masking logic.</li>
       </ul>
 
-      <div class="modal-section-title">Architecture Flow</div>
-      <div class="diagram-block">
-Raw Transactions (JSON / CSV) ──> Bronze (Staging) ──> Silver (De-duped & Masked) ──> Gold (Star Schema) ──> Power BI Reports
+      <div class="modal-section-title">Snowflake Task CDC Code Sample</div>
+      <div class="code-block">
+CREATE OR REPLACE TASK silver_tx_task
+  SCHEDULE = '1 MINUTE'
+  WHEN SYSTEM$STREAM_HAS_DATA('bronze_tx_stream')
+AS
+  INSERT INTO silver_clean_transactions
+  SELECT transaction_id, customer_id, card_number, amount, tx_timestamp
+  FROM bronze_tx_stream
+  QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1;
+      </div>
+
+      <div class="modal-section-title">Dynamic Data Masking Code Sample</div>
+      <div class="code-block">
+CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
+  CASE WHEN CURRENT_ROLE() IN ('COMPLIANCE_ADMIN') THEN val
+       ELSE CONCAT('XXXX-XXXX-XXXX-', RIGHT(val, 4)) END;
       </div>
     </div>
   </div>

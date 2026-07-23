@@ -20,6 +20,18 @@ Rather than relying on marketing copy or overhyped claims, I focus on building r
 
 ---
 
+## 🎯 Target Role Alignment Matrix
+
+| Role Requisition | Portfolio Fit | Core Demonstrated Strengths |
+|---|---|---|
+| **Data Operations Lead** | 🟢 **Primary Fit** | 14+ Years Operational Data Intake (200K–300K records), Quality Control, 15+ Team Leadership, Excel/VBA Automation |
+| **BI Developer** | 🟢 **Strong Fit** | Power BI Dashboards, DAX Calculated Measures, Power Query ETL, Star Schema Dimensional Modeling |
+| **Data Analyst** | 🟢 **Strong Fit** | SQL CTEs & Window Functions, Financial Analytics, Data Cleansing, Operational Metric Reporting |
+| **AI Automation Engineer** | 🟢 **Strong Fit** | Python Scripting (`pywin32`, `gspread`), Outlook COM API Email Automation, Claude & Cortex AI Workflow Integration |
+| **Analytics Engineer** | 🟢 **Good Fit** | Snowflake Medallion Architecture (Bronze/Silver/Gold), Streams & Tasks CDC, Dynamic Data Masking |
+
+---
+
 ## 🛠️ Technical Stack & Skill Levels
 
 * **SQL & Data Warehousing:** SQL (Complex Queries, Window Functions, Star Schema Data Modeling), Snowflake (Medallion Architecture: Bronze/Silver/Gold, Streams & Tasks, Dynamic Data Masking)
