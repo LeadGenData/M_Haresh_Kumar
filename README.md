@@ -69,7 +69,7 @@ These are practical data engineering, analytics, and automation projects built t
 
 * **Status:** ✅ Completed
 * **Tech Stack:** `Snowflake` | `Streams & Tasks` | `SQL` | `Dynamic Data Masking` | `Power BI` | `Snowflake Cortex AI`
-* **Links:** 📂 [Source Code & Documentation](https://github.com/LeadGenData/M_Haresh_Kumar)
+* **Links:** 📂 [Source Code & Documentation](https://github.com/LeadGenData/M_Haresh_Kumar) | 📓 [Jupyter Notebook Case Study](notebooks/snowflake_medallion_pipeline.ipynb)
 
 **Business Problem:**
 
@@ -120,7 +120,7 @@ Raw Transactions (JSON / CSV)
 
 * **Status:** ✅ Completed
 * **Tech Stack:** `Python` | `Outlook COM API` | `Google Sheets API` | `Pandas`
-* **Links:** 📂 [Source Code](https://github.com/LeadGenData/bdl-leads-pro) | 📄 [Documentation](https://github.com/LeadGenData/M_Haresh_Kumar)
+* **Links:** 📂 [Source Code](https://github.com/LeadGenData/bdl-leads-pro) | 📄 [Documentation](https://github.com/LeadGenData/M_Haresh_Kumar) | 📓 [Jupyter Notebook Case Study](notebooks/outlook_email_automation.ipynb)
 
 **Business Problem:**
 
@@ -227,6 +227,24 @@ Built a target selection matrix application in React with an integrated credit w
 
 * **Cost Efficiency:** Prevented redundant API expenditure on previously searched zip codes.
 * **Faster Retrieval:** Instant delivery of cached target datasets.
+
+---
+
+## 📁 Repository Organization & Architecture
+
+```text
+single_portfolio_repo/
+├── index.html                 # Primary Portfolio Web App
+├── resume.html                # Professional Web Resume
+├── README.md                  # Comprehensive Portfolio & Project Documentation
+├── .nojekyll                  # GitHub Pages static asset bypass flag
+├── docs/                      # Synchronized GitHub Pages Deployment Directory
+│   ├── index.html
+│   └── resume.html
+└── notebooks/                 # Interactive Jupyter Notebook (.ipynb) Case Studies
+    ├── snowflake_medallion_pipeline.ipynb   # Snowflake Medallion (Bronze/Silver/Gold) Pipeline
+    └── outlook_email_automation.ipynb       # Python Multi-Account Outlook Email Engine
+```
 
 ---
 

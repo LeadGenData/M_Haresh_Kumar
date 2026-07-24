@@ -982,6 +982,7 @@
         <div class="project-actions">
           <button class="btn-project" onclick="openModal('modal-1')">🔍 SQL Code & Lessons</button>
           <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="btn-project btn-project-outline">📂 GitHub Docs</a>
+          <a href="notebooks/snowflake_medallion_pipeline.ipynb" target="_blank" class="btn-project btn-project-outline">📓 Jupyter Notebook</a>
         </div>
       </div>
 
@@ -1001,6 +1002,7 @@
         <div class="project-actions">
           <button class="btn-project" onclick="openModal('modal-2')">🔍 Lessons & Architecture</button>
           <a href="https://github.com/LeadGenData/bdl-leads-pro" target="_blank" class="btn-project btn-project-outline">📂 Source Code</a>
+          <a href="notebooks/outlook_email_automation.ipynb" target="_blank" class="btn-project btn-project-outline">📓 Jupyter Notebook</a>
         </div>
       </div>
 
@@ -1123,6 +1125,7 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
   CASE WHEN CURRENT_ROLE() IN ('COMPLIANCE_ADMIN') THEN val
        ELSE CONCAT('XXXX-XXXX-XXXX-', RIGHT(val, 4)) END;
       </div>
+      <p style="margin-top: 14px;"><a href="notebooks/snowflake_medallion_pipeline.ipynb" target="_blank" style="color: #fbd5a5; text-decoration: underline; font-weight: 600;">📓 Open Interactive Snowflake Jupyter Notebook (.ipynb)</a></p>
     </div>
   </div>
 
@@ -1136,6 +1139,7 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
         <strong style="color: #fbd5a5;">Challenges & Lessons Learned:</strong><br>
         Avoiding Outlook COM API thread locking (`pywin32`) during high-frequency dispatch runs was solved by implementing randomized human interval delays (15–45 seconds) and sender rotation per 100 emails.
       </p>
+      <p style="margin-top: 14px;"><a href="notebooks/outlook_email_automation.ipynb" target="_blank" style="color: #fbd5a5; text-decoration: underline; font-weight: 600;">📓 Open Interactive Outlook Email Automation Jupyter Notebook (.ipynb)</a></p>
     </div>
   </div>
 
