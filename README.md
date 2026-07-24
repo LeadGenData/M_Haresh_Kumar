@@ -81,25 +81,7 @@ Designed and deployed a **Medallion Data Architecture** in Snowflake. Raw data i
 
 **Architecture Flow:**
 
-```text
-Raw Transactions (JSON / CSV)
-            ↓
-  ┌──────────────────┐
-  │   Bronze Layer   │  Staging & Raw Storage
-  └─────────┬────────┘
-            ↓  (Snowflake Streams & Tasks)
-  ┌──────────────────┐
-  │   Silver Layer   │  Deduplication, PII Masking, Data Cleansing
-  └─────────┬────────┘
-            ↓  (Star Schema Modeling)
-  ┌──────────────────┐
-  │    Gold Layer    │  Fact & Dimension Tables
-  └─────────┬────────┘
-            ↓
-  ┌──────────────────┐
-  │ Power BI Reports │  Operational Fraud & Transaction Dashboard
-  └──────────────────┘
-```
+![Snowflake Medallion Architecture](docs/assets/diagrams/snowflake_medallion_architecture.svg)
 
 **My Contribution:**
 
@@ -132,9 +114,7 @@ Built a Python desktop script using Outlook COM API (`pywin32`) and Google Sheet
 
 **Architecture Flow:**
 
-```text
-Target Contacts (Google Sheets API) ──> Python Rotator Engine ──> Outlook Accounts (1 & 2) ──> Bounce Logger ──> CRM Writeback
-```
+![Outlook Automation Architecture](docs/assets/diagrams/outlook_automation_architecture.svg)
 
 **My Contribution:**
 
@@ -164,6 +144,10 @@ Small business owners (Dental, Legal, SaaS, Real Estate) often struggle to quant
 
 Created a responsive web diagnostic calculator where business owners input operational parameters (monthly leads, average deal value, follow-up speed) to calculate estimated monthly and annual revenue leakage, capturing contact details directly into a Google Sheets CRM.
 
+**Architecture Flow:**
+
+![Revenue Leakage Calculator Architecture](docs/assets/diagrams/revenue_leakage_calculator_architecture.svg)
+
 **My Contribution:**
 
 * **Front-End Styling & Math:** Built the responsive UI and financial calculation formulas in JavaScript.
@@ -190,6 +174,10 @@ Hospital administrators needed clear visibility into Emergency Department patien
 **Solution:**
 
 Built an interactive Power BI dashboard aggregating patient admission records, triage severity levels (1-5), age demographics, and hourly arrival trends to assist in shift planning and resource allocation.
+
+**Architecture Flow:**
+
+![Hospital Emergency Room BI Architecture](docs/assets/diagrams/emergency_room_bi_architecture.svg)
 
 **My Contribution:**
 

@@ -1,0 +1,326 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1120" width="100%" height="100%" style="background-color: #0B1220;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap');
+
+      text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+    </style>
+
+    <!-- Background Gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="card-grad-standard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#131C2E"/>
+    </linearGradient>
+    
+    <linearGradient id="card-bronze" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1B14"/>
+      <stop offset="100%" stop-color="#1A120E"/>
+    </linearGradient>
+
+    <linearGradient id="card-silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#131C2E"/>
+    </linearGradient>
+
+    <linearGradient id="card-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C2411"/>
+      <stop offset="100%" stop-color="#171309"/>
+    </linearGradient>
+
+    <linearGradient id="outcome-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Arrows -->
+    <linearGradient id="arrow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10A37F"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <filter id="shadow-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrowhead-teal" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10A37F"/>
+    </marker>
+
+    <!-- REUSABLE TECH ICONS -->
+    <g id="icon-snowflake">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#29B5E8" stroke-width="1.5"/>
+      <path d="M 18 8 L 18 28 M 8 18 L 28 18 M 11 11 L 25 25 M 11 25 L 25 11" stroke="#29B5E8" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="18" cy="18" r="2.5" fill="#29B5E8"/>
+    </g>
+
+    <g id="icon-sql">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+      <path d="M 10 12 C 10 9.5 26 9.5 26 12 C 26 14.5 10 14.5 10 12 Z" fill="none" stroke="#38BDF8" stroke-width="1.5"/>
+      <path d="M 10 12 L 10 24 C 10 26.5 26 26.5 26 24 L 26 12" fill="none" stroke="#38BDF8" stroke-width="1.5"/>
+      <path d="M 10 18 C 10 20.5 26 20.5 26 18" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2,2"/>
+    </g>
+
+    <g id="icon-powerbi">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="1.5"/>
+      <rect x="9" y="19" width="4.5" height="9" rx="1" fill="#F59E0B"/>
+      <rect x="15.5" y="14" width="4.5" height="14" rx="1" fill="#FBBF24"/>
+      <rect x="22.5" y="9" width="4.5" height="19" rx="1" fill="#F59E0B"/>
+    </g>
+
+    <g id="icon-cortex">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#A855F7" stroke-width="1.5"/>
+      <circle cx="18" cy="18" r="6" fill="none" stroke="#A855F7" stroke-width="2"/>
+      <path d="M 18 6 L 18 10 M 18 26 L 18 30 M 6 18 L 10 18 M 26 18 L 30 18" stroke="#C084FC" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="850" height="1120" fill="url(#bg-gradient)"/>
+
+  <!-- GRID PATTERN -->
+  <g opacity="0.04">
+    <path d="M 0 50 L 850 50 M 0 100 L 850 100 M 0 150 L 850 150 M 0 200 L 850 200 M 0 250 L 850 250 M 0 300 L 850 300 M 0 350 L 850 350 M 0 400 L 850 400 M 0 450 L 850 450 M 0 500 L 850 500 M 0 550 L 850 550 M 0 600 L 850 600 M 0 650 L 850 650 M 0 700 L 850 700 M 0 750 L 850 750 M 0 800 L 850 800 M 0 850 L 850 850 M 0 900 L 850 900 M 0 950 L 850 950 M 0 1000 L 850 1000" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- HEADER SECTION -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="210" height="26" rx="13" fill="#10A37F" fill-opacity="0.15" stroke="#10A37F" stroke-opacity="0.4"/>
+    <circle cx="14" cy="13" r="4" fill="#10A37F"/>
+    <text x="26" y="17" class="font-mono" font-size="11" font-weight="700" fill="#34D399" letter-spacing="1">PROJECT ARCHITECTURE 01</text>
+
+    <text x="0" y="60" font-size="25" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Snowflake Medallion Pipeline &amp; Fraud Analytics</text>
+    <text x="0" y="82" font-size="13" font-weight="400" fill="#94A3B8">Automated Bronze/Silver/Gold ETL, Streams &amp; Tasks CDC, Dynamic Masking &amp; Power BI</text>
+  </g>
+
+  <!-- STAGE 01: RAW INGESTION & BRONZE LAYER -->
+  <g transform="translate(40, 150)">
+    <rect x="0" y="0" width="770" height="150" rx="14" fill="url(#card-bronze)" stroke="#D97706" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="150" rx="3" fill="#F59E0B"/>
+
+    <!-- Badge -->
+    <rect x="24" y="18" width="120" height="22" rx="11" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-opacity="0.5"/>
+    <text x="84" y="33" class="font-mono" font-size="10" font-weight="700" fill="#FBBF24" text-anchor="middle" letter-spacing="1">BRONZE LAYER</text>
+
+    <text x="160" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Raw Ingestion &amp; Change Data Capture (CDC)</text>
+    <text x="160" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Land unstructured credit card transaction logs and automated Snowflake Streams</text>
+
+    <!-- Sub-Cards Container -->
+    <g transform="translate(24, 65)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="220" height="65" rx="8" fill="#0B1220" stroke="#451A03"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Raw Payloads (JSON / CSV)</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Multi-format transaction feeds</text>
+      </g>
+
+      <!-- Connection Arrow 1 -->
+      <path d="M 224 32 L 244 32" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- Card 2 -->
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="230" height="65" rx="8" fill="#0B1220" stroke="#F59E0B" stroke-opacity="0.4"/>
+        <use href="#icon-snowflake" x="12" y="14"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Snowflake Internal Stage</text>
+        <text x="56" y="45" class="font-mono" font-size="9.5" font-weight="600" fill="#FBBF24">COPY INTO @raw_stage</text>
+      </g>
+
+      <!-- Connection Arrow 2 -->
+      <path d="M 482 32 L 492 32" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- Card 3 -->
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="65" rx="8" fill="#0B1220" stroke="#F59E0B" stroke-opacity="0.4"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Bronze Table + Stream</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Append-only CDC logging</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 1 -->
+  <g transform="translate(425, 300)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowhead-teal)"/>
+    <rect x="-95" y="12" width="190" height="20" rx="10" fill="#0B1220" stroke="#10A37F" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="0.8">SNOWFLAKE TASKS TRIGGER</text>
+  </g>
+
+  <!-- STAGE 02: SILVER LAYER -->
+  <g transform="translate(40, 345)">
+    <rect x="0" y="0" width="770" height="160" rx="14" fill="url(#card-silver)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="160" rx="3" fill="#10A37F"/>
+
+    <!-- Badge -->
+    <rect x="24" y="18" width="120" height="22" rx="11" fill="#10A37F" fill-opacity="0.2" stroke="#10A37F" stroke-opacity="0.5"/>
+    <text x="84" y="33" class="font-mono" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle" letter-spacing="1">SILVER LAYER</text>
+
+    <text x="160" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Cleansing, Deduplication &amp; Dynamic PII Masking</text>
+    <text x="160" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Enforces QUALIFY ROW_NUMBER() window functions &amp; Dynamic Data Masking policies</text>
+
+    <!-- Sub-Cards Container -->
+    <g transform="translate(24, 68)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#2A3B5C"/>
+        <use href="#icon-sql" x="12" y="18"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">QUALIFY Deduplication</text>
+        <text x="56" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Eliminates duplicate logs</text>
+        <text x="56" y="58" class="font-mono" font-size="9" font-weight="600" fill="#10A37F">ROW_NUMBER() OVER (...)</text>
+      </g>
+
+      <!-- Card 2 -->
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#10A37F" stroke-opacity="0.5"/>
+        <use href="#icon-snowflake" x="12" y="18"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Dynamic Data Masking</text>
+        <text x="56" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Anonymizes account #s</text>
+        <text x="56" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#34D399">MASKING POLICY account_mask</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="75" rx="8" fill="#0F172A" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Silver Cleaned Tables</text>
+        <text x="16" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Normalized schemas ready</text>
+        <text x="16" y="58" class="font-mono" font-size="9" font-weight="600" fill="#38BDF8">Cleaned &amp; secured</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 2 -->
+  <g transform="translate(425, 505)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <rect x="-85" y="12" width="170" height="20" rx="10" fill="#0B1220" stroke="#38BDF8" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="0.8">STAR SCHEMA MODELING</text>
+  </g>
+
+  <!-- STAGE 03: GOLD LAYER -->
+  <g transform="translate(40, 550)">
+    <rect x="0" y="0" width="770" height="150" rx="14" fill="url(#card-gold)" stroke="#EAB308" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="150" rx="3" fill="#EAB308"/>
+
+    <!-- Badge -->
+    <rect x="24" y="18" width="120" height="22" rx="11" fill="#EAB308" fill-opacity="0.2" stroke="#EAB308" stroke-opacity="0.5"/>
+    <text x="84" y="33" class="font-mono" font-size="10" font-weight="700" fill="#FDE047" text-anchor="middle" letter-spacing="1">GOLD LAYER</text>
+
+    <text x="160" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Dimensional Data Mart &amp; Business Aggregates</text>
+    <text x="160" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Star Schema Fact and Dimension tables supporting high-speed analytical queries</text>
+
+    <!-- Sub-Cards Container -->
+    <g transform="translate(24, 65)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#EAB308" stroke-opacity="0.4"/>
+        <text x="16" y="26" font-size="12" font-weight="800" fill="#FDE047" letter-spacing="0.3">FACT_TRANSACTIONS</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Amounts, timestamps, risk</text>
+      </g>
+
+      <!-- Card 2 -->
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#EAB308" stroke-opacity="0.4"/>
+        <text x="16" y="26" font-size="12" font-weight="800" fill="#F8FAFC" letter-spacing="0.3">DIM_CUSTOMER</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Demographics &amp; masked PII</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="65" rx="8" fill="#0B1220" stroke="#EAB308" stroke-opacity="0.4"/>
+        <text x="16" y="26" font-size="12" font-weight="800" fill="#F8FAFC" letter-spacing="0.3">DIM_MERCHANT</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Merchant categories &amp; geo</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 3 -->
+  <g transform="translate(425, 700)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowhead-teal)"/>
+    <rect x="-95" y="12" width="190" height="20" rx="10" fill="#0B1220" stroke="#10A37F" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="0.8">BI DASHBOARDS &amp; AI QUERY</text>
+  </g>
+
+  <!-- STAGE 04: PRESENTATION LAYER -->
+  <g transform="translate(40, 745)">
+    <rect x="0" y="0" width="770" height="130" rx="14" fill="url(#card-grad-standard)" stroke="#2A3B5C" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="130" rx="3" fill="#A855F7"/>
+
+    <!-- Badge -->
+    <rect x="24" y="18" width="120" height="22" rx="11" fill="#A855F7" fill-opacity="0.2" stroke="#A855F7" stroke-opacity="0.5"/>
+    <text x="84" y="33" class="font-mono" font-size="10" font-weight="700" fill="#C084FC" text-anchor="middle" letter-spacing="1">REPORTING &amp; AI</text>
+
+    <text x="160" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Power BI Dashboard &amp; Snowflake Cortex AI</text>
+    <text x="160" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Operational fraud monitoring visuals with natural language LLM assistance</text>
+
+    <!-- Sub-Cards Container -->
+    <g transform="translate(130, 68)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="240" height="48" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-opacity="0.5"/>
+        <use href="#icon-powerbi" x="10" y="6"/>
+        <text x="54" y="28" font-size="12.5" font-weight="700" fill="#F8FAFC">Power BI Operational BI</text>
+      </g>
+
+      <g transform="translate(270, 0)">
+        <rect x="0" y="0" width="240" height="48" rx="8" fill="#0F172A" stroke="#A855F7" stroke-opacity="0.5"/>
+        <use href="#icon-cortex" x="10" y="6"/>
+        <text x="54" y="28" font-size="12.5" font-weight="700" fill="#F8FAFC">Snowflake Cortex AI</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- BUSINESS OUTCOMES SECTION -->
+  <g transform="translate(40, 895)">
+    <rect x="0" y="0" width="770" height="180" rx="16" fill="url(#outcome-grad)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    
+    <g transform="translate(24, 22)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" fill-opacity="0.2"/>
+      <path d="M 6 10 L 9 13 L 15 7" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+      <text x="32" y="15" font-size="14" font-weight="800" fill="#10B981" letter-spacing="1">BUSINESS OUTCOMES &amp; IMPACT</text>
+    </g>
+
+    <!-- 3 Metric Cards Grid -->
+    <g transform="translate(24, 52)">
+      <!-- Metric 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#10B981" letter-spacing="-0.5">Automated CDC</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Continuous Ingestion</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Replaced manual file batching</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">with automated Snowflake Tasks</text>
+      </g>
+
+      <!-- Metric 2 -->
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#38BDF8" letter-spacing="-0.5">100% PII Masked</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Zero Exposure Risk</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Dynamic Data Masking policy</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">secures account credentials</text>
+      </g>
+
+      <!-- Metric 3 -->
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#F59E0B" letter-spacing="-0.5">Clean Integrity</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Zero Duplicate Logs</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">QUALIFY ROW_NUMBER()</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">removes duplicate Silver logs</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- SVG FOOTER STAMP -->
+  <text x="425" y="1098" class="font-mono" font-size="10" font-weight="500" fill="#475569" text-anchor="middle">M. Haresh Kumar Portfolio • Snowflake Medallion Data Pipeline</text>
+</svg>

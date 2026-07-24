@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1120" width="100%" height="100%" style="background-color: #0B1220;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap');
+
+      text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+    </style>
+
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad-standard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#131C2E"/>
+    </linearGradient>
+    
+    <linearGradient id="outcome-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="arrow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10A37F"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <filter id="shadow-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrowhead-teal" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10A37F"/>
+    </marker>
+
+    <!-- REUSABLE TECH ICONS -->
+    <g id="icon-html5">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#E34F26" stroke-width="1.5"/>
+      <path d="M 10 9 L 12 27 L 18 29 L 24 27 L 26 9 Z" fill="#E34F26"/>
+      <path d="M 18 11 L 18 27 L 22.5 25.5 L 24.2 11 Z" fill="#EF652A"/>
+      <path d="M 14 14 L 18 14 L 18 17 L 14.5 17 L 15 21 L 18 21 L 18 24 L 15 23 L 14.8 20 L 13 20 L 13.5 25 L 18 26.5 L 22.5 25 L 23 18 L 14 18 Z" fill="#FFFFFF"/>
+    </g>
+
+    <g id="icon-js">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#F7DF1E" stroke-width="1.5"/>
+      <rect x="8" y="8" width="20" height="20" rx="2" fill="#F7DF1E"/>
+      <text x="14" y="23" class="font-mono" font-size="11" font-weight="700" fill="#000000">JS</text>
+    </g>
+
+    <g id="icon-appsscript">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#4285F4" stroke-width="1.5"/>
+      <path d="M 11 18 L 16 12 L 25 12 L 20 18 Z" fill="#4285F4"/>
+      <path d="M 11 18 L 16 24 L 25 24 L 20 18 Z" fill="#34A853"/>
+    </g>
+
+    <g id="icon-sheets">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#0F9D58" stroke-width="1.5"/>
+      <rect x="11" y="9" width="14" height="18" rx="2" fill="#0F9D58"/>
+      <path d="M 14 9 L 14 27 M 22 9 L 22 27 M 11 15 L 25 15 M 11 21 L 25 21" stroke="#A7F3D0" stroke-width="1" stroke-opacity="0.6"/>
+    </g>
+  </defs>
+
+  <rect width="850" height="1120" fill="url(#bg-gradient)"/>
+
+  <g opacity="0.04">
+    <path d="M 0 50 L 850 50 M 0 100 L 850 100 M 0 150 L 850 150 M 0 200 L 850 200 M 0 250 L 850 250 M 0 300 L 850 300 M 0 350 L 850 350 M 0 400 L 850 400 M 0 450 L 850 450 M 0 500 L 850 500 M 0 550 L 850 550 M 0 600 L 850 600 M 0 650 L 850 650 M 0 700 L 850 700 M 0 750 L 850 750 M 0 800 L 850 800 M 0 850 L 850 850 M 0 900 L 850 900 M 0 950 L 850 950 M 0 1000 L 850 1000" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- HEADER SECTION -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="210" height="26" rx="13" fill="#10A37F" fill-opacity="0.15" stroke="#10A37F" stroke-opacity="0.4"/>
+    <circle cx="14" cy="13" r="4" fill="#10A37F"/>
+    <text x="26" y="17" class="font-mono" font-size="11" font-weight="700" fill="#34D399" letter-spacing="1">PROJECT ARCHITECTURE 03</text>
+
+    <text x="0" y="60" font-size="25" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Interactive Revenue Leakage Calculator &amp; Lead Intake</text>
+    <text x="0" y="82" font-size="13" font-weight="400" fill="#94A3B8">Responsive Web App, Client-Side Math Engine, Google Apps Script POST API &amp; CRM Sync</text>
+  </g>
+
+  <!-- STAGE 01: FRONT-END UI LAYER -->
+  <g transform="translate(40, 150)">
+    <rect x="0" y="0" width="770" height="150" rx="14" fill="url(#card-grad-standard)" stroke="#E34F26" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="150" rx="3" fill="#E34F26"/>
+
+    <rect x="24" y="18" width="130" height="22" rx="11" fill="#E34F26" fill-opacity="0.2" stroke="#E34F26" stroke-opacity="0.5"/>
+    <text x="89" y="33" class="font-mono" font-size="10" font-weight="700" fill="#FF8A65" text-anchor="middle" letter-spacing="1">WEB FRONTEND</text>
+
+    <text x="170" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Responsive User Interface &amp; Input Diagnostic</text>
+    <text x="170" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Captures monthly lead volume, average deal value ($), and response lag parameters</text>
+
+    <g transform="translate(24, 65)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="210" height="65" rx="8" fill="#0B1220" stroke="#E34F26" stroke-opacity="0.4"/>
+        <use href="#icon-html5" x="12" y="14"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Responsive Form UI</text>
+        <text x="56" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">HTML5 &amp; CSS flexbox layout</text>
+      </g>
+
+      <path d="M 218 32 L 246 32" stroke="#E34F26" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <g transform="translate(255, 0)">
+        <rect x="0" y="0" width="220" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Parameter Inputs</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Leads, Deal Size, Conversion %</text>
+      </g>
+
+      <path d="M 483 32 L 511 32" stroke="#E34F26" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <g transform="translate(520, 0)">
+        <rect x="0" y="0" width="202" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Instant Validation</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Sanitizes user input fields</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 1 -->
+  <g transform="translate(425, 300)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowhead-teal)"/>
+    <rect x="-95" y="12" width="190" height="20" rx="10" fill="#0B1220" stroke="#10A37F" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="0.8">CLIENT MATH ENGINE</text>
+  </g>
+
+  <!-- STAGE 02: CLIENT MATH ENGINE -->
+  <g transform="translate(40, 345)">
+    <rect x="0" y="0" width="770" height="160" rx="14" fill="url(#card-grad-standard)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="160" rx="3" fill="#10A37F"/>
+
+    <rect x="24" y="18" width="165" height="22" rx="11" fill="#10A37F" fill-opacity="0.2" stroke="#10A37F" stroke-opacity="0.5"/>
+    <text x="106" y="33" class="font-mono" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle" letter-spacing="1">CLIENT FORMULA ENGINE</text>
+
+    <text x="200" y="34" font-size="16" font-weight="700" fill="#F8FAFC">JavaScript Revenue Leakage Calculation</text>
+    <text x="200" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Calculates monthly &amp; annual lost revenue without full page reloads</text>
+
+    <g transform="translate(24, 68)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#F7DF1E"/>
+        <use href="#icon-js" x="12" y="18"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Vanilla JS Engine</text>
+        <text x="56" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Dynamic event listeners</text>
+        <text x="56" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#F7DF1E">Zero library dependencies</text>
+      </g>
+
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#10A37F" stroke-opacity="0.5"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Leakage Formula</text>
+        <text x="16" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">(Leads * Lag Drop %) * Deal</text>
+        <text x="16" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#34D399">Real-time DOM update</text>
+      </g>
+
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="75" rx="8" fill="#0F172A" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Lead Capture Form</text>
+        <text x="16" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">User contact &amp; business info</text>
+        <text x="16" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#38BDF8">Validated JSON payload</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 2 -->
+  <g transform="translate(425, 505)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <rect x="-95" y="12" width="190" height="20" rx="10" fill="#0B1220" stroke="#38BDF8" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="0.8">ASYNCHRONOUS POST FETCH</text>
+  </g>
+
+  <!-- STAGE 03: GOOGLE APPS SCRIPT WEBHOOK API -->
+  <g transform="translate(40, 550)">
+    <rect x="0" y="0" width="770" height="150" rx="14" fill="url(#card-grad-standard)" stroke="#4285F4" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="150" rx="3" fill="#4285F4"/>
+
+    <rect x="24" y="18" width="120" height="22" rx="11" fill="#4285F4" fill-opacity="0.2" stroke="#4285F4" stroke-opacity="0.5"/>
+    <text x="84" y="33" class="font-mono" font-size="10" font-weight="700" fill="#93C5FD" text-anchor="middle" letter-spacing="1">BACKEND API</text>
+
+    <text x="160" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Google Apps Script Webhook Endpoint</text>
+    <text x="160" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Receives POST JSON payload, parses lead parameters &amp; authenticates request</text>
+
+    <g transform="translate(24, 65)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#4285F4" stroke-opacity="0.4"/>
+        <use href="#icon-appsscript" x="12" y="14"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">doPost(e) Handler</text>
+        <text x="56" y="44" class="font-mono" font-size="9.5" font-weight="600" fill="#94A3B8">Google Apps Script API</text>
+      </g>
+
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">CORS &amp; Auth Header</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Secure HTTP response handling</text>
+      </g>
+
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Payload Structuring</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Calculated values &amp; metadata</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 3 -->
+  <g transform="translate(425, 700)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowhead-teal)"/>
+    <rect x="-95" y="12" width="190" height="20" rx="10" fill="#0B1220" stroke="#10A37F" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="0.8">DIRECT CRM STORAGE</text>
+  </g>
+
+  <!-- STAGE 04: GOOGLE SHEETS CRM -->
+  <g transform="translate(40, 745)">
+    <rect x="0" y="0" width="770" height="130" rx="14" fill="url(#card-grad-standard)" stroke="#0F9D58" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="130" rx="3" fill="#0F9D58"/>
+
+    <rect x="24" y="18" width="125" height="22" rx="11" fill="#0F9D58" fill-opacity="0.2" stroke="#0F9D58" stroke-opacity="0.5"/>
+    <text x="86" y="33" class="font-mono" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle" letter-spacing="1">CRM STORAGE</text>
+
+    <text x="165" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Google Sheets Real-Time Lead CRM</text>
+    <text x="165" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Appends new business row with calculated potential leakage and sales follow-up status</text>
+
+    <g transform="translate(130, 68)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="240" height="48" rx="8" fill="#0F172A" stroke="#0F9D58" stroke-opacity="0.5"/>
+        <use href="#icon-sheets" x="10" y="6"/>
+        <text x="54" y="28" font-size="12.5" font-weight="700" fill="#F8FAFC">Google Sheet Lead CRM</text>
+      </g>
+
+      <g transform="translate(270, 0)">
+        <rect x="0" y="0" width="240" height="48" rx="8" fill="#0F172A" stroke="#34D399" stroke-opacity="0.5"/>
+        <text x="16" y="28" font-size="12.5" font-weight="700" fill="#34D399">Instant Lead Alert Email</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- BUSINESS OUTCOMES SECTION -->
+  <g transform="translate(40, 895)">
+    <rect x="0" y="0" width="770" height="180" rx="16" fill="url(#outcome-grad)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    
+    <g transform="translate(24, 22)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" fill-opacity="0.2"/>
+      <path d="M 6 10 L 9 13 L 15 7" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+      <text x="32" y="15" font-size="14" font-weight="800" fill="#10B981" letter-spacing="1">BUSINESS OUTCOMES &amp; IMPACT</text>
+    </g>
+
+    <g transform="translate(24, 52)">
+      <!-- Metric 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#10B981" letter-spacing="-0.5">&lt; 100 ms</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Instant Calculation</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Client-side Vanilla JS math</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">executes without page reload</text>
+      </g>
+
+      <!-- Metric 2 -->
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#38BDF8" letter-spacing="-0.5">100% Automated</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Web-to-Sheet CRM</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Apps Script POST API logs</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">lead info &amp; leakage metrics</text>
+      </g>
+
+      <!-- Metric 3 -->
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#F59E0B" letter-spacing="-0.5">High Intent</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Quantified Value</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Provides clear financial estimate</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">of annual $ revenue leakage</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- SVG FOOTER STAMP -->
+  <text x="425" y="1098" class="font-mono" font-size="10" font-weight="500" fill="#475569" text-anchor="middle">M. Haresh Kumar Portfolio • Interactive Revenue Leakage Calculator</text>
+</svg>

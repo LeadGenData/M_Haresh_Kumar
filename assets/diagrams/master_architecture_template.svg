@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100" width="100%" height="100%" style="background-color: #0B1220;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap');
+
+      text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+    </style>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="card-grad-standard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#131C2E"/>
+    </linearGradient>
+    <linearGradient id="outcome-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="arrow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10A37F"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="shadow-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrowhead-teal" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10A37F"/>
+    </marker>
+    <g id="icon-sql">
+      <rect x="0" y="0" width="40" height="40" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <path d="M 12 14 C 12 11.5 28 11.5 28 14 C 28 16.5 12 16.5 12 14 Z" fill="none" stroke="#38BDF8" stroke-width="2"/>
+      <path d="M 12 14 L 12 26 C 12 28.5 28 28.5 28 26 L 28 14" fill="none" stroke="#38BDF8" stroke-width="2"/>
+      <path d="M 12 20 C 12 22.5 28 22.5 28 20" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="2,2"/>
+    </g>
+    <g id="icon-snowflake">
+      <rect x="0" y="0" width="40" height="40" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <path d="M 20 8 L 20 32 M 8 20 L 32 20 M 11.5 11.5 L 28.5 28.5 M 11.5 28.5 L 28.5 11.5" stroke="#29B5E8" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="20" cy="20" r="3" fill="#29B5E8"/>
+    </g>
+    <g id="icon-powerbi">
+      <rect x="0" y="0" width="40" height="40" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <rect x="10" y="22" width="5" height="10" rx="1" fill="#F59E0B"/>
+      <rect x="17.5" y="16" width="5" height="16" rx="1" fill="#FBBF24"/>
+      <rect x="25" y="10" width="5" height="22" rx="1" fill="#F59E0B"/>
+    </g>
+    <g id="icon-python">
+      <rect x="0" y="0" width="40" height="40" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <path d="M 19.5 9 C 14 9 13.5 11.5 13.5 11.5 L 13.5 14 L 19.5 14 L 19.5 15 L 11 15 C 11 15 8.5 15 8.5 20.5 C 8.5 26 11 26 C 11 26 12 26 12 24.5 L 12 22 C 12 19.5 14.5 19.5 14.5 19.5 L 21 19.5 C 21 19.5 23.5 19.5 23.5 17 L 23.5 11.5 C 23.5 11.5 24 9 19.5 9 Z" fill="#3776AB"/>
+      <circle cx="16.5" cy="11.5" r="1" fill="#FFFFFF"/>
+      <path d="M 20.5 31 C 26 31 26.5 28.5 26.5 28.5 L 26.5 26 L 20.5 26 L 20.5 25 L 29 25 C 29 25 31.5 25 31.5 19.5 C 31.5 14 29 14 29 14 C 29 14 28 14 28 15.5 L 28 18 C 28 20.5 25.5 20.5 25.5 20.5 L 19 20.5 C 19 20.5 16.5 20.5 16.5 23 L 16.5 28.5 C 16.5 28.5 16 31 20.5 31 Z" fill="#FFD43B"/>
+      <circle cx="23.5" cy="28.5" r="1" fill="#1E293B"/>
+    </g>
+    <g id="icon-outlook">
+      <rect x="0" y="0" width="40" height="40" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <rect x="14" y="13" width="18" height="14" rx="2" fill="#0078D4"/>
+      <path d="M 14 13 L 23 20 L 32 13" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+      <circle cx="14" cy="20" r="7" fill="#107C41" stroke="#1E293B" stroke-width="1"/>
+      <text x="14" y="23" class="font-mono" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">O</text>
+    </g>
+    <g id="icon-excel">
+      <rect x="0" y="0" width="40" height="40" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <rect x="16" y="12" width="16" height="16" rx="2" fill="#107C41"/>
+      <path d="M 20 12 L 20 28 M 26 12 L 26 28 M 16 17 L 32 17 M 16 23 L 32 23" stroke="#A7F3D0" stroke-width="1" stroke-opacity="0.5"/>
+      <rect x="8" y="14" width="12" height="12" rx="2" fill="#1D6F42"/>
+      <text x="14" y="23" class="font-mono" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">X</text>
+    </g>
+  </defs>
+  <rect width="850" height="1100" fill="url(#bg-gradient)"/>
+  <g opacity="0.04">
+    <path d="M 0 50 L 850 50 M 0 100 L 850 100 M 0 150 L 850 150 M 0 200 L 850 200 M 0 250 L 850 250 M 0 300 L 850 300 M 0 350 L 850 350 M 0 400 L 850 400 M 0 450 L 850 450 M 0 500 L 850 500 M 0 550 L 850 550 M 0 600 L 850 600 M 0 650 L 850 650 M 0 700 L 850 700 M 0 750 L 850 750 M 0 800 L 850 800 M 0 850 L 850 850 M 0 900 L 850 900 M 0 950 L 850 950 M 0 1000 L 850 1000" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="220" height="26" rx="13" fill="#10A37F" fill-opacity="0.15" stroke="#10A37F" stroke-opacity="0.4"/>
+    <circle cx="14" cy="13" r="4" fill="#10A37F"/>
+    <text x="26" y="17" class="font-mono" font-size="11" font-weight="700" fill="#34D399" letter-spacing="1">SVG ARCHITECTURE SYSTEM</text>
+    <text x="0" y="60" font-size="26" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Master Diagram System &amp; Design Library</text>
+    <text x="0" y="82" font-size="13" font-weight="400" fill="#94A3B8">Modern ChatGPT-inspired dark theme standards for technical portfolio architecture</text>
+  </g>
+  <g transform="translate(40, 150)">
+    <rect x="0" y="0" width="770" height="115" rx="14" fill="url(#card-grad-standard)" stroke="#2A3B5C" filter="url(#shadow-soft)"/>
+    <text x="24" y="30" class="font-mono" font-size="12" font-weight="700" fill="#10A37F" letter-spacing="1">VECTOR TECH ICON LIBRARY</text>
+    <g transform="translate(24, 48)">
+      <g transform="translate(0, 0)">
+        <use href="#icon-sql" x="0" y="0"/>
+        <text x="50" y="22" font-size="13" font-weight="700" fill="#F8FAFC">SQL</text>
+        <text x="50" y="38" font-size="10.5" font-weight="400" fill="#94A3B8">Relational Queries</text>
+      </g>
+      <g transform="translate(130, 0)">
+        <use href="#icon-snowflake" x="0" y="0"/>
+        <text x="50" y="22" font-size="13" font-weight="700" fill="#F8FAFC">Snowflake</text>
+        <text x="50" y="38" font-size="10.5" font-weight="400" fill="#94A3B8">Data Cloud</text>
+      </g>
+      <g transform="translate(260, 0)">
+        <use href="#icon-powerbi" x="0" y="0"/>
+        <text x="50" y="22" font-size="13" font-weight="700" fill="#F8FAFC">Power BI</text>
+        <text x="50" y="38" font-size="10.5" font-weight="400" fill="#94A3B8">Analytics BI</text>
+      </g>
+      <g transform="translate(380, 0)">
+        <use href="#icon-python" x="0" y="0"/>
+        <text x="50" y="22" font-size="13" font-weight="700" fill="#F8FAFC">Python</text>
+        <text x="50" y="38" font-size="10.5" font-weight="400" fill="#94A3B8">ETL &amp; Automation</text>
+      </g>
+      <g transform="translate(500, 0)">
+        <use href="#icon-outlook" x="0" y="0"/>
+        <text x="50" y="22" font-size="13" font-weight="700" fill="#F8FAFC">Outlook</text>
+        <text x="50" y="38" font-size="10.5" font-weight="400" fill="#94A3B8">COM API Engine</text>
+      </g>
+      <g transform="translate(620, 0)">
+        <use href="#icon-excel" x="0" y="0"/>
+        <text x="50" y="22" font-size="13" font-weight="700" fill="#F8FAFC">Excel</text>
+        <text x="50" y="38" font-size="10.5" font-weight="400" fill="#94A3B8">Reporting / MIS</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(40, 290)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="770" height="135" rx="14" fill="url(#card-grad-standard)" stroke="#2A3B5C" filter="url(#shadow-soft)"/>
+      <rect x="0" y="0" width="6" height="135" rx="3" fill="#38BDF8"/>
+      <rect x="24" y="20" width="90" height="22" rx="11" fill="#38BDF8" fill-opacity="0.15" stroke="#38BDF8" stroke-opacity="0.4"/>
+      <text x="69" y="35" class="font-mono" font-size="10" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="1">STAGE 01</text>
+      <text x="130" y="36" font-size="16" font-weight="700" fill="#F8FAFC">Data Intake &amp; Ingestion Layer</text>
+      <text x="130" y="56" font-size="12" font-weight="400" fill="#CBD5E1">Captures raw transactional logs, unstructured payloads (JSON/CSV), and API triggers</text>
+      <g transform="translate(130, 75)">
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="115" height="32" rx="8" fill="#0F172A" stroke="#334155"/>
+          <text x="16" y="20" font-size="11.5" font-weight="600" fill="#E2E8F0">JSON Logs</text>
+        </g>
+        <g transform="translate(130, 0)">
+          <rect x="0" y="0" width="125" height="32" rx="8" fill="#0F172A" stroke="#334155"/>
+          <text x="16" y="20" font-size="11.5" font-weight="600" fill="#E2E8F0">CSV Storage</text>
+        </g>
+        <g transform="translate(275, 0)">
+          <rect x="0" y="0" width="145" height="32" rx="8" fill="#0F172A" stroke="#334155"/>
+          <text x="16" y="20" font-size="11.5" font-weight="600" fill="#E2E8F0">REST API Hooks</text>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(385, 135)">
+      <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowhead)"/>
+      <rect x="-70" y="12" width="140" height="20" rx="10" fill="#0B1220" stroke="#10A37F" stroke-opacity="0.6"/>
+      <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="0.8">AUTOMATED CDC</text>
+    </g>
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="770" height="135" rx="14" fill="url(#card-grad-standard)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+      <rect x="0" y="0" width="6" height="135" rx="3" fill="#10A37F"/>
+      <rect x="24" y="20" width="90" height="22" rx="11" fill="#10A37F" fill-opacity="0.15" stroke="#10A37F" stroke-opacity="0.4"/>
+      <text x="69" y="35" class="font-mono" font-size="10" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="1">STAGE 02</text>
+      <text x="130" y="36" font-size="16" font-weight="700" fill="#F8FAFC">Transformation, Masking &amp; Cleansing</text>
+      <text x="130" y="56" font-size="12" font-weight="400" fill="#CBD5E1">Executes deduplication algorithms, dynamic data masking for PII, and schema normalization</text>
+      <g transform="translate(130, 75)">
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="150" height="32" rx="8" fill="#0F172A" stroke="#10A37F" stroke-opacity="0.5"/>
+          <text x="16" y="20" font-size="11.5" font-weight="600" fill="#E2E8F0">SQL CTE Rules</text>
+        </g>
+        <g transform="translate(165, 0)">
+          <rect x="0" y="0" width="170" height="32" rx="8" fill="#0F172A" stroke="#10A37F" stroke-opacity="0.5"/>
+          <text x="16" y="20" font-size="11.5" font-weight="600" fill="#E2E8F0">Streams &amp; Tasks</text>
+        </g>
+        <g transform="translate(350, 0)">
+          <rect x="0" y="0" width="160" height="32" rx="8" fill="#0F172A" stroke="#10A37F" stroke-opacity="0.5"/>
+          <text x="16" y="20" font-size="11.5" font-weight="600" fill="#E2E8F0">Python Pandas</text>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(385, 315)">
+      <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" marker-end="url(#arrowhead-teal)"/>
+      <rect x="-85" y="12" width="170" height="20" rx="10" fill="#0B1220" stroke="#38BDF8" stroke-opacity="0.6"/>
+      <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="0.8">STAR SCHEMA MODEL</text>
+    </g>
+    <g transform="translate(0, 360)">
+      <rect x="0" y="0" width="770" height="135" rx="14" fill="url(#card-grad-standard)" stroke="#2A3B5C" filter="url(#shadow-soft)"/>
+      <rect x="0" y="0" width="6" height="135" rx="3" fill="#F59E0B"/>
+      <rect x="24" y="20" width="90" height="22" rx="11" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-opacity="0.4"/>
+      <text x="69" y="35" class="font-mono" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle" letter-spacing="1">STAGE 03</text>
+      <text x="130" y="36" font-size="16" font-weight="700" fill="#F8FAFC">Analytics, BI &amp; Actionable Reporting</text>
+      <text x="130" y="56" font-size="12" font-weight="400" fill="#CBD5E1">Presents interactive dashboards, DAX metrics, shift optimization, and Cortex AI insights</text>
+      <g transform="translate(130, 75)">
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="170" height="32" rx="8" fill="#0F172A" stroke="#334155"/>
+          <text x="16" y="20" font-size="11.5" font-weight="600" fill="#E2E8F0">Power BI Reports</text>
+        </g>
+        <g transform="translate(185, 0)">
+          <rect x="0" y="0" width="160" height="32" rx="8" fill="#0F172A" stroke="#334155"/>
+          <text x="16" y="20" font-size="11.5" font-weight="600" fill="#E2E8F0">Executive MIS</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(40, 810)">
+    <rect x="0" y="0" width="770" height="220" rx="16" fill="url(#outcome-grad)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <g transform="translate(28, 24)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" fill-opacity="0.2"/>
+      <path d="M 6 10 L 9 13 L 15 7" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+      <text x="32" y="15" font-size="14" font-weight="800" fill="#10B981" letter-spacing="1">BUSINESS OUTCOMES &amp; IMPACT</text>
+      <text x="32" y="32" font-size="12" font-weight="400" fill="#94A3B8">Quantifiable ROI and operational performance gains achieved through this architecture</text>
+    </g>
+    <g transform="translate(28, 75)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="110" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="18" y="36" font-size="24" font-weight="800" fill="#10B981" letter-spacing="-0.5">99.9%</text>
+        <text x="18" y="56" font-size="12" font-weight="700" fill="#F8FAFC">Automated Ingestion</text>
+        <text x="18" y="74" font-size="10" font-weight="400" fill="#94A3B8">Replaced manual file batching</text>
+        <text x="18" y="88" font-size="10" font-weight="400" fill="#94A3B8">with automated CDC streams</text>
+      </g>
+      <g transform="translate(243, 0)">
+        <rect x="0" y="0" width="225" height="110" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="18" y="36" font-size="24" font-weight="800" fill="#38BDF8" letter-spacing="-0.5">100%</text>
+        <text x="18" y="56" font-size="12" font-weight="700" fill="#F8FAFC">PII Masking Compliance</text>
+        <text x="18" y="74" font-size="10" font-weight="400" fill="#94A3B8">Dynamic masking enforces zero</text>
+        <text x="18" y="88" font-size="10" font-weight="400" fill="#94A3B8">raw PII exposure across tables</text>
+      </g>
+      <g transform="translate(486, 0)">
+        <rect x="0" y="0" width="225" height="110" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="18" y="36" font-size="24" font-weight="800" fill="#F59E0B" letter-spacing="-0.5">0 Credits</text>
+        <text x="18" y="56" font-size="12" font-weight="700" fill="#F8FAFC">Wasted Expenditure</text>
+        <text x="18" y="74" font-size="10" font-weight="400" fill="#94A3B8">7-day cache checks prevent</text>
+        <text x="18" y="88" font-size="10" font-weight="400" fill="#94A3B8">duplicate processing runs</text>
+      </g>
+    </g>
+  </g>
+  <text x="425" y="1075" class="font-mono" font-size="10" font-weight="500" fill="#475569" text-anchor="middle">M. Haresh Kumar Portfolio • Standardized SVG Architecture Design System</text>
+</svg>

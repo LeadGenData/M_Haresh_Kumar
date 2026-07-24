@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1120" width="100%" height="100%" style="background-color: #0B1220;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap');
+
+      text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+    </style>
+
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad-standard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#131C2E"/>
+    </linearGradient>
+    
+    <linearGradient id="outcome-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="arrow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10A37F"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <filter id="shadow-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrowhead-teal" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10A37F"/>
+    </marker>
+
+    <!-- REUSABLE TECH ICONS -->
+    <g id="icon-python">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#3776AB" stroke-width="1.5"/>
+      <path d="M 17.5 8 C 12.5 8 12 10.5 12 10.5 L 12 13 L 17.5 13 L 17.5 14 L 10 14 C 10 14 7.5 14 7.5 19 C 7.5 24 10 24 10 24 L 11 24 L 11 22.5 C 11 20 13.5 20 13.5 20 L 19.5 20 C 19.5 20 22 20 22 17.5 L 22 10.5 C 22 10.5 22.5 8 17.5 8 Z" fill="#3776AB"/>
+      <circle cx="14.5" cy="10.5" r="1" fill="#FFFFFF"/>
+      <path d="M 18.5 28 C 23.5 28 24 25.5 24 25.5 L 24 23 L 18.5 23 L 18.5 22 L 26 22 C 26 26 23.5 26 23.5 26 L 22.5 26 L 22.5 27.5 C 22.5 30 20 30 20 30 L 14 30 C 14 30 11.5 30 11.5 27.5 L 11.5 20.5 C 11.5 20.5 11 18 16 18 Z" fill="#FFD43B"/>
+      <circle cx="21.5" cy="25.5" r="1" fill="#0F172A"/>
+    </g>
+
+    <g id="icon-outlook">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#0078D4" stroke-width="1.5"/>
+      <rect x="12" y="11" width="16" height="13" rx="2" fill="#0078D4"/>
+      <path d="M 12 11 L 20 17 L 28 11" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+      <circle cx="12" cy="18" r="6" fill="#107C41"/>
+      <text x="12" y="21" class="font-mono" font-size="8" font-weight="700" fill="#FFFFFF" text-anchor="middle">O</text>
+    </g>
+
+    <g id="icon-sheets">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#0F9D58" stroke-width="1.5"/>
+      <rect x="11" y="9" width="14" height="18" rx="2" fill="#0F9D58"/>
+      <path d="M 14 9 L 14 27 M 22 9 L 22 27 M 11 15 L 25 15 M 11 21 L 25 21" stroke="#A7F3D0" stroke-width="1" stroke-opacity="0.6"/>
+    </g>
+  </defs>
+
+  <rect width="850" height="1120" fill="url(#bg-gradient)"/>
+
+  <g opacity="0.04">
+    <path d="M 0 50 L 850 50 M 0 100 L 850 100 M 0 150 L 850 150 M 0 200 L 850 200 M 0 250 L 850 250 M 0 300 L 850 300 M 0 350 L 850 350 M 0 400 L 850 400 M 0 450 L 850 450 M 0 500 L 850 500 M 0 550 L 850 550 M 0 600 L 850 600 M 0 650 L 850 650 M 0 700 L 850 700 M 0 750 L 850 750 M 0 800 L 850 800 M 0 850 L 850 850 M 0 900 L 850 900 M 0 950 L 850 950 M 0 1000 L 850 1000" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- HEADER SECTION -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="210" height="26" rx="13" fill="#10A37F" fill-opacity="0.15" stroke="#10A37F" stroke-opacity="0.4"/>
+    <circle cx="14" cy="13" r="4" fill="#10A37F"/>
+    <text x="26" y="17" class="font-mono" font-size="11" font-weight="700" fill="#34D399" letter-spacing="1">PROJECT ARCHITECTURE 02</text>
+
+    <text x="0" y="60" font-size="25" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Multi-Account Outlook Email Engine &amp; CRM Sync</text>
+    <text x="0" y="82" font-size="13" font-weight="400" fill="#94A3B8">Python win32com COM API, Automated Account Rotator, Rate Limiter &amp; Google Sheets API</text>
+  </g>
+
+  <!-- STAGE 01: CONTACT INTAKE & TARGET MATRIX -->
+  <g transform="translate(40, 150)">
+    <rect x="0" y="0" width="770" height="150" rx="14" fill="url(#card-grad-standard)" stroke="#0F9D58" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="150" rx="3" fill="#0F9D58"/>
+
+    <rect x="24" y="18" width="135" height="22" rx="11" fill="#0F9D58" fill-opacity="0.2" stroke="#0F9D58" stroke-opacity="0.5"/>
+    <text x="91" y="33" class="font-mono" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle" letter-spacing="1">INTAKE &amp; CRM SOURCE</text>
+
+    <text x="175" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Prospect Matrix &amp; Google Sheets API Intake</text>
+    <text x="175" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Retrieves target contacts, customized email placeholders, and campaign status tags</text>
+
+    <!-- Sub-Cards Container -->
+    <g transform="translate(24, 65)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="210" height="65" rx="8" fill="#0B1220" stroke="#0F9D58" stroke-opacity="0.4"/>
+        <use href="#icon-sheets" x="12" y="14"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Google Sheets CRM</text>
+        <text x="56" y="44" class="font-mono" font-size="9.5" font-weight="600" fill="#94A3B8">gspread API client</text>
+      </g>
+
+      <path d="M 218 32 L 246 32" stroke="#0F9D58" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <g transform="translate(255, 0)">
+        <rect x="0" y="0" width="220" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Contact Validation</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Email format regex &amp; dedup</text>
+      </g>
+
+      <path d="M 483 32 L 511 32" stroke="#0F9D58" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <g transform="translate(520, 0)">
+        <rect x="0" y="0" width="202" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Queue Builder</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Pending campaign records</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 1 -->
+  <g transform="translate(425, 300)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowhead-teal)"/>
+    <rect x="-95" y="12" width="190" height="20" rx="10" fill="#0B1220" stroke="#10A37F" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="0.8">PYTHON DISPATCH ENGINE</text>
+  </g>
+
+  <!-- STAGE 02: PYTHON ROTATOR & OUTLOOK COM API ENGINE -->
+  <g transform="translate(40, 345)">
+    <rect x="0" y="0" width="770" height="160" rx="14" fill="url(#card-grad-standard)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="160" rx="3" fill="#10A37F"/>
+
+    <rect x="24" y="18" width="135" height="22" rx="11" fill="#10A37F" fill-opacity="0.2" stroke="#10A37F" stroke-opacity="0.5"/>
+    <text x="91" y="33" class="font-mono" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle" letter-spacing="1">CORE ROTATOR ENGINE</text>
+
+    <text x="175" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Account Rotator &amp; Provider Safety Guard</text>
+    <text x="175" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Enforces 100 emails/day rate limits per account with automatic profile switching</text>
+
+    <g transform="translate(24, 68)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#3776AB"/>
+        <use href="#icon-python" x="12" y="18"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">win32com.client API</text>
+        <text x="56" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Outlook COM App wrapper</text>
+        <text x="56" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#38BDF8">random.uniform(45, 90) delay</text>
+      </g>
+
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#10A37F" stroke-opacity="0.5"/>
+        <use href="#icon-outlook" x="12" y="18"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Sender Account 1</text>
+        <text x="56" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Cap: 100 msgs/day</text>
+        <text x="56" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#34D399">Active Queue [001-100]</text>
+      </g>
+
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="75" rx="8" fill="#0F172A" stroke="#0078D4" stroke-opacity="0.5"/>
+        <use href="#icon-outlook" x="12" y="18"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Sender Account 2</text>
+        <text x="56" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Cap: 100 msgs/day</text>
+        <text x="56" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#38BDF8">Rotates on Acc 1 limit</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 2 -->
+  <g transform="translate(425, 505)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <rect x="-100" y="12" width="200" height="20" rx="10" fill="#0B1220" stroke="#38BDF8" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="0.8">DELIVERY &amp; BOUNCE MONITORING</text>
+  </g>
+
+  <!-- STAGE 03: BOUNCE DETECTION & SYNC ENGINE -->
+  <g transform="translate(40, 550)">
+    <rect x="0" y="0" width="770" height="150" rx="14" fill="url(#card-grad-standard)" stroke="#2A3B5C" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="150" rx="3" fill="#EF4444"/>
+
+    <rect x="24" y="18" width="135" height="22" rx="11" fill="#EF4444" fill-opacity="0.2" stroke="#EF4444" stroke-opacity="0.5"/>
+    <text x="91" y="33" class="font-mono" font-size="10" font-weight="700" fill="#FCA5A5" text-anchor="middle" letter-spacing="1">BOUNCE &amp; STATUS ENGINE</text>
+
+    <text x="175" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Inbox Bounce Detection &amp; Audit Logger</text>
+    <text x="175" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Parses non-delivery reports (NDR) via Regex and records timestamps</text>
+
+    <g transform="translate(24, 65)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#EF4444" stroke-opacity="0.4"/>
+        <text x="16" y="26" font-size="12" font-weight="800" fill="#FCA5A5">NDR Regex Matcher</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Identifies 550 / 554 bounce codes</text>
+      </g>
+
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Delivery Timestamping</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Exact dispatch epoch logging</text>
+      </g>
+
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Audit Log Queue</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Buffered status payloads</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 3 -->
+  <g transform="translate(425, 700)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowhead-teal)"/>
+    <rect x="-95" y="12" width="190" height="20" rx="10" fill="#0B1220" stroke="#10A37F" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="0.8">AUTOMATED CRM WRITEBACK</text>
+  </g>
+
+  <!-- STAGE 04: GOOGLE SHEETS CRM WRITEBACK -->
+  <g transform="translate(40, 745)">
+    <rect x="0" y="0" width="770" height="130" rx="14" fill="url(#card-grad-standard)" stroke="#0F9D58" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="130" rx="3" fill="#0F9D58"/>
+
+    <rect x="24" y="18" width="125" height="22" rx="11" fill="#0F9D58" fill-opacity="0.2" stroke="#0F9D58" stroke-opacity="0.5"/>
+    <text x="86" y="33" class="font-mono" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle" letter-spacing="1">CRM WRITEBACK</text>
+
+    <text x="165" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Google Sheets CRM Automated Synchronization</text>
+    <text x="165" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Updates contact rows with Sent / Bounced status and exact timestamps</text>
+
+    <g transform="translate(130, 68)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="240" height="48" rx="8" fill="#0F172A" stroke="#0F9D58" stroke-opacity="0.5"/>
+        <use href="#icon-sheets" x="10" y="6"/>
+        <text x="54" y="28" font-size="12.5" font-weight="700" fill="#F8FAFC">Live CRM Status Update</text>
+      </g>
+
+      <g transform="translate(270, 0)">
+        <rect x="0" y="0" width="240" height="48" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.5"/>
+        <use href="#icon-python" x="10" y="6"/>
+        <text x="54" y="28" font-size="12.5" font-weight="700" fill="#F8FAFC">Pandas Dataframe Export</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- BUSINESS OUTCOMES SECTION -->
+  <g transform="translate(40, 895)">
+    <rect x="0" y="0" width="770" height="180" rx="16" fill="url(#outcome-grad)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    
+    <g transform="translate(24, 22)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" fill-opacity="0.2"/>
+      <path d="M 6 10 L 9 13 L 15 7" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+      <text x="32" y="15" font-size="14" font-weight="800" fill="#10B981" letter-spacing="1">BUSINESS OUTCOMES &amp; IMPACT</text>
+    </g>
+
+    <g transform="translate(24, 52)">
+      <!-- Metric 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#10B981" letter-spacing="-0.5">85% Reduction</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Manual Effort Saved</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Automated daily dispatch</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">&amp; real-time status logging</text>
+      </g>
+
+      <!-- Metric 2 -->
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#38BDF8" letter-spacing="-0.5">Zero Cap Breach</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Account Safety Enforced</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Daily caps (100/day/acc) protect</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">sender domain &amp; IP rating</text>
+      </g>
+
+      <!-- Metric 3 -->
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#F59E0B" letter-spacing="-0.5">100% CRM Sync</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Real-Time Accuracy</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Automated delivery timestamps</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">&amp; NDR bounce status updates</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- SVG FOOTER STAMP -->
+  <text x="425" y="1098" class="font-mono" font-size="10" font-weight="500" fill="#475569" text-anchor="middle">M. Haresh Kumar Portfolio • Multi-Account Outlook Email Engine</text>
+</svg>

@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1120" width="100%" height="100%" style="background-color: #0B1220;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap');
+
+      text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+    </style>
+
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad-standard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#131C2E"/>
+    </linearGradient>
+    
+    <linearGradient id="outcome-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="arrow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10A37F"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <filter id="shadow-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrowhead-teal" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10A37F"/>
+    </marker>
+
+    <!-- REUSABLE TECH ICONS -->
+    <g id="icon-sql">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+      <path d="M 10 12 C 10 9.5 26 9.5 26 12 C 26 14.5 10 14.5 10 12 Z" fill="none" stroke="#38BDF8" stroke-width="1.5"/>
+      <path d="M 10 12 L 10 24 C 10 26.5 26 26.5 26 24 L 26 12" fill="none" stroke="#38BDF8" stroke-width="1.5"/>
+      <path d="M 10 18 C 10 20.5 26 20.5 26 18" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2,2"/>
+    </g>
+
+    <g id="icon-powerbi">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="1.5"/>
+      <rect x="9" y="19" width="4.5" height="9" rx="1" fill="#F59E0B"/>
+      <rect x="15.5" y="14" width="4.5" height="14" rx="1" fill="#FBBF24"/>
+      <rect x="22.5" y="9" width="4.5" height="19" rx="1" fill="#F59E0B"/>
+    </g>
+
+    <g id="icon-powerquery">
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="1.5"/>
+      <path d="M 10 12 L 26 12 L 26 18 L 10 18 Z" fill="#F59E0B" fill-opacity="0.3"/>
+      <path d="M 14 18 L 22 18 L 22 24 L 14 24 Z" fill="#FBBF24"/>
+    </g>
+  </defs>
+
+  <rect width="850" height="1120" fill="url(#bg-gradient)"/>
+
+  <g opacity="0.04">
+    <path d="M 0 50 L 850 50 M 0 100 L 850 100 M 0 150 L 850 150 M 0 200 L 850 200 M 0 250 L 850 250 M 0 300 L 850 300 M 0 350 L 850 350 M 0 400 L 850 400 M 0 450 L 850 450 M 0 500 L 850 500 M 0 550 L 850 550 M 0 600 L 850 600 M 0 650 L 850 650 M 0 700 L 850 700 M 0 750 L 850 750 M 0 800 L 850 800 M 0 850 L 850 850 M 0 900 L 850 900 M 0 950 L 850 950 M 0 1000 L 850 1000" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- HEADER SECTION -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="210" height="26" rx="13" fill="#10A37F" fill-opacity="0.15" stroke="#10A37F" stroke-opacity="0.4"/>
+    <circle cx="14" cy="13" r="4" fill="#10A37F"/>
+    <text x="26" y="17" class="font-mono" font-size="11" font-weight="700" fill="#34D399" letter-spacing="1">PROJECT ARCHITECTURE 04</text>
+
+    <text x="0" y="60" font-size="25" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Hospital Emergency Room Capacity BI Dashboard</text>
+    <text x="0" y="82" font-size="13" font-weight="400" fill="#94A3B8">Power BI Analytics, Custom DAX Measures, Power Query ETL &amp; Dimensional Modeling</text>
+  </g>
+
+  <!-- STAGE 01: RAW INGESTION LAYER -->
+  <g transform="translate(40, 150)">
+    <rect x="0" y="0" width="770" height="150" rx="14" fill="url(#card-grad-standard)" stroke="#F59E0B" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="150" rx="3" fill="#F59E0B"/>
+
+    <rect x="24" y="18" width="135" height="22" rx="11" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-opacity="0.5"/>
+    <text x="91" y="33" class="font-mono" font-size="10" font-weight="700" fill="#FBBF24" text-anchor="middle" letter-spacing="1">ER DATA INGESTION</text>
+
+    <text x="175" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Hospital ER Admission &amp; Triage Feeds</text>
+    <text x="175" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Aggregates patient intake records, triage severity levels (1-5), and timestamp logs</text>
+
+    <!-- Sub-Cards Container -->
+    <g transform="translate(24, 65)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="210" height="65" rx="8" fill="#0B1220" stroke="#F59E0B" stroke-opacity="0.4"/>
+        <use href="#icon-sql" x="12" y="14"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Patient Log Database</text>
+        <text x="56" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Raw admission &amp; exit times</text>
+      </g>
+
+      <path d="M 218 32 L 246 32" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <g transform="translate(255, 0)">
+        <rect x="0" y="0" width="220" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Triage Levels (1-5)</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Critical to non-urgent scale</text>
+      </g>
+
+      <path d="M 483 32 L 511 32" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <g transform="translate(520, 0)">
+        <rect x="0" y="0" width="202" height="65" rx="8" fill="#0B1220" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Demographics</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Age groups &amp; referral type</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 1 -->
+  <g transform="translate(425, 300)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowhead-teal)"/>
+    <rect x="-95" y="12" width="190" height="20" rx="10" fill="#0B1220" stroke="#10A37F" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="0.8">POWER QUERY ETL PROCESS</text>
+  </g>
+
+  <!-- STAGE 02: POWER QUERY & DAX ENGINE -->
+  <g transform="translate(40, 345)">
+    <rect x="0" y="0" width="770" height="160" rx="14" fill="url(#card-grad-standard)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="160" rx="3" fill="#10A37F"/>
+
+    <rect x="24" y="18" width="135" height="22" rx="11" fill="#10A37F" fill-opacity="0.2" stroke="#10A37F" stroke-opacity="0.5"/>
+    <text x="91" y="33" class="font-mono" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle" letter-spacing="1">ETL &amp; DAX ENGINE</text>
+
+    <text x="175" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Data Transformation &amp; DAX Calculations</text>
+    <text x="175" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Normalizes date/time granularity &amp; builds custom DAX performance measures</text>
+
+    <g transform="translate(24, 68)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#F59E0B"/>
+        <use href="#icon-powerquery" x="12" y="18"/>
+        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Power Query ETL</text>
+        <text x="56" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Null handling &amp; timestamping</text>
+        <text x="56" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#FBBF24">M Language scripts</text>
+      </g>
+
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#10A37F" stroke-opacity="0.5"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">DAX Measures</text>
+        <text x="16" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Avg Wait Time, Admission %</text>
+        <text x="16" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#34D399">CALCULATE(AVERAGE(...))</text>
+      </g>
+
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="75" rx="8" fill="#0F172A" stroke="#2A3B5C"/>
+        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Hourly Patient Volume</text>
+        <text x="16" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">24-hour arrival window bins</text>
+        <text x="16" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#38BDF8">Capacity allocation</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 2 -->
+  <g transform="translate(425, 505)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <rect x="-95" y="12" width="190" height="20" rx="10" fill="#0B1220" stroke="#38BDF8" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="0.8">STAR SCHEMA DATA MODEL</text>
+  </g>
+
+  <!-- STAGE 03: DIMENSIONAL DATA MODEL -->
+  <g transform="translate(40, 550)">
+    <rect x="0" y="0" width="770" height="150" rx="14" fill="url(#card-grad-standard)" stroke="#38BDF8" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="150" rx="3" fill="#38BDF8"/>
+
+    <rect x="24" y="18" width="125" height="22" rx="11" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8" stroke-opacity="0.5"/>
+    <text x="86" y="33" class="font-mono" font-size="10" font-weight="700" fill="#7DD3FC" text-anchor="middle" letter-spacing="1">STAR SCHEMA</text>
+
+    <text x="165" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Dimensional Model (Fact &amp; Dimensions)</text>
+    <text x="165" y="53" font-size="12" font-weight="400" fill="#CBD5E1">High-performance relationships connecting admissions, triage, and time dimensions</text>
+
+    <g transform="translate(24, 65)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#38BDF8" stroke-opacity="0.4"/>
+        <text x="16" y="26" font-size="12" font-weight="800" fill="#7DD3FC" letter-spacing="0.3">FACT_ADMISSIONS</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Wait times, treatment duration</text>
+      </g>
+
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#38BDF8" stroke-opacity="0.4"/>
+        <text x="16" y="26" font-size="12" font-weight="800" fill="#F8FAFC" letter-spacing="0.3">DIM_TRIAGE</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Severity level 1 to 5 priority</text>
+      </g>
+
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="65" rx="8" fill="#0B1220" stroke="#38BDF8" stroke-opacity="0.4"/>
+        <text x="16" y="26" font-size="12" font-weight="800" fill="#F8FAFC" letter-spacing="0.3">DIM_TIME_SLOT</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Shift periods &amp; hourly buckets</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL ARROW 3 -->
+  <g transform="translate(425, 700)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="url(#arrow-grad)" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowhead-teal)"/>
+    <rect x="-105" y="12" width="210" height="20" rx="10" fill="#0B1220" stroke="#10A37F" stroke-opacity="0.6"/>
+    <text x="0" y="25" class="font-mono" font-size="9.5" font-weight="700" fill="#10A37F" text-anchor="middle" letter-spacing="0.8">INTERACTIVE VISUAL DASHBOARD</text>
+  </g>
+
+  <!-- STAGE 04: PRESENTATION LAYER -->
+  <g transform="translate(40, 745)">
+    <rect x="0" y="0" width="770" height="130" rx="14" fill="url(#card-grad-standard)" stroke="#F59E0B" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    <rect x="0" y="0" width="6" height="130" rx="3" fill="#F59E0B"/>
+
+    <rect x="24" y="18" width="135" height="22" rx="11" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-opacity="0.5"/>
+    <text x="91" y="33" class="font-mono" font-size="10" font-weight="700" fill="#FBBF24" text-anchor="middle" letter-spacing="1">POWER BI DASHBOARD</text>
+
+    <text x="175" y="34" font-size="16" font-weight="700" fill="#F8FAFC">Executive ER Capacity &amp; Patient Flow Visuals</text>
+    <text x="175" y="53" font-size="12" font-weight="400" fill="#CBD5E1">Interactive visual report for hospital administrators and shift planners</text>
+
+    <g transform="translate(130, 68)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="240" height="48" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-opacity="0.5"/>
+        <use href="#icon-powerbi" x="10" y="6"/>
+        <text x="54" y="28" font-size="12.5" font-weight="700" fill="#F8FAFC">Shift Heatmap Visuals</text>
+      </g>
+
+      <g transform="translate(270, 0)">
+        <rect x="0" y="0" width="240" height="48" rx="8" fill="#0F172A" stroke="#34D399" stroke-opacity="0.5"/>
+        <text x="16" y="28" font-size="12.5" font-weight="700" fill="#34D399">Triage Bottleneck Slicers</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- BUSINESS OUTCOMES SECTION -->
+  <g transform="translate(40, 895)">
+    <rect x="0" y="0" width="770" height="180" rx="16" fill="url(#outcome-grad)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
+    
+    <g transform="translate(24, 22)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" fill-opacity="0.2"/>
+      <path d="M 6 10 L 9 13 L 15 7" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+      <text x="32" y="15" font-size="14" font-weight="800" fill="#10B981" letter-spacing="1">BUSINESS OUTCOMES &amp; IMPACT</text>
+    </g>
+
+    <g transform="translate(24, 52)">
+      <!-- Metric 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#10B981" letter-spacing="-0.5">6 PM - 10 PM</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Peak Surge Window</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Identified key arrival hours</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">for optimal shift allocation</text>
+      </g>
+
+      <!-- Metric 2 -->
+      <g transform="translate(248, 0)">
+        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#38BDF8" letter-spacing="-0.5">Clear Visibility</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Triage Bottlenecks</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Granular wait-time breakdown</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">across severity 1-5 levels</text>
+      </g>
+
+      <!-- Metric 3 -->
+      <g transform="translate(496, 0)">
+        <rect x="0" y="0" width="226" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="32" font-size="22" font-weight="800" fill="#F59E0B" letter-spacing="-0.5">Data-Driven</text>
+        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Capacity Planning</text>
+        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Empowered administration</text>
+        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">with actionable BI metrics</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- SVG FOOTER STAMP -->
+  <text x="425" y="1098" class="font-mono" font-size="10" font-weight="500" fill="#475569" text-anchor="middle">M. Haresh Kumar Portfolio • Hospital Emergency Room Capacity BI Analysis</text>
+</svg>
