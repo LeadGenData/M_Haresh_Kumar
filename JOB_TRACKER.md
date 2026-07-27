@@ -8,6 +8,7 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 | Date Applied | Company Name | Job Title | Work Type | Salary Range | Primary Tech Stack | Status | Key Focus & Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **2026-07-27** | **RARR Technologies** | Sr. Snowflake Engineer - Matillion | Bangalore (Hybrid) | Up to ₹36 LPA (Exp: 18 LPA) | Snowflake, Medallion Architecture, Matillion ETL, Advanced SQL | 🟢 **Applied** | **High Value Target (Up to ₹36 LPA). 5 Openings.** Applied via RARR Portal. |
 | **2026-07-27** | **TEKsystems** | Snowflake Developer | Bengaluru (Hybrid) | Exp: 15–18 LPA | Snowflake, Medallion Pipelines, Advanced SQL, Data Quality Audit | 🟢 **Applied** | **95% Excellent Match. UG Graduation Not Required.** Applied via Naukri. |
 | **2026-07-27** | **Tradeweb** | Data Management Security Master (AVP) | Bangalore (Hybrid) | Undisclosed (AVP) | Data Operations Leadership, Quality Control, Data Validation, SQL, Python | 🟢 **Applied** | **98–100% Slam Dunk AVP Match.** Applied via Company Portal. |
 | **2026-07-27** | **Lacento Technologies** | Power BI Developer (SQL) | Bengaluru (Hybrid) | Undisclosed | Power BI, DAX, Power Query ETL, Advanced SQL, Data Modeling | 🟢 **Applied** | **98–100% Slam Dunk Match.** Applied via LinkedIn Easy Apply. |
@@ -28,6 +29,6 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 ## 📊 Applications Summary
 
-* **Total Applications Tracked:** 15
-* **Target Roles:** Snowflake Developer, AVP Data Management, Power BI Developer, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Data Analyst, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
+* **Total Applications Tracked:** 16
+* **Target Roles:** Sr. Snowflake Engineer, Snowflake Developer, AVP Data Management, Power BI Developer, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Data Analyst, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
 * **Primary Skill Pillars:** Data Operations Leadership (15+ Members), Power BI DAX & Semantic Modeling, Advanced SQL & Query Tuning, Snowflake Medallion Architecture, Python & Agentic AI Workflows
