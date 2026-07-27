@@ -8,6 +8,7 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 | Date Applied | Company Name | Job Title | Work Type | Salary Range | Primary Tech Stack | Status | Key Focus & Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **2026-07-27** | **TEKsystems** | Snowflake Developer | Bengaluru (Hybrid) | Exp: 15–18 LPA | Snowflake, Medallion Pipelines, Advanced SQL, Data Quality Audit | 🟢 **Applied** | **95% Excellent Match. UG Graduation Not Required.** Applied via Naukri. |
 | **2026-07-27** | **Tradeweb** | Data Management Security Master (AVP) | Bangalore (Hybrid) | Undisclosed (AVP) | Data Operations Leadership, Quality Control, Data Validation, SQL, Python | 🟢 **Applied** | **98–100% Slam Dunk AVP Match.** Applied via Company Portal. |
 | **2026-07-27** | **Lacento Technologies** | Power BI Developer (SQL) | Bengaluru (Hybrid) | Undisclosed | Power BI, DAX, Power Query ETL, Advanced SQL, Data Modeling | 🟢 **Applied** | **98–100% Slam Dunk Match.** Applied via LinkedIn Easy Apply. |
 | **2026-07-27** | **KPI Partners** | Senior Power BI Developer | Bangalore Urban (Hybrid) | Undisclosed | Power BI, DAX, Power Query ETL, SQL Server, Power Platform, Mentorship | 🟢 **Applied** | **92–95% Excellent Match.** Applied via LinkedIn. Contact: Vidya Patil. 0 days notice. |
@@ -19,14 +20,14 @@ This document tracks all active job applications, tech stack alignment, and stat
 | **2026-07-27** | **MoveInSync Technology** | Data Analyst | Bengaluru (In Office) | ₹7L – ₹9L | SQL, Excel, BI Dashboards, Operational Data, Python | 🟢 **Applied** | **98–100% Perfect Match.** Applied via Wellfound. Contact: Premkumar Harti. |
 | **2026-07-27** | **WebIndiaInc** | Data Automation Engineer | Remote | ₹6L – ₹12L | Data Analysis, Workflow Automation, ETL, Snowflake, Python, Claude Code | 🟢 **Applied** | **95–100% Perfect Match.** Applied via Wellfound. Key focus: ETL + Claude AI workflows. |
 | **2026-07-27** | **YBrantWorks** | Senior Data Specialist | Remote | Undisclosed | Microsoft Fabric, Data Factory, Lakehouse, Medallion Architecture, SQL | 🟢 **Applied** | Transition fit focusing on Medallion Data Architecture (Bronze/Silver/Gold) & Data Operations. |
-| **2026-07-25** | **TECHVINE** | Data Viz & Dashboard Dev | Remote | 13-15 LPA | Power BI, SQL, Security Observability | ⚪ **Withdrawn** | Direct CEO outreach (Jacob George). Passed due to weekend timeline setup. |
-| **2026-07-24** | **Two95 International** | Data Viz / Dashboard Dev | Remote | Contract | Power BI, SQL, BI Reporting | 🟡 **Interviewing** | Submitted to Client Manager by Recruiter Arun. |
+| **2026-07-25** | **TECHVINE** | Data Viz & Dashboard Dev | Remote | 13-15 LPA | Power BI, SQL, Security Observability | ⚪ **Withdrawn** | Passed / Withdrawn due to legitimacy verification concerns. |
+| **2026-07-24** | **Two95 International** | Data Viz / Dashboard Dev | Remote | Contract | Power BI, SQL, BI Reporting | ⚪ **Withdrawn** | Passed / Withdrawn due to legitimacy verification concerns. |
 | **2026-07-24** | **Innova ESI** | Data Modeler | Bengaluru | Official | Data Modeling, SQL, Reporting | 🟢 **Applied** | Application submitted. Follow-up after 31-Jul-2026. |
 
 ---
 
 ## 📊 Applications Summary
 
-* **Total Applications Tracked:** 14
-* **Target Roles:** AVP Data Management, Power BI Developer, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Data Analyst, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
+* **Total Applications Tracked:** 15
+* **Target Roles:** Snowflake Developer, AVP Data Management, Power BI Developer, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Data Analyst, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
 * **Primary Skill Pillars:** Data Operations Leadership (15+ Members), Power BI DAX & Semantic Modeling, Advanced SQL & Query Tuning, Snowflake Medallion Architecture, Python & Agentic AI Workflows
