@@ -8,7 +8,7 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 | Date Applied | Company Name | Job Title | Work Type | Salary Range | Primary Tech Stack | Status | Key Focus & Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **2026-07-27** | **Cision** | Data Operations Team Lead | 100% Remote (India) | Exp: 18 LPA | Team Leadership (15+), Data Governance, Quality Controls, Advanced SQL, Databricks | 🟢 **Applied** | **98–100% Slam Dunk Match. 100% Remote.** Applied via Company Portal / LinkedIn. |
+| **2026-07-27** | **Cision** | Data Operations Team Lead | 100% Remote (India) | Exp: 18 LPA | Team Leadership (15+), Data Governance, Quality Controls, Advanced SQL, Databricks | 🟢 **Applied** | **98–100% Slam Dunk Match. 100% Remote.** Greenhouse ATS Receipt Confirmed (`no-reply@eu.greenhouse-mail.io`). |
 | **2026-07-27** | **Exolios Group** | Remote Snowflake Architect | 100% Remote | Undisclosed (Architect) | Snowflake, Medallion Architecture, Data Quality, MDM, dbt, APIs | 🟢 **Applied** | **95% Match. 100% Remote (14+ Yrs Exp Match).** Direct email to Priyanka Kumari (`priyanka.k@exolios.com`). |
 | **2026-07-27** | **Happiest Minds Technologies** | Lead Data Engineer - Snowflake | Bengaluru (Hybrid) | Undisclosed (Lead) | Snowflake, Medallion Architecture, Advanced SQL, Power BI, Leadership | 🟢 **Applied** | **92% Excellent Match. Low Competition (26 applicants).** Applied via Company Site. |
 | **2026-07-27** | **RARR Technologies** | Sr. Snowflake Engineer (LTIMINDTREE) | Bangalore (Hybrid) | Up to ₹36 LPA (Exp: 18 LPA) | Snowflake, Medallion Architecture, Matillion ETL, Advanced SQL | 🟢 **Applied** | **High Value Target (Up to ₹36 LPA). End Client: LTIMINDTREE.** Applied via RARR Portal. |
