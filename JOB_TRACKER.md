@@ -1,0 +1,32 @@
+# 📋 Job Applications Tracker
+
+This document tracks all active job applications, tech stack alignment, and status updates for M. Haresh Kumar.
+
+---
+
+## 🚀 Active Applications Log
+
+| Date Applied | Company Name | Job Title | Work Type | Salary Range | Primary Tech Stack | Status | Key Focus & Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **2026-07-27** | **Tradeweb** | Data Management Security Master (AVP) | Bangalore (Hybrid) | Undisclosed (AVP) | Data Operations Leadership, Quality Control, Data Validation, SQL, Python | 🟢 **Applied** | **98–100% Slam Dunk AVP Match.** Applied via Company Portal. |
+| **2026-07-27** | **Lacento Technologies** | Power BI Developer (SQL) | Bengaluru (Hybrid) | Undisclosed | Power BI, DAX, Power Query ETL, Advanced SQL, Data Modeling | 🟢 **Applied** | **98–100% Slam Dunk Match.** Applied via LinkedIn Easy Apply. |
+| **2026-07-27** | **KPI Partners** | Senior Power BI Developer | Bangalore Urban (Hybrid) | Undisclosed | Power BI, DAX, Power Query ETL, SQL Server, Power Platform, Mentorship | 🟢 **Applied** | **92–95% Excellent Match.** Applied via LinkedIn. Contact: Vidya Patil. 0 days notice. |
+| **2026-07-27** | **YMinds.AI** | Senior Snowflake Data Engineer | Remote / Bangalore | Up to ₹30 LPA (Exp: 18 LPA) | Snowflake, Medallion Architecture, SQL, Python, Streams & Tasks | 🟢 **Applied** | **High Compensation Target (88% Match).** Applied via LinkedIn. 0 days notice. |
+| **2026-07-27** | **Bandhan Technologies** | AI Engineer | Bengaluru (Whitefield, Hybrid) | Undisclosed | Python, Agentic AI, LLMs, GenAI, APIs | 🟢 **Applied** | **AI Automation Fit (75%).** Applied via LinkedIn Easy Apply. Contact: JYOTIRAJ PANI. |
+| **2026-07-27** | **Bandhan Technologies** | Tech Lead – Data & Analytics | Bengaluru (Hybrid) | Undisclosed | Team Leadership, Power BI, SQL, Medallion Architecture, Governance | 🟢 **Applied** | **90–95% Excellent Match.** Applied via LinkedIn Easy Apply. Contact: Poornima Reddy. |
+| **2026-07-27** | **Dentira** | Data Analyst | Bangalore Urban (Hybrid) | ₹10L – ₹16L | SQL, Python ETL Pipelines, Data Anomaly Investigation, AI/LLM Workflows | 🟢 **Applied** | **Strong Match (85%).** Applied via Wellfound. Contact: RAMYA M RAIKAR. |
+| **2026-07-27** | **FxConsulting** | Senior Data Analyst | Bengaluru (In Office) | ₹15L – ₹28L | Advanced SQL, Query Optimization, RDBMS, Power BI, Python, LLM/Agentic AI | 🟢 **Applied** | **High Value Target (90% Match).** Applied via Wellfound. Contact: Sneha Sah. |
+| **2026-07-27** | **MoveInSync Technology** | Data Analyst | Bengaluru (In Office) | ₹7L – ₹9L | SQL, Excel, BI Dashboards, Operational Data, Python | 🟢 **Applied** | **98–100% Perfect Match.** Applied via Wellfound. Contact: Premkumar Harti. |
+| **2026-07-27** | **WebIndiaInc** | Data Automation Engineer | Remote | ₹6L – ₹12L | Data Analysis, Workflow Automation, ETL, Snowflake, Python, Claude Code | 🟢 **Applied** | **95–100% Perfect Match.** Applied via Wellfound. Key focus: ETL + Claude AI workflows. |
+| **2026-07-27** | **YBrantWorks** | Senior Data Specialist | Remote | Undisclosed | Microsoft Fabric, Data Factory, Lakehouse, Medallion Architecture, SQL | 🟢 **Applied** | Transition fit focusing on Medallion Data Architecture (Bronze/Silver/Gold) & Data Operations. |
+| **2026-07-25** | **TECHVINE** | Data Viz & Dashboard Dev | Remote | 13-15 LPA | Power BI, SQL, Security Observability | ⚪ **Withdrawn** | Direct CEO outreach (Jacob George). Passed due to weekend timeline setup. |
+| **2026-07-24** | **Two95 International** | Data Viz / Dashboard Dev | Remote | Contract | Power BI, SQL, BI Reporting | 🟡 **Interviewing** | Submitted to Client Manager by Recruiter Arun. |
+| **2026-07-24** | **Innova ESI** | Data Modeler | Bengaluru | Official | Data Modeling, SQL, Reporting | 🟢 **Applied** | Application submitted. Follow-up after 31-Jul-2026. |
+
+---
+
+## 📊 Applications Summary
+
+* **Total Applications Tracked:** 14
+* **Target Roles:** AVP Data Management, Power BI Developer, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Data Analyst, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
+* **Primary Skill Pillars:** Data Operations Leadership (15+ Members), Power BI DAX & Semantic Modeling, Advanced SQL & Query Tuning, Snowflake Medallion Architecture, Python & Agentic AI Workflows
