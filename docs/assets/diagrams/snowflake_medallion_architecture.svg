@@ -124,29 +124,29 @@
     <g transform="translate(24, 65)">
       <!-- Card 1 -->
       <g transform="translate(0, 0)">
-        <rect x="0" y="0" width="220" height="65" rx="8" fill="#0B1220" stroke="#451A03"/>
-        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Raw Payloads (JSON / CSV)</text>
-        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Multi-format transaction feeds</text>
+        <rect x="0" y="0" width="210" height="65" rx="8" fill="#0B1220" stroke="#451A03"/>
+        <text x="16" y="26" font-size="12.5" font-weight="700" fill="#F8FAFC">Raw Payloads (JSON / CSV)</text>
+        <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Multi-format transactional feeds</text>
       </g>
 
       <!-- Connection Arrow 1 -->
-      <path d="M 224 32 L 244 32" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M 218 32 L 246 32" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
 
       <!-- Card 2 -->
-      <g transform="translate(248, 0)">
-        <rect x="0" y="0" width="230" height="65" rx="8" fill="#0B1220" stroke="#F59E0B" stroke-opacity="0.4"/>
+      <g transform="translate(255, 0)">
+        <rect x="0" y="0" width="220" height="65" rx="8" fill="#0B1220" stroke="#F59E0B" stroke-opacity="0.4"/>
         <use href="#icon-snowflake" x="12" y="14"/>
-        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Snowflake Internal Stage</text>
-        <text x="56" y="45" class="font-mono" font-size="9.5" font-weight="600" fill="#FBBF24">COPY INTO @raw_stage</text>
+        <text x="56" y="26" font-size="12.5" font-weight="700" fill="#F8FAFC">Snowflake Internal Stage</text>
+        <text x="56" y="45" class="font-mono" font-size="10" font-weight="600" fill="#FBBF24">COPY INTO @raw_stage</text>
       </g>
 
       <!-- Connection Arrow 2 -->
-      <path d="M 482 32 L 492 32" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M 483 32 L 511 32" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
 
       <!-- Card 3 -->
-      <g transform="translate(496, 0)">
-        <rect x="0" y="0" width="226" height="65" rx="8" fill="#0B1220" stroke="#F59E0B" stroke-opacity="0.4"/>
-        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Bronze Table + Stream</text>
+      <g transform="translate(520, 0)">
+        <rect x="0" y="0" width="202" height="65" rx="8" fill="#0B1220" stroke="#F59E0B" stroke-opacity="0.4"/>
+        <text x="16" y="26" font-size="12.5" font-weight="700" fill="#F8FAFC">Bronze Table + Stream</text>
         <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Append-only CDC logging</text>
       </g>
     </g>
@@ -177,7 +177,7 @@
       <g transform="translate(0, 0)">
         <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#2A3B5C"/>
         <use href="#icon-sql" x="12" y="18"/>
-        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">QUALIFY Deduplication</text>
+        <text x="56" y="26" font-size="12.5" font-weight="700" fill="#F8FAFC">QUALIFY Deduplication</text>
         <text x="56" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Eliminates duplicate logs</text>
         <text x="56" y="58" class="font-mono" font-size="9" font-weight="600" fill="#10A37F">ROW_NUMBER() OVER (...)</text>
       </g>
@@ -186,15 +186,15 @@
       <g transform="translate(248, 0)">
         <rect x="0" y="0" width="225" height="75" rx="8" fill="#0F172A" stroke="#10A37F" stroke-opacity="0.5"/>
         <use href="#icon-snowflake" x="12" y="18"/>
-        <text x="56" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Dynamic Data Masking</text>
+        <text x="56" y="26" font-size="12.5" font-weight="700" fill="#F8FAFC">Dynamic Data Masking</text>
         <text x="56" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Anonymizes account #s</text>
-        <text x="56" y="58" class="font-mono" font-size="8.5" font-weight="600" fill="#34D399">MASKING POLICY account_mask</text>
+        <text x="56" y="58" class="font-mono" font-size="9" font-weight="600" fill="#34D399">MASKING POLICY account_mask</text>
       </g>
 
       <!-- Card 3 -->
       <g transform="translate(496, 0)">
         <rect x="0" y="0" width="226" height="75" rx="8" fill="#0F172A" stroke="#2A3B5C"/>
-        <text x="16" y="26" font-size="12" font-weight="700" fill="#F8FAFC">Silver Cleaned Tables</text>
+        <text x="16" y="26" font-size="12.5" font-weight="700" fill="#F8FAFC">Silver Cleaned Tables</text>
         <text x="16" y="42" font-size="10.5" font-weight="400" fill="#94A3B8">Normalized schemas ready</text>
         <text x="16" y="58" class="font-mono" font-size="9" font-weight="600" fill="#38BDF8">Cleaned &amp; secured</text>
       </g>
@@ -225,21 +225,21 @@
       <!-- Card 1 -->
       <g transform="translate(0, 0)">
         <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#EAB308" stroke-opacity="0.4"/>
-        <text x="16" y="26" font-size="12" font-weight="800" fill="#FDE047" letter-spacing="0.3">FACT_TRANSACTIONS</text>
+        <text x="16" y="26" font-size="12.5" font-weight="800" fill="#FDE047" letter-spacing="0.3">FACT_TRANSACTIONS</text>
         <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Amounts, timestamps, risk</text>
       </g>
 
       <!-- Card 2 -->
       <g transform="translate(248, 0)">
         <rect x="0" y="0" width="225" height="65" rx="8" fill="#0B1220" stroke="#EAB308" stroke-opacity="0.4"/>
-        <text x="16" y="26" font-size="12" font-weight="800" fill="#F8FAFC" letter-spacing="0.3">DIM_CUSTOMER</text>
+        <text x="16" y="26" font-size="12.5" font-weight="800" fill="#F8FAFC" letter-spacing="0.3">DIM_CUSTOMER</text>
         <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Demographics &amp; masked PII</text>
       </g>
 
       <!-- Card 3 -->
       <g transform="translate(496, 0)">
         <rect x="0" y="0" width="226" height="65" rx="8" fill="#0B1220" stroke="#EAB308" stroke-opacity="0.4"/>
-        <text x="16" y="26" font-size="12" font-weight="800" fill="#F8FAFC" letter-spacing="0.3">DIM_MERCHANT</text>
+        <text x="16" y="26" font-size="12.5" font-weight="800" fill="#F8FAFC" letter-spacing="0.3">DIM_MERCHANT</text>
         <text x="16" y="44" font-size="10.5" font-weight="400" fill="#94A3B8">Merchant categories &amp; geo</text>
       </g>
     </g>
@@ -284,39 +284,36 @@
   <g transform="translate(40, 895)">
     <rect x="0" y="0" width="770" height="180" rx="16" fill="url(#outcome-grad)" stroke="#10A37F" stroke-width="1.5" filter="url(#shadow-soft)"/>
     
-    <g transform="translate(24, 22)">
+    <g transform="translate(24, 24)">
       <circle cx="10" cy="10" r="10" fill="#10B981" fill-opacity="0.2"/>
       <path d="M 6 10 L 9 13 L 15 7" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
       <text x="32" y="15" font-size="14" font-weight="800" fill="#10B981" letter-spacing="1">BUSINESS OUTCOMES &amp; IMPACT</text>
     </g>
 
     <!-- 3 Metric Cards Grid -->
-    <g transform="translate(24, 52)">
+    <g transform="translate(24, 55)">
       <!-- Metric 1 -->
       <g transform="translate(0, 0)">
-        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
-        <text x="16" y="32" font-size="22" font-weight="800" fill="#10B981" letter-spacing="-0.5">Automated CDC</text>
-        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Continuous Ingestion</text>
-        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Replaced manual file batching</text>
-        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">with automated Snowflake Tasks</text>
+        <rect x="0" y="0" width="225" height="105" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="36" font-size="25" font-weight="800" fill="#10B981" letter-spacing="-0.5">Automated CDC</text>
+        <text x="16" y="56" font-size="12" font-weight="700" fill="#F8FAFC">Continuous Ingestion</text>
+        <text x="16" y="74" font-size="10.5" font-weight="400" fill="#94A3B8">Replaced manual file batching with automated Snowflake Tasks</text>
       </g>
 
       <!-- Metric 2 -->
       <g transform="translate(248, 0)">
-        <rect x="0" y="0" width="225" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
-        <text x="16" y="32" font-size="22" font-weight="800" fill="#38BDF8" letter-spacing="-0.5">100% PII Masked</text>
-        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Zero Exposure Risk</text>
-        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">Dynamic Data Masking policy</text>
-        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">secures account credentials</text>
+        <rect x="0" y="0" width="225" height="105" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="36" font-size="25" font-weight="800" fill="#38BDF8" letter-spacing="-0.5">100% PII Masked</text>
+        <text x="16" y="56" font-size="12" font-weight="700" fill="#F8FAFC">Zero Exposure Risk</text>
+        <text x="16" y="74" font-size="10.5" font-weight="400" fill="#94A3B8">Dynamic Data Masking secures credit card credentials</text>
       </g>
 
       <!-- Metric 3 -->
       <g transform="translate(496, 0)">
-        <rect x="0" y="0" width="226" height="108" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
-        <text x="16" y="32" font-size="22" font-weight="800" fill="#F59E0B" letter-spacing="-0.5">Clean Integrity</text>
-        <text x="16" y="50" font-size="11.5" font-weight="700" fill="#F8FAFC">Zero Duplicate Logs</text>
-        <text x="16" y="68" font-size="10" font-weight="500" fill="#94A3B8">QUALIFY ROW_NUMBER()</text>
-        <text x="16" y="84" font-size="10" font-weight="500" fill="#94A3B8">removes duplicate Silver logs</text>
+        <rect x="0" y="0" width="226" height="105" rx="10" fill="#0B1220" fill-opacity="0.75" stroke="#10A37F" stroke-opacity="0.3"/>
+        <text x="16" y="36" font-size="25" font-weight="800" fill="#F59E0B" letter-spacing="-0.5">Clean Integrity</text>
+        <text x="16" y="56" font-size="12" font-weight="700" fill="#F8FAFC">Zero Duplicate Logs</text>
+        <text x="16" y="74" font-size="10.5" font-weight="400" fill="#94A3B8">QUALIFY ROW_NUMBER() removes duplicate logs in Silver</text>
       </g>
     </g>
   </g>

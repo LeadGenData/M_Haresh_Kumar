@@ -29,6 +29,7 @@ Rather than relying on marketing copy or overhyped claims, I focus on building r
 | **Data Analyst** | 🟢 **Strong Fit** | SQL CTEs & Window Functions, Financial Analytics, Data Cleansing, Operational Metric Reporting |
 | **AI Automation Engineer** | 🟢 **Strong Fit** | Python Scripting (`pywin32`, `gspread`), Outlook COM API Email Automation, Claude & Cortex AI Workflow Integration |
 | **Analytics Engineer** | 🟢 **Good Fit** | Snowflake Medallion Architecture (Bronze/Silver/Gold), Streams & Tasks CDC, Dynamic Data Masking |
+| **Senior Data Specialist / Fabric Data Engineer** | 🔵 **Good Transition Fit** | Medallion Data Architecture (Bronze/Silver/Gold), Power Query ETL (Dataflows M Engine), Advanced SQL Transformations, Data Governance & Operations Leadership |
 
 ---
 
@@ -36,7 +37,7 @@ Rather than relying on marketing copy or overhyped claims, I focus on building r
 
 * **🟢 Advanced Experience:** Excel (Pivot Tables, Macros, Formula Automation), Data Validation, Data Cleansing, Quality Control & MIS Reporting, Operational Process Improvement, Team Leadership (15+ Members)
 * **🔵 Intermediate Competency:** SQL (Complex CTEs, Window Functions, Star Schema Data Modeling), Power BI (DAX Calculated Measures, Power Query ETL, Operational KPI Dashboards), REST API Integration
-* **🟡 Practical Learning:** Snowflake (Medallion Architecture: Bronze/Silver/Gold, Streams & Tasks, Dynamic Data Masking), Python (`pandas`, `pywin32`, Outlook COM API, `gspread`), AI Workflow Automation, Microsoft Fabric Concepts
+* **🟡 Practical Learning:** Snowflake (Medallion Architecture: Bronze/Silver/Gold, Streams & Tasks, Dynamic Data Masking), Python (`pandas`, `pywin32`, Outlook COM API, `gspread`), Microsoft Fabric (Lakehouse Medallion Patterns, Dataflows Gen2 Concepts), AI Workflow Automation
 * **⚪ Conceptual Understanding:** Azure Data Factory, SSIS ETL Pipelines, Informatica Data Integration
 
 ---
