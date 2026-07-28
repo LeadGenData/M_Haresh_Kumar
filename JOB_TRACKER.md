@@ -8,6 +8,7 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 | Date Applied | Company Name | Job Title | Work Type | Salary Range | Primary Tech Stack | Status | Key Focus & Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **2026-07-28** | **Perfect Job Accord** | Engineering Manager - AI | Bengaluru / Hyderabad | Undisclosed (Manager) | Team Leadership (14+ Yrs), Agentic AI, Model Context Protocol (MCP), Snowflake, SQL | 🟢 **Applied** | **88% AI Leadership Fit.** Direct email sent to Prudhvi (`prudhvi@perfectjobaccord.com`). |
 | **2026-07-28** | **UsefulBI Corporation** | PowerBI Developer (Immediate) | Bengaluru (Hybrid) | Undisclosed | Power BI, DAX, Power Query M, Power BI Service, RLS/OLS, Python, SQL | 🟢 **Applied** | **98% Match. Immediate Joiner.** Contact: Prriya Panigrahi. Applied via LinkedIn. |
 | **2026-07-28** | **Recrew AI** | Senior Analytics Engineer | Bengaluru (On-site) | Undisclosed | Analytics Engineering, Advanced SQL, Data Modeling, Star/Snowflake Schema | 🟢 **Applied** | **90% Match.** Applied via LinkedIn. |
 | **2026-07-28** | **MULLY TECHNOLOGY** | Senior SQL Developer - Azure/Snowflake | Secunderābād / Hyderabad | Up to 10 LPA | SQL, Azure Data Factory, Snowflake, Streams & Tasks, Data Modeling | 🟢 **Applied** | **92% Match. Immediate Joiner.** Email sent to `hr@mullytech.in`. Applied via LinkedIn. |
@@ -36,6 +37,6 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 ## 📊 Applications Summary
 
-* **Total Applications Tracked:** 23
-* **Target Roles:** Power BI Developer (Immediate), Senior Analytics Engineer, Senior SQL Developer, Data Analyst, Data Operations Team Lead, Remote Snowflake Architect, Lead Data Engineer, Sr. Snowflake Engineer (LTIMindtree), Snowflake Developer, AVP Data Management, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
+* **Total Applications Tracked:** 24
+* **Target Roles:** Engineering Manager - AI, Power BI Developer (Immediate), Senior Analytics Engineer, Senior SQL Developer, Data Analyst, Data Operations Team Lead, Remote Snowflake Architect, Lead Data Engineer, Sr. Snowflake Engineer (LTIMindtree), Snowflake Developer, AVP Data Management, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
 * **Primary Skill Pillars:** Data Operations Leadership (15+ Members), Power BI DAX & Semantic Modeling, Advanced SQL & Query Tuning, Snowflake Medallion Architecture, Python & Agentic AI Workflows
