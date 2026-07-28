@@ -8,6 +8,7 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 | Date Applied | Company Name | Job Title | Work Type | Salary Range | Primary Tech Stack | Status | Key Focus & Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **2026-07-28** | **NAM Info** | Snowflake Developer | Bengaluru (Hybrid) | 8-12 LPA | Snowflake SQL, Snowpipe, Streams & Tasks, Medallion Architecture, Python | 🟢 **Applied** | **98–100% Slam Dunk Match. Early Applicant (<10 applicants), 5 Openings.** Applied via Naukri. |
 | **2026-07-28** | **Apptad** | Snowflake Admin/DBA | Bengaluru (Hybrid) | Undisclosed | Snowflake RBAC, Cortex AI, Dynamic PII Masking, Warehouse Cost Tuning, Advanced SQL | 🟢 **Applied** | **92% Match.** Applied via Naukri. |
 | **2026-07-28** | **Mogi I/O** | Snowflake Architect | 100% Remote | Undisclosed (SaaS) | Snowflake, Medallion Architecture, Data Governance, Data Quality, SQL, Python, dbt | 🟢 **Applied** | **92% Match. 100% Remote SaaS Venture.** Applied via Wellfound / SaaS Portal. |
 | **2026-07-28** | **Perfect Job Accord** | Engineering Manager - AI | Bengaluru / Hyderabad | Undisclosed (Manager) | Team Leadership (14+ Yrs), Agentic AI, Model Context Protocol (MCP), Snowflake, SQL | 🟢 **Applied** | **88% AI Leadership Fit.** Direct email sent to Prudhvi (`prudhvi@perfectjobaccord.com`). |
@@ -39,6 +40,6 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 ## 📊 Applications Summary
 
-* **Total Applications Tracked:** 26
-* **Target Roles:** Snowflake Admin/DBA, Snowflake Architect (100% Remote), Engineering Manager - AI, Power BI Developer (Immediate), Senior Analytics Engineer, Senior SQL Developer, Data Analyst, Data Operations Team Lead, Lead Data Engineer, Sr. Snowflake Engineer (LTIMindtree), Snowflake Developer, AVP Data Management, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
+* **Total Applications Tracked:** 27
+* **Target Roles:** Snowflake Developer (NAM Info - Early Applicant), Snowflake Admin/DBA, Snowflake Architect (100% Remote), Engineering Manager - AI, Power BI Developer (Immediate), Senior Analytics Engineer, Senior SQL Developer, Data Analyst, Data Operations Team Lead, Lead Data Engineer, Sr. Snowflake Engineer (LTIMindtree), Snowflake Developer, AVP Data Management, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
 * **Primary Skill Pillars:** Data Operations Leadership (15+ Members), Power BI DAX & Semantic Modeling, Advanced SQL & Query Tuning, Snowflake Medallion Architecture, Python & Agentic AI Workflows
