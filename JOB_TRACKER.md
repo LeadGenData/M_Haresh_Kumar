@@ -8,6 +8,10 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 | Date Applied | Company Name | Job Title | Work Type | Salary Range | Primary Tech Stack | Status | Key Focus & Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **2026-07-28** | **UsefulBI Corporation** | PowerBI Developer (Immediate) | Bengaluru (Hybrid) | Undisclosed | Power BI, DAX, Power Query M, Power BI Service, RLS/OLS, Python, SQL | 🟢 **Applied** | **98% Match. Immediate Joiner.** Contact: Prriya Panigrahi. Applied via LinkedIn. |
+| **2026-07-28** | **Recrew AI** | Senior Analytics Engineer | Bengaluru (On-site) | Undisclosed | Analytics Engineering, Advanced SQL, Data Modeling, Star/Snowflake Schema | 🟢 **Applied** | **90% Match.** Applied via LinkedIn. |
+| **2026-07-28** | **MULLY TECHNOLOGY** | Senior SQL Developer - Azure/Snowflake | Secunderābād / Hyderabad | Up to 10 LPA | SQL, Azure Data Factory, Snowflake, Streams & Tasks, Data Modeling | 🟢 **Applied** | **92% Match. Immediate Joiner.** Email sent to `hr@mullytech.in`. Applied via LinkedIn. |
+| **2026-07-28** | **Kamakhya Analytics** | Data Analyst | Bengaluru (Hybrid) | Undisclosed | Automated Workflows, Data Governance, Quality Checks, SQL, Power BI, Excel VBA | 🟢 **Applied** | **95% Match.** Applied via LinkedIn. |
 | **2026-07-27** | **Cision** | Data Operations Team Lead | 100% Remote (India) | Exp: 18 LPA | Team Leadership (15+), Data Governance, Quality Controls, Advanced SQL, Databricks | 🟢 **Applied** | **98–100% Slam Dunk Match. 100% Remote.** Greenhouse ATS Receipt Confirmed (`no-reply@eu.greenhouse-mail.io`). |
 | **2026-07-27** | **Exolios Group** | Remote Snowflake Architect | 100% Remote | Undisclosed (Architect) | Snowflake, Medallion Architecture, Data Quality, MDM, dbt, APIs | 🟢 **Applied** | **95% Match. 100% Remote (14+ Yrs Exp Match).** Direct email to Priyanka Kumari (`priyanka.k@exolios.com`). |
 | **2026-07-27** | **Happiest Minds Technologies** | Lead Data Engineer - Snowflake | Bengaluru (Hybrid) | Undisclosed (Lead) | Snowflake, Medallion Architecture, Advanced SQL, Power BI, Leadership | 🟢 **Applied** | **92% Excellent Match. Low Competition (26 applicants).** Applied via Company Site. |
@@ -32,6 +36,6 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 ## 📊 Applications Summary
 
-* **Total Applications Tracked:** 19
-* **Target Roles:** Data Operations Team Lead, Remote Snowflake Architect, Lead Data Engineer, Sr. Snowflake Engineer (LTIMindtree), Snowflake Developer, AVP Data Management, Power BI Developer, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Data Analyst, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
+* **Total Applications Tracked:** 23
+* **Target Roles:** Power BI Developer (Immediate), Senior Analytics Engineer, Senior SQL Developer, Data Analyst, Data Operations Team Lead, Remote Snowflake Architect, Lead Data Engineer, Sr. Snowflake Engineer (LTIMindtree), Snowflake Developer, AVP Data Management, Senior Power BI Developer, Senior Snowflake Data Engineer, AI Engineer, Tech Lead – Data & Analytics, Senior Data Analyst, Data Automation Engineer, Senior Data Specialist, Data Modeler
 * **Primary Skill Pillars:** Data Operations Leadership (15+ Members), Power BI DAX & Semantic Modeling, Advanced SQL & Query Tuning, Snowflake Medallion Architecture, Python & Agentic AI Workflows
