@@ -8,7 +8,7 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 | Date Applied | Company Name | Job Title | Work Type | Salary Range | Primary Tech Stack | Status | Key Focus & Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **2026-07-28** | **VSquare Systems** | Lead Data Engineer | Bangalore / Remote | Undisclosed | Data Modeling Lead, Snowflake, Data Quality, SQL, Python | 🟢 **Applied** | **90% Match. 100% Remote Option.** Contact: Sonal Thakre. Applied via LinkedIn Easy Apply. |
+| **2026-07-28** | **VSquare Systems** | Lead Data Engineer | Bangalore / Remote | Undisclosed | Data Modeling Lead, Snowflake, Data Quality, SQL, Python | 🟢 **Applied** | **90% Match. 100% Remote Option.** Official LinkedIn Receipt Confirmed. Contact: Sonal Thakre. |
 | **2026-07-28** | **Intellics Global Services** | Snowflake Developer | Bengaluru / Hyderabad | 12-22 LPA | Snowflake, Complex SQL, ETL Pipelines, Query Tuning | 🟢 **Applied** | **98–100% Slam Dunk Match. 12–22 LPA Target. Immediate Notice Match.** Contact: `9944747956`. Applied via Naukri. |
 | **2026-07-28** | **NAM Info** | Snowflake Developer | Bengaluru (Hybrid) | 8-12 LPA | Snowflake SQL, Snowpipe, Streams & Tasks, Medallion Architecture, Python | 🟢 **Applied** | **98–100% Slam Dunk Match. Early Applicant (<10 applicants), 5 Openings.** Applied via Naukri. |
 | **2026-07-28** | **Apptad** | Snowflake Admin/DBA | Bengaluru (Hybrid) | Undisclosed | Snowflake RBAC, Cortex AI, Dynamic PII Masking, Warehouse Cost Tuning, Advanced SQL | 🟢 **Applied** | **92% Match.** Applied via Naukri. |
