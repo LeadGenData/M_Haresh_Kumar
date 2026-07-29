@@ -1,2 +1,23 @@
-
+# IDE & System
 .agents/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local Private Data & Trackers (Local Only)
+JOB_TRACKER.md
+Job_Applications_Tracker.csv
+Job_Application_Tracker_Updated.xlsx
+*.xlsx
+*.csv
+*.xls
+*.pdf
+
+# Local Python Scripts & Temp Data
+ai_data_cleaner.py
+messy_sales_data*
+multi_agent_data_pipeline.py
+fast_scan.py
+scan_and_split_campaign.py
+clean_outbox_and_restore.py
+check_auto_rest.py
