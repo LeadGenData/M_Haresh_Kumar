@@ -1,0 +1,104 @@
+
+--- Page 1 ---
+Global11 demo 
+This document describes how Global11_demo Data Modeler design was built. 
+I. Schema setup 
+Install global schema as it’s described here 
+http://www.oracle.com/technetwork/database/options/olap/global-11g-readme-082667.html 
+and using data here http://www.oracle.com/technetwork/database/enterprise-
+edition/downloads/global-11g-schema-1-128202.zip 
+Do not create analytic workspace. 
+Additional privileges need to be granted to used user for Oracle 12 c : 
+grant create view, create cube, create cube dimension, create cube measure folder to global; 
+Changes introduced to GLOBAL schema: 
+1) Two new columns added in UNITS_FACT table - to illustrate role playing dimensions 
+alter table global.units_fact add SHIP_MONTH_ID varchar2(7); 
+alter table global.units_fact add DELIVERY_MONTH_ID varchar2(7); 
+update  global.units_fact set SHIP_MONTH_ID = MONTH_ID; 
+update  global.units_fact set DELIVERY_MONTH_ID = MONTH_ID; 
+2) New table is created using following statement: 
+create table GLOBAL.cust_account AS 
+SELECT GLOBAL.CUSTOMER_DIM.SHIP_TO_ID, 
+  GLOBAL.CUSTOMER_DIM.SHIP_TO_DSC, 
+  GLOBAL.CUSTOMER_DIM.SHIP_TO_DSC_FRENCH, 
+  GLOBAL.CUSTOMER_DIM.SHIP_TO_DSC_DUTCH, 
+  GLOBAL.ACCOUNT.ACCOUNT_ID, 
+  GLOBAL.ACCOUNT.FIRSTNAME, 
+  GLOBAL.ACCOUNT.LASTNAME, 
+  GLOBAL.ACCOUNT.ADDRESS, 
+  GLOBAL.ACCOUNT.ADDRESS2, 
+  GLOBAL.ACCOUNT.CITY, 
+--- Page 2 ---
+  GLOBAL.ACCOUNT.STATE_PROV, 
+  GLOBAL.ACCOUNT.COUNTRY, 
+  GLOBAL.ACCOUNT.ZIP_PC, 
+  GLOBAL.ACCOUNT.PHONE, 
+  GLOBAL.ACCOUNT.FAX, 
+  GLOBAL.ACCOUNT.EMAIL 
+FROM GLOBAL.CUSTOMER_DIM 
+INNER JOIN GLOBAL.ACCOUNT 
+ON GLOBAL.CUSTOMER_DIM.ACCOUNT_ID = GLOBAL.ACCOUNT.ACCOUNT_ID ; 
+3)  
+II. Building the design 
+1. Import Created schema (GLOBAL) 
+2. Engineer relational model to logical model 
+3. Create Dimensional model 
+4. Dimension is created using “New Dimension” icon on tool bar. Dimension can be set as time 
+dimension. Hierarchies in dimension are created in rollup manner connecting base level of 
+dimension (lowest granularity level) to dimension shape on diagram. Each sequence of levels 
+(starting from base level) constitutes a hierarchy belonging to that dimension. One level can 
+belong to several dimensions. 
+5. Hierarchy is created when dimension shape is connected (using “New Link”) to base level.  
+ 
+Levels are connected (in level based hierarchies) using “New Link” tool. 
+6. Level – level entity need to be defined, and also – definition includes level key, descriptive 
+attributes and calculated attributes. Mapping of optional short description and long description 
+attributes can be defined and for level belonging to time dimension mapping of mandatory 
+‘time span” and “time end” attributes should be defined. 
+--- Page 3 ---
+7. Link – used to define hierarchies and dimension usage. Child to parent attributes can be defined 
+when link connects levels defined on different entities 
+ 
+8. Value based hierarchy  - used level to define level key, parent key and descriptive attributes 
+ 
+9. Ragged hierarchy – corresponds to skip level hierarchy in Oracle OLAP – use “New Ragged 
+Hierarchy Link” tool in order to mark and represent a “jump” over level(s) – dashed green link 
+below. 
+ 
+Ragged hierarchy is exported to Oracle OLAP as ragged and “skip level” hierarchy. 
+10. Dimension usage (link between cube and dimension) – defines child to parent attributes (join of 
+fact entity to base level of dimension), whether it’s role playing dimension and other related 
+--- Page 4 ---
+properties 
+ 
+11. Cube – fact entities, measures and pre-compute of the cube can be defined 
+pre-compute: 
+1) 
+ 
+2) 
+--- Page 5 ---
+ 
+measures: 
+ 
+12. Measure –  
+basic measure – mapped to attribute in fact entity 
+--- Page 6 ---
+ 
+summary levels for basic measure can be defined – not exported to Oracle OLAP 
+ 
+--- Page 7 ---
+calculated measure 
+ 
+13. Calculated attribute (level) 
+ 
+--- Page 8 ---
+14. Export to Oracle AW 
+ 
+if AW with given name exist it’ll be dropped first and then recreated, metadata will be exported 
+to file if file name is provided. Export to file only – still needs connection to Oracle database 
+because metadata are created but not committed to database. 
+“Default schema” can be set if there are objects in relational/physical model without schema 
+defined, if not set then schema from connection is used to resolve objects without schema in 
+the model. 
+Can be selected which cubes to be exported. 
+15.  
