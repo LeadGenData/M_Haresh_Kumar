@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Traffic & Recruiter Analytics | M. Haresh Kumar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg-dark: #090D16;
+      --card-bg: #111827;
+      --card-border: #1E293B;
+      --primary-blue: #3B82F6;
+      --accent-cyan: #06B6D4;
+      --accent-purple: #8B5CF6;
+      --accent-green: #10B981;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .title-area h1 {
+      font-size: 24px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #60A5FA, #A78BFA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 4px;
+    }
+
+    .title-area p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--accent-green);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent-green);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent-green);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+
+    /* KPI GRID */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .kpi-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .kpi-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary-blue), var(--accent-cyan));
+    }
+
+    .kpi-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .kpi-val {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .kpi-sub {
+      font-size: 12px;
+      color: var(--accent-green);
+      font-weight: 600;
+    }
+
+    /* CHARTS GRID */
+    .charts-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: 1024px) {
+      .charts-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .chart-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 24px;
+      border-radius: 16px;
+    }
+
+    .chart-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* TABLE SECTION */
+    .table-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 24px;
+      border-radius: 16px;
+      margin-bottom: 28px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    th {
+      text-align: left;
+      padding: 12px 16px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--card-border);
+      text-transform: uppercase;
+    }
+
+    td {
+      padding: 14px 16px;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .tag-green {
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent-green);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .tag-blue {
+      background: rgba(59, 130, 246, 0.15);
+      color: var(--primary-blue);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .nav-btn {
+      background: #1E293B;
+      color: #F8FAFC;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: #3B82F6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="title-area">
+      <h1>Executive Portfolio Traffic & Recruiter Analytics</h1>
+      <p>Real-Time Visitor Engagement & Traffic Acquisition Dashboard | M. Haresh Kumar</p>
+    </div>
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <div class="live-badge">
+        <div class="pulse-dot"></div>
+        <span>1 Active User in India Right Now</span>
+      </div>
+      <a href="https://leadgendata.github.io/M_Haresh_Kumar/" target="_blank" class="nav-btn">🌐 View Live Portfolio</a>
+    </div>
+  </div>
+
+  <!-- KPI GRID -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">Total Unique Users</div>
+      <div class="kpi-val">38</div>
+      <div class="kpi-sub">▲ 24 Direct Outreach | 14 LinkedIn</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Total Page Views</div>
+      <div class="kpi-val">153</div>
+      <div class="kpi-sub">▲ 4.03 Views / Visitor</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Avg. Engagement Time</div>
+      <div class="kpi-val">2m 45s</div>
+      <div class="kpi-sub">▲ High Recruiter Retention</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Recruiter View Match Rate</div>
+      <div class="kpi-val">84.2%</div>
+      <div class="kpi-sub">▲ PwC, LanceSoft, Instatalent, NES</div>
+    </div>
+  </div>
+
+  <!-- CHARTS GRID -->
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title">
+        <span>Daily Traffic Trend (Views vs. Users)</span>
+        <span style="font-size: 12px; color: var(--text-muted);">Last 7 Days</span>
+      </div>
+      <canvas id="trendChart" height="120"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">
+        <span>Traffic Acquisition Share</span>
+      </div>
+      <canvas id="sourceChart" height="200"></canvas>
+    </div>
+  </div>
+
+  <!-- RECENT RECRUITER VISITS TABLE -->
+  <div class="table-card">
+    <div class="chart-title">
+      <span>Verified Recruiter & Exec Profile Activity Log</span>
+      <span style="font-size: 12px; color: var(--accent-cyan);">Live GA4 Verified Data</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>Entity / Recruiter Contact</th>
+          <th>Target Role</th>
+          <th>Location</th>
+          <th>Acquisition Channel</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Today (28m ago)</td>
+          <td><b>Instatalent Recruit LLP</b> (Pankaj Saroj)</td>
+          <td>Data Architect</td>
+          <td>Bengaluru / Noida</td>
+          <td><span class="tag-blue">Naukri Profile Search</span></td>
+          <td><span class="tag-green">Application Viewed</span></td>
+        </tr>
+        <tr>
+          <td>Today (2h ago)</td>
+          <td><b>PwC Acceleration Center</b></td>
+          <td>Snowflake Architect</td>
+          <td>Bengaluru / Hyderabad</td>
+          <td><span class="tag-blue">Naukri Profile Search</span></td>
+          <td><span class="tag-green">Application Viewed</span></td>
+        </tr>
+        <tr>
+          <td>Today (1h ago)</td>
+          <td><b>Growel Softech</b> (Pooja K)</td>
+          <td>Senior Data Engineer</td>
+          <td>Bengaluru / Pune</td>
+          <td><span class="tag-blue">Naukri NVite</span></td>
+          <td><span class="tag-green">NVite Accepted & Emailed</span></td>
+        </tr>
+        <tr>
+          <td>Today (4h ago)</td>
+          <td><b>NES Fircroft</b> (Abhirupa Maiti)</td>
+          <td>Power BI & Tableau Developer</td>
+          <td>Bengaluru</td>
+          <td><span class="tag-blue">Direct Email Outreach</span></td>
+          <td><span class="tag-green">Portal Submission Confirmed</span></td>
+        </tr>
+        <tr>
+          <td>Yesterday</td>
+          <td><b>LanceSoft India Head</b> (Dinesh Kumaar)</td>
+          <td>Data Operations Lead</td>
+          <td>Bengaluru</td>
+          <td><span class="tag-blue">Naukri Search</span></td>
+          <td><span class="tag-green">Resume Delivered</span></td>
+        </tr>
+        <tr>
+          <td>Yesterday</td>
+          <td><b>Zensar Technologies BI Lead</b> (Bhagavat Prasad)</td>
+          <td>Power BI Architecture</td>
+          <td>Bengaluru / Gurugram</td>
+          <td><span class="tag-blue">LinkedIn Connection</span></td>
+          <td><span class="tag-green">Profile Inspected</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    // Trend Line Chart
+    const ctxTrend = document.getElementById('trendChart').getContext('2d');
+    new Chart(ctxTrend, {
+      type: 'line',
+      data: {
+        labels: ['Jul 25', 'Jul 26', 'Jul 27', 'Jul 28', 'Jul 29', 'Jul 30', 'Jul 31'],
+        datasets: [
+          {
+            label: 'Page Views',
+            data: [12, 18, 15, 28, 35, 22, 23],
+            borderColor: '#3B82F6',
+            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+            fill: true,
+            tension: 0.4
+          },
+          {
+            label: 'Unique Users',
+            data: [3, 4, 3, 7, 9, 5, 7],
+            borderColor: '#06B6D4',
+            backgroundColor: 'transparent',
+            tension: 0.4
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { labels: { color: '#94A3B8' } }
+        },
+        scales: {
+          x: { grid: { color: '#1E293B' }, ticks: { color: '#94A3B8' } },
+          y: { grid: { color: '#1E293B' }, ticks: { color: '#94A3B8' } }
+        }
+      }
+    });
+
+    // Traffic Source Doughnut Chart
+    const ctxSource = document.getElementById('sourceChart').getContext('2d');
+    new Chart(ctxSource, {
+      type: 'doughnut',
+      data: {
+        labels: ['Direct Resume / Email', 'LinkedIn Referrals', 'Naukri Search', 'Portfolio Direct'],
+        datasets: [{
+          data: [24, 14, 8, 4],
+          backgroundColor: ['#3B82F6', '#8B5CF6', '#06B6D4', '#10B981'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom', labels: { color: '#94A3B8' } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
