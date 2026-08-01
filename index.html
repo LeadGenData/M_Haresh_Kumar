@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GV07KQZ3XY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-GV07KQZ3XY');
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M. Haresh Kumar | Senior Data Operations Lead &amp; Power BI Developer | SQL • DAX • Snowflake Medallion • Python</title>
-  <meta name="description" content="14+ years improving business operations through analytics, reporting, and workflow automation using SQL, Power BI, Snowflake, and Python." />
+  <title>M. Haresh Kumar | Senior Data Operations Lead &amp; Power BI Developer | SQL • DAX • Snowflake Medallion •
+    Python</title>
+  <meta name="description"
+    content="14+ years improving business operations through analytics, reporting, and workflow automation using SQL, Power BI, Snowflake, and Python." />
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <style>
     * {
@@ -26,6 +31,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       background: radial-gradient(circle at top left, rgba(254, 215, 170, 0.28) 0%, rgba(251, 146, 60, 0.15) 35%, #0f172a 85%);
@@ -35,6 +41,7 @@
       position: relative;
       line-height: 1.6;
     }
+
     a {
       text-decoration: none;
       color: inherit;
@@ -49,10 +56,19 @@
       transform: translateY(0);
       animation: parallaxMove 18s ease-in-out infinite;
     }
+
     @keyframes parallaxMove {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-30px); }
-      100% { transform: translateY(0); }
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-30px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
     }
 
     /* FLOATING GEOMETRIC SHAPES */
@@ -66,6 +82,7 @@
       z-index: -1;
       animation: floatShape 16s ease-in-out infinite;
     }
+
     .shape.circle {
       border-radius: 50%;
       width: 90px;
@@ -73,15 +90,33 @@
       background: radial-gradient(circle, rgba(254, 215, 170, 0.2), rgba(251, 146, 60, 0.1));
       animation: floatShape2 14s ease-in-out infinite;
     }
+
     @keyframes floatShape {
-      0% { transform: translate(0, 0); }
-      50% { transform: translate(40px, -60px); }
-      100% { transform: translate(0, 0); }
+      0% {
+        transform: translate(0, 0);
+      }
+
+      50% {
+        transform: translate(40px, -60px);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
     }
+
     @keyframes floatShape2 {
-      0% { transform: translate(0, 0); }
-      50% { transform: translate(-50px, 40px); }
-      100% { transform: translate(0, 0); }
+      0% {
+        transform: translate(0, 0);
+      }
+
+      50% {
+        transform: translate(-50px, 40px);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
     }
 
     /* NAVBAR */
@@ -99,16 +134,19 @@
       border-bottom: 1px solid rgba(254, 215, 170, 0.2);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
+
     .nav-left {
       font-weight: 800;
       font-size: 1.3rem;
       color: #ffffff;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
       letter-spacing: -0.5px;
     }
+
     .nav-left span {
       color: #fbd5a5;
     }
+
     .nav-right {
       display: flex;
       align-items: center;
@@ -116,14 +154,17 @@
       font-size: 0.95rem;
       list-style: none;
     }
+
     .nav-link {
       color: #f1f5f9;
       font-weight: 600;
       transition: 0.2s;
     }
+
     .nav-link:hover {
       color: #fbd5a5;
     }
+
     .nav-btn {
       padding: 0.6rem 1.3rem;
       border-radius: 999px;
@@ -136,17 +177,20 @@
       transition: 0.3s;
       text-decoration: none;
     }
+
     .nav-btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 0 22px rgba(251, 146, 60, 0.5);
       border-color: #fbd5a5;
     }
+
     .nav-btn-secondary {
       background: rgba(15, 23, 42, 0.8);
       border: 1px solid rgba(254, 215, 170, 0.4);
       color: #fbd5a5;
       box-shadow: none;
     }
+
     .nav-btn-secondary:hover {
       background: rgba(254, 215, 170, 0.15);
       color: #ffffff;
@@ -162,6 +206,7 @@
       position: relative;
       z-index: 1;
     }
+
     .hero-left {
       display: flex;
       flex-direction: column;
@@ -169,10 +214,19 @@
       justify-content: center;
       animation: slideUp 1.2s ease forwards;
     }
+
     @keyframes slideUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     .hero-tag {
       font-size: 0.85rem;
       letter-spacing: 0.12em;
@@ -185,19 +239,22 @@
       border-radius: 20px;
       display: inline-block;
       width: fit-content;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
+
     .hero-title {
       font-size: clamp(2.6rem, 4.5vw, 3.6rem);
       font-weight: 800;
       line-height: 1.1;
       letter-spacing: -1px;
       color: #ffffff;
-      text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     }
+
     .hero-title span {
       color: #fbd5a5;
     }
+
     .hero-role {
       font-size: 1.15rem;
       font-weight: 800;
@@ -207,8 +264,9 @@
       padding: 8px 18px;
       border-radius: 12px;
       width: fit-content;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     }
+
     .hero-subtitle-box {
       background: rgba(15, 23, 42, 0.85);
       border: 1px solid rgba(254, 215, 170, 0.25);
@@ -216,14 +274,16 @@
       padding: 18px 22px;
       max-width: 34rem;
       backdrop-filter: blur(12px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     }
+
     .hero-subtitle {
       font-size: 1.05rem;
       color: #f8fafc;
       line-height: 1.7;
       font-weight: 500;
     }
+
     .hero-actions {
       display: flex;
       align-items: center;
@@ -231,6 +291,7 @@
       margin-top: 0.5rem;
       flex-wrap: wrap;
     }
+
     .hero-btn-main {
       padding: 0.85rem 1.8rem;
       border-radius: 999px;
@@ -245,11 +306,13 @@
       text-decoration: none;
       display: inline-block;
     }
+
     .hero-btn-main:hover {
       transform: translateY(-2px);
       box-shadow: 0 0 25px rgba(251, 146, 60, 0.6);
       border-color: #fbd5a5;
     }
+
     .hero-btn-secondary {
       padding: 0.85rem 1.6rem;
       border-radius: 999px;
@@ -260,6 +323,7 @@
       text-decoration: none;
       transition: 0.3s;
     }
+
     .hero-btn-secondary:hover {
       border-color: #fbd5a5;
       color: #fbd5a5;
@@ -278,6 +342,7 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
       line-height: 1.65;
     }
+
     .testimonial-author {
       margin-top: 0.8rem;
       font-weight: 800;
@@ -293,24 +358,28 @@
       margin-top: 1rem;
       max-width: 34rem;
       padding: 1.4rem 1.6rem;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
     }
+
     .metrics-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.2rem;
     }
+
     .metric-item {
       display: flex;
       flex-direction: column;
       gap: 4px;
     }
+
     .metric-number {
       font-size: 1.7rem;
       font-weight: 800;
       color: #fbd5a5;
       line-height: 1;
     }
+
     .metric-label {
       font-size: 0.85rem;
       color: #e2e8f0;
@@ -324,6 +393,7 @@
       justify-content: center;
       animation: slideUp 1.4s ease forwards;
     }
+
     .hero-panel {
       width: 100%;
       max-width: 390px;
@@ -332,6 +402,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero-panel::before {
       content: "";
       position: absolute;
@@ -339,6 +410,7 @@
       background: linear-gradient(135deg, rgba(254, 215, 170, 0.6), rgba(251, 146, 60, 0.6));
       z-index: -2;
     }
+
     .hero-panel::after {
       content: "";
       position: absolute;
@@ -347,6 +419,7 @@
       background: rgba(15, 23, 42, 0.96);
       z-index: -1;
     }
+
     .hero-panel-title {
       font-size: 1.2rem;
       font-weight: 800;
@@ -356,16 +429,19 @@
       align-items: center;
       gap: 8px;
     }
+
     .hero-panel-sub {
       font-size: 0.9rem;
       color: #cbd5e1;
       margin-bottom: 1.2rem;
     }
+
     .hero-icons {
       display: flex;
       flex-wrap: wrap;
       gap: 0.6rem;
     }
+
     .hero-icon-pill {
       padding: 0.5rem 1rem;
       border-radius: 999px;
@@ -375,12 +451,21 @@
       font-weight: 700;
       color: #ffffff;
       animation: floatIcon 4s ease-in-out infinite;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     }
+
     @keyframes floatIcon {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-      100% { transform: translateY(0); }
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
     }
 
     /* SECTION WRAPPER */
@@ -392,15 +477,18 @@
       z-index: 1;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
+
     .section-title {
       font-size: 2.2rem;
       font-weight: 800;
       margin-bottom: 0.5rem;
       color: #ffffff;
     }
+
     .section-title span {
       color: #fbd5a5;
     }
+
     .section-subtitle {
       font-size: 1.02rem;
       color: #cbd5e1;
@@ -414,6 +502,7 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
     }
+
     .role-card {
       background: rgba(15, 23, 42, 0.95);
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -423,6 +512,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .role-card::before {
       content: "";
       position: absolute;
@@ -432,13 +522,16 @@
       transition: 0.3s;
       z-index: -1;
     }
+
     .role-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
     }
+
     .role-card:hover::before {
       opacity: 1;
     }
+
     .role-badge {
       font-size: 0.75rem;
       font-weight: 800;
@@ -450,12 +543,14 @@
       display: inline-block;
       margin-bottom: 10px;
     }
+
     .role-name {
       font-size: 1.05rem;
       font-weight: 800;
       color: #ffffff;
       margin-bottom: 8px;
     }
+
     .role-desc {
       font-size: 0.85rem;
       color: #e2e8f0;
@@ -468,13 +563,15 @@
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.6rem;
     }
+
     .skills-col {
       background: rgba(15, 23, 42, 0.95);
       border: 1px solid rgba(254, 215, 170, 0.25);
       border-radius: 1rem;
       padding: 1.5rem;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
     }
+
     .skills-col-title {
       font-size: 1rem;
       font-weight: 800;
@@ -483,9 +580,11 @@
       border-bottom: 1px solid rgba(254, 215, 170, 0.25);
       padding-bottom: 8px;
     }
+
     .skills-col-list {
       list-style: none;
     }
+
     .skills-col-list li {
       font-size: 0.9rem;
       color: #f8fafc;
@@ -499,6 +598,7 @@
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 2rem;
     }
+
     .project-card {
       position: relative;
       padding: 1.8rem;
@@ -512,6 +612,7 @@
       flex-direction: column;
       justify-content: space-between;
     }
+
     .project-card::before {
       content: "";
       position: absolute;
@@ -521,25 +622,30 @@
       transition: 0.3s;
       z-index: -1;
     }
+
     .project-card:hover {
       transform: translateY(-4px) scale(1.02);
       box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8);
     }
+
     .project-card:hover::before {
       opacity: 1;
     }
+
     .project-name {
       font-size: 1.2rem;
       font-weight: 800;
       margin-bottom: 0.8rem;
       color: #ffffff;
     }
+
     .project-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-bottom: 1.2rem;
     }
+
     .project-tag {
       padding: 0.3rem 0.7rem;
       border-radius: 999px;
@@ -550,6 +656,7 @@
       font-family: 'JetBrains Mono', monospace;
       font-weight: 600;
     }
+
     .project-desc {
       font-size: 0.93rem;
       color: #f1f5f9;
@@ -566,6 +673,7 @@
       padding: 10px 0;
       margin: 10px 0 14px;
     }
+
     .pipe-node {
       background: rgba(31, 41, 55, 0.95);
       border: 1px solid rgba(254, 215, 170, 0.3);
@@ -574,15 +682,18 @@
       min-width: 100px;
       text-align: center;
     }
+
     .pipe-title {
       font-size: 0.8rem;
       font-weight: 800;
       color: #fbd5a5;
     }
+
     .pipe-sub {
       font-size: 0.7rem;
       color: #cbd5e1;
     }
+
     .pipe-arrow {
       color: #fbd5a5;
       font-weight: 800;
@@ -595,6 +706,7 @@
       flex-wrap: wrap;
       margin-top: 12px;
     }
+
     .btn-project {
       display: inline-flex;
       align-items: center;
@@ -610,16 +722,19 @@
       transition: 0.2s;
       text-decoration: none;
     }
+
     .btn-project:hover {
       box-shadow: 0 0 18px rgba(251, 146, 60, 0.5);
       border-color: #fbd5a5;
     }
+
     .btn-project-outline {
       background: rgba(15, 23, 42, 0.8);
       border: 1px solid rgba(254, 215, 170, 0.4);
       color: #fbd5a5;
       font-weight: 700;
     }
+
     .btn-project-outline:hover {
       background: rgba(254, 215, 170, 0.15);
       color: #ffffff;
@@ -631,10 +746,12 @@
       padding-left: 2rem;
       position: relative;
     }
+
     .timeline-item {
       margin-bottom: 2.2rem;
       position: relative;
     }
+
     .timeline-item::before {
       content: "";
       position: absolute;
@@ -646,11 +763,13 @@
       background: radial-gradient(circle, #fbd5a5, #fb923c);
       box-shadow: 0 0 15px rgba(251, 146, 60, 0.7);
     }
+
     .timeline-item h3 {
       font-size: 1.15rem;
       font-weight: 800;
       color: #fbd5a5;
     }
+
     .timeline-item p {
       font-size: 0.95rem;
       color: #f1f5f9;
@@ -667,14 +786,19 @@
       color: #f8fafc;
       font-size: 1rem;
       line-height: 1.75;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
-    .ai-box strong { color: #fbd5a5; font-size: 1.1rem; }
+
+    .ai-box strong {
+      color: #fbd5a5;
+      font-size: 1.1rem;
+    }
 
     /* CONTACT */
     .contact-center {
       text-align: center;
     }
+
     .contact-btn {
       display: inline-block;
       margin-top: 1rem;
@@ -688,6 +812,7 @@
       box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
       transition: 0.3s;
     }
+
     .contact-btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 0 28px rgba(251, 146, 60, 0.8);
@@ -697,7 +822,10 @@
     /* MODAL OVERLAY */
     .modal-overlay {
       position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       background: rgba(15, 23, 42, 0.95);
       backdrop-filter: blur(14px);
       z-index: 1000;
@@ -709,10 +837,12 @@
       pointer-events: none;
       transition: opacity 0.3s ease;
     }
+
     .modal-overlay.active {
       opacity: 1;
       pointer-events: auto;
     }
+
     .modal-card {
       background: rgba(15, 23, 42, 0.98);
       border: 1px solid rgba(254, 215, 170, 0.4);
@@ -723,22 +853,32 @@
       overflow-y: auto;
       padding: 36px;
       position: relative;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.95);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95);
       color: #ffffff;
     }
+
     .modal-close {
       position: absolute;
-      top: 20px; right: 20px;
+      top: 20px;
+      right: 20px;
       background: rgba(31, 41, 55, 0.9);
       border: 1px solid rgba(254, 215, 170, 0.35);
       color: #fbd5a5;
-      width: 38px; height: 38px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
       font-weight: 800;
     }
-    .modal-close:hover { color: #fff; border-color: #fbd5a5; }
+
+    .modal-close:hover {
+      color: #fff;
+      border-color: #fbd5a5;
+    }
+
     .code-block {
       background: rgba(3, 7, 18, 0.98);
       border: 1px solid rgba(254, 215, 170, 0.3);
@@ -763,12 +903,22 @@
     }
 
     @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-right { order: -1; margin-bottom: 2rem; }
-      .nav-right { display: none; }
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-right {
+        order: -1;
+        margin-bottom: 2rem;
+      }
+
+      .nav-right {
+        display: none;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Parallax Background & Floating Shapes -->
@@ -787,7 +937,8 @@
       <li><a href="#experience" class="nav-link">Experience</a></li>
       <li><a href="#ai-statement" class="nav-link">AI Collaboration</a></li>
       <li><a href="resume.html" target="_blank" class="nav-btn nav-btn-secondary">📄 View Resume</a></li>
-      <li><a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="nav-btn">GitHub Master Repo</a></li>
+      <li><a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="nav-btn">GitHub Master Repo</a>
+      </li>
     </ul>
   </header>
 
@@ -795,29 +946,35 @@
   <section class="hero" id="home">
     <div class="hero-left">
       <div style="display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap;">
-        <img src="profile_pic.png" alt="M. Haresh Kumar" style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #fbd5a5; box-shadow: 0 0 20px rgba(251, 146, 60, 0.4);" />
+        <img src="profile_pic.png" alt="M. Haresh Kumar"
+          style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #fbd5a5; box-shadow: 0 0 20px rgba(251, 146, 60, 0.4);" />
         <div>
           <div class="hero-tag">Data Operations &amp; AI Automation</div>
           <h1 class="hero-title" style="margin-top: 4px;">M. Haresh <span>Kumar</span></h1>
         </div>
       </div>
       <div class="hero-role">Senior Data Operations Lead &amp; Power BI Developer</div>
-      
+
       <div class="hero-subtitle-box">
         <p class="hero-subtitle">
-          14+ years bridging the gap between business operations and data analytics. I design clean pipelines, Power BI dashboards, and automated Python workflows using SQL, Snowflake, and Power BI.
+          14+ years bridging the gap between business operations and data analytics. I design clean pipelines, Power BI
+          dashboards, and automated Python workflows using SQL, Snowflake, and Power BI.
         </p>
       </div>
 
       <div class="hero-actions">
         <a href="#projects" class="hero-btn-main">View Projects</a>
-        <a href="resume.html" target="_blank" class="hero-btn-main" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); border-color: #93c5fd;">📄 Official 2-Page Resume</a>
-        <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="hero-btn-secondary">GitHub Profile</a>
+        <a href="resume.html" target="_blank" class="hero-btn-main"
+          style="background: linear-gradient(135deg, #2563eb, #1d4ed8); border-color: #93c5fd;">📄 Official 2-Page
+          Resume</a>
+        <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="hero-btn-secondary">GitHub
+          Profile</a>
       </div>
 
       <!-- Testimonial Quote -->
       <div class="testimonial">
-        “I didn't start in a classroom. I started in the real world. Handling 200K–300K record workflows and leading 15+ member teams taught me to build data solutions that actually work.”
+        “I didn't start in a classroom. I started in the real world. Handling 200K–300K record workflows and leading 15+
+        member teams taught me to build data solutions that actually work.”
         <div class="testimonial-author">— M. Haresh Kumar</div>
       </div>
 
@@ -837,7 +994,8 @@
             <div class="metric-label">Team Members Led</div>
           </div>
           <div class="metric-item">
-            <div class="metric-number" style="font-size: 1.1rem; color: #fbd5a5; margin-top: 4px;">SQL | Power BI | Snowflake</div>
+            <div class="metric-number" style="font-size: 1.1rem; color: #fbd5a5; margin-top: 4px;">SQL | Power BI |
+              Snowflake</div>
             <div class="metric-label">Core Technical Stack</div>
           </div>
         </div>
@@ -898,9 +1056,12 @@
         <div class="role-desc">Snowflake Medallion Architecture (Bronze/Silver/Gold), Streams/Tasks, PII Masking</div>
       </div>
       <div class="role-card">
-        <span class="role-badge" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3);">TRANSITION FIT</span>
+        <span class="role-badge"
+          style="background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3);">TRANSITION
+          FIT</span>
         <div class="role-name">Fabric Data Specialist</div>
-        <div class="role-desc">Medallion Architecture (Bronze/Silver/Gold), Power Query ETL (Dataflows M), SQL Transformations, Governance</div>
+        <div class="role-desc">Medallion Architecture (Bronze/Silver/Gold), Power Query ETL (Dataflows M), SQL
+          Transformations, Governance</div>
       </div>
     </div>
   </section>
@@ -971,7 +1132,8 @@
             <span class="project-tag">🔒 PII Masking</span>
           </div>
           <p class="project-desc">
-            3-layer Medallion Data Architecture (Bronze/Silver/Gold) in Snowflake with Streams & Tasks ingestion, Dynamic PII Data Masking, and Power BI fraud reporting.
+            3-layer Medallion Data Architecture (Bronze/Silver/Gold) in Snowflake with Streams & Tasks ingestion,
+            Dynamic PII Data Masking, and Power BI fraud reporting.
           </p>
 
           <!-- Visual Node Flow -->
@@ -1000,8 +1162,10 @@
 
         <div class="project-actions">
           <button class="btn-project" onclick="openModal('modal-1')">🔍 SQL Code & Lessons</button>
-          <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="btn-project btn-project-outline">📂 GitHub Docs</a>
-          <a href="notebooks/snowflake_medallion_pipeline.ipynb" target="_blank" class="btn-project btn-project-outline">📓 Jupyter Notebook</a>
+          <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank"
+            class="btn-project btn-project-outline">📂 GitHub Docs</a>
+          <a href="notebooks/snowflake_medallion_pipeline.ipynb" target="_blank"
+            class="btn-project btn-project-outline">📓 Jupyter Notebook</a>
         </div>
       </div>
 
@@ -1015,13 +1179,16 @@
             <span class="project-tag">📊 Google Sheets API</span>
           </div>
           <p class="project-desc">
-            Python automation using Outlook COM API (`pywin32`) and Google Sheets API to manage multi-account sender rotation (100/day cap), bounce logging, and CRM sync.
+            Python automation using Outlook COM API (`pywin32`) and Google Sheets API to manage multi-account sender
+            rotation (100/day cap), bounce logging, and CRM sync.
           </p>
         </div>
         <div class="project-actions">
           <button class="btn-project" onclick="openModal('modal-2')">🔍 Lessons & Architecture</button>
-          <a href="https://github.com/LeadGenData/bdl-leads-pro" target="_blank" class="btn-project btn-project-outline">📂 Source Code</a>
-          <a href="notebooks/outlook_email_automation.ipynb" target="_blank" class="btn-project btn-project-outline">📓 Jupyter Notebook</a>
+          <a href="https://github.com/LeadGenData/bdl-leads-pro" target="_blank"
+            class="btn-project btn-project-outline">📂 Source Code</a>
+          <a href="notebooks/outlook_email_automation.ipynb" target="_blank" class="btn-project btn-project-outline">📓
+            Jupyter Notebook</a>
         </div>
       </div>
 
@@ -1035,12 +1202,14 @@
             <span class="project-tag">📊 CRM Intake</span>
           </div>
           <p class="project-desc">
-            Responsive web diagnostic calculator for business owners to quantify missed lead revenue opportunities with real-time web-to-sheet CRM intake.
+            Responsive web diagnostic calculator for business owners to quantify missed lead revenue opportunities with
+            real-time web-to-sheet CRM intake.
           </p>
         </div>
         <div class="project-actions">
           <a href="https://bdl.dataconnectmail.com/" target="_blank" class="btn-project">🌐 Live Web App</a>
-          <a href="https://github.com/jamescluster35/revenue-leakage-calculator" target="_blank" class="btn-project btn-project-outline">📂 Source Code</a>
+          <a href="https://github.com/jamescluster35/revenue-leakage-calculator" target="_blank"
+            class="btn-project btn-project-outline">📂 Source Code</a>
         </div>
       </div>
 
@@ -1054,12 +1223,14 @@
             <span class="project-tag">🏥 Healthcare</span>
           </div>
           <p class="project-desc">
-            Interactive Power BI dashboard analyzing patient triage priority (1-5), admission wait times, and peak arrival windows for hospital shift planning.
+            Interactive Power BI dashboard analyzing patient triage priority (1-5), admission wait times, and peak
+            arrival windows for hospital shift planning.
           </p>
         </div>
         <div class="project-actions">
           <button class="btn-project" onclick="openModal('modal-4')">🔍 DAX & Lessons</button>
-          <a href="https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis" target="_blank" class="btn-project btn-project-outline">📂 PBI Files</a>
+          <a href="https://github.com/LeadGenData/Hosptal-Emergency-Room-Analysis" target="_blank"
+            class="btn-project btn-project-outline">📂 PBI Files</a>
         </div>
       </div>
     </div>
@@ -1076,21 +1247,24 @@
       <div class="timeline-item">
         <h3>🏢 Operational Data Management & Intake</h3>
         <p>
-          Managed day-to-day data intake, validation, and reporting workflows across operational teams (handling datasets ranging from 200K–300K records).
+          Managed day-to-day data intake, validation, and reporting workflows across operational teams (handling
+          datasets ranging from 200K–300K records).
         </p>
       </div>
 
       <div class="timeline-item">
         <h3>⚡ Process Automation & MIS Reporting</h3>
         <p>
-          Built custom Excel, VBA, and script-based tools that significantly reduced repetitive manual effort for operations staff.
+          Built custom Excel, VBA, and script-based tools that significantly reduced repetitive manual effort for
+          operations staff.
         </p>
       </div>
 
       <div class="timeline-item">
         <h3>👥 Team Leadership & Quality Control</h3>
         <p>
-          Led teams of 15+ members, standardizing reporting formats, enforcing data quality rules, and training personnel on reporting systems.
+          Led teams of 15+ members, standardizing reporting formats, enforcing data quality rules, and training
+          personnel on reporting systems.
         </p>
       </div>
     </div>
@@ -1101,7 +1275,9 @@
     <h2 class="section-title">🤖 AI Assistance <span>Statement</span></h2>
     <div class="ai-box">
       <strong>Modern AI Collaboration:</strong><br>
-      The portfolio reflects my own solution design, SQL logic, Power BI models, and implementation. AI tools such as Claude and Snowflake Cortex AI were used where appropriate to accelerate development, with all outputs reviewed, tested, and validated by me.
+      The portfolio reflects my own solution design, SQL logic, Power BI models, and implementation. AI tools such as
+      Claude and Snowflake Cortex AI were used where appropriate to accelerate development, with all outputs reviewed,
+      tested, and validated by me.
     </div>
   </section>
 
@@ -1112,8 +1288,10 @@
       <p class="section-subtitle">
         Open to Data Analyst, BI Developer, and Data Operations Lead opportunities.
       </p>
-      <a href="resume.html" target="_blank" class="contact-btn" style="margin-right: 12px;">📄 View & Download Executive Resume PDF</a>
-      <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="contact-btn">📂 Explore GitHub Master Repo</a>
+      <a href="resume.html" target="_blank" class="contact-btn" style="margin-right: 12px;">📄 View & Download Executive
+        Resume PDF</a>
+      <a href="https://github.com/LeadGenData/M_Haresh_Kumar" target="_blank" class="contact-btn">📂 Explore GitHub
+        Master Repo</a>
     </div>
   </section>
 
@@ -1122,29 +1300,33 @@
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('modal-1')">✕</button>
       <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #fbd5a5;">💳 1. Snowflake Medallion Pipeline</h3>
-      
+
       <p style="color: #f8fafc; font-size: 0.95rem; margin-bottom: 14px; line-height: 1.6;">
         <strong style="color: #fbd5a5;">Challenges & Lessons Learned:</strong><br>
-        Handling out-of-order raw JSON logs without creating duplicate Silver records was solved using Snowflake Streams + <code style="color: #fbd5a5; font-weight: bold;">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code>.
+        Handling out-of-order raw JSON logs without creating duplicate Silver records was solved using Snowflake Streams
+        + <code
+          style="color: #fbd5a5; font-weight: bold;">QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1</code>.
       </p>
 
       <div class="code-block">
-CREATE OR REPLACE TASK silver_tx_task
-  SCHEDULE = '1 MINUTE'
-  WHEN SYSTEM$STREAM_HAS_DATA('bronze_tx_stream')
-AS
-  INSERT INTO silver_clean_transactions
-  SELECT transaction_id, customer_id, card_number, amount, tx_timestamp
-  FROM bronze_tx_stream
-  QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1;
+        CREATE OR REPLACE TASK silver_tx_task
+        SCHEDULE = '1 MINUTE'
+        WHEN SYSTEM$STREAM_HAS_DATA('bronze_tx_stream')
+        AS
+        INSERT INTO silver_clean_transactions
+        SELECT transaction_id, customer_id, card_number, amount, tx_timestamp
+        FROM bronze_tx_stream
+        QUALIFY ROW_NUMBER() OVER (PARTITION BY transaction_id ORDER BY tx_timestamp DESC) = 1;
       </div>
 
       <div class="code-block">
-CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
-  CASE WHEN CURRENT_ROLE() IN ('COMPLIANCE_ADMIN') THEN val
-       ELSE CONCAT('XXXX-XXXX-XXXX-', RIGHT(val, 4)) END;
+        CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
+        CASE WHEN CURRENT_ROLE() IN ('COMPLIANCE_ADMIN') THEN val
+        ELSE CONCAT('XXXX-XXXX-XXXX-', RIGHT(val, 4)) END;
       </div>
-      <p style="margin-top: 14px;"><a href="notebooks/snowflake_medallion_pipeline.ipynb" target="_blank" style="color: #fbd5a5; text-decoration: underline; font-weight: 600;">📓 Open Interactive Snowflake Jupyter Notebook (.ipynb)</a></p>
+      <p style="margin-top: 14px;"><a href="notebooks/snowflake_medallion_pipeline.ipynb" target="_blank"
+          style="color: #fbd5a5; text-decoration: underline; font-weight: 600;">📓 Open Interactive Snowflake Jupyter
+          Notebook (.ipynb)</a></p>
     </div>
   </div>
 
@@ -1152,13 +1334,17 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
   <div class="modal-overlay" id="modal-2">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('modal-2')">✕</button>
-      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #fbd5a5;">📧 2. Multi-Account Outlook Email Automation</h3>
-      
+      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #fbd5a5;">📧 2. Multi-Account Outlook Email Automation
+      </h3>
+
       <p style="color: #f8fafc; font-size: 0.95rem; line-height: 1.6;">
         <strong style="color: #fbd5a5;">Challenges & Lessons Learned:</strong><br>
-        Avoiding Outlook COM API thread locking (`pywin32`) during high-frequency dispatch runs was solved by implementing randomized human interval delays (15–45 seconds) and sender rotation per 100 emails.
+        Avoiding Outlook COM API thread locking (`pywin32`) during high-frequency dispatch runs was solved by
+        implementing randomized human interval delays (15–45 seconds) and sender rotation per 100 emails.
       </p>
-      <p style="margin-top: 14px;"><a href="notebooks/outlook_email_automation.ipynb" target="_blank" style="color: #fbd5a5; text-decoration: underline; font-weight: 600;">📓 Open Interactive Outlook Email Automation Jupyter Notebook (.ipynb)</a></p>
+      <p style="margin-top: 14px;"><a href="notebooks/outlook_email_automation.ipynb" target="_blank"
+          style="color: #fbd5a5; text-decoration: underline; font-weight: 600;">📓 Open Interactive Outlook Email
+          Automation Jupyter Notebook (.ipynb)</a></p>
     </div>
   </div>
 
@@ -1166,11 +1352,14 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
   <div class="modal-overlay" id="modal-4">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('modal-4')">✕</button>
-      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #fbd5a5;">🏥 4. Hospital Emergency Room Capacity BI Dashboard</h3>
-      
+      <h3 style="font-size: 1.4rem; margin-bottom: 14px; color: #fbd5a5;">🏥 4. Hospital Emergency Room Capacity BI
+        Dashboard</h3>
+
       <p style="color: #f8fafc; font-size: 0.95rem; line-height: 1.6;">
         <strong style="color: #fbd5a5;">Challenges & Lessons Learned:</strong><br>
-        Managing multi-level triage severity calculations (Levels 1–5) with varying wait time baselines was solved using modular DAX measures with <code style="color: #fbd5a5; font-weight: bold;">CALCULATE()</code> and <code style="color: #fbd5a5; font-weight: bold;">FILTER()</code>.
+        Managing multi-level triage severity calculations (Levels 1–5) with varying wait time baselines was solved using
+        modular DAX measures with <code style="color: #fbd5a5; font-weight: bold;">CALCULATE()</code> and <code
+          style="color: #fbd5a5; font-weight: bold;">FILTER()</code>.
       </p>
     </div>
   </div>
@@ -1199,4 +1388,5 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
     });
   </script>
 </body>
+
 </html>
