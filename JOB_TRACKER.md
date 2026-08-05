@@ -8,7 +8,10 @@ This document tracks all active job applications, tech stack alignment, and stat
 
 | Date Applied | Company Name | Job Title | Work Type | Salary Range | Primary Tech Stack | Status | Key Focus & Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **2026-08-03** | **Mphasis** | Data Governance Lead / Consultant | Bengaluru (Hybrid) | Undisclosed (15-18 LPA Target) | Data Governance, Data Quality, SQL, Power BI, Metadata Management | 🟢 **Applied & WhatsApp Sent** | **Direct Recruiter Outreach Hit!** HR Recruiter: Mansi Lakadhara (`9225091792`). Direct WhatsApp message & updated master resume sent. Focus: Data Quality, Governance. |
+
 | **2026-08-03** | **Global Software Solutions Group** | Sr. Power BI Engineer - (SSRS & PySpark) | Bengaluru (On-site) | Undisclosed (15-18 LPA Target) | Power BI, DAX, SQL, SSRS, Data Modeling, PySpark | 🟢 **Applied (Early #15)** | **Early Applicant Advantage (<15 applicants).** Posted <1h ago. Focus: Enterprise Power BI, DAX, SQL, SSRS. Applied via Easy Apply. Receipt confirmed. |
+
 | **2026-08-03** | **V4c.ai** | Data Architect / Senior Architect | Remote / Hybrid | Undisclosed (18-22 LPA Target) | Snowflake Architecture, Data Operations Leadership, Advanced SQL, Python, AI-Augmented Pipelines | 🟢 **Applied & DM Sent** | **Direct Hiring Lead DM & Resume Sent!** Samarth Amodkar accepted connection. Direct message + updated master resume sent. |
 
 
@@ -75,3 +78,20 @@ This document tracks all active job applications, tech stack alignment, and stat
 * **Newly Added (July 31):** Pro Team Solutions (Reporting & Analytics Specialist), LanceSoft India (Direct Recruiter Outreach to Dinesh Kumaar), Lacento Technologies (Power BI / SQL Developer).
 * **Updated Status (July 31):** Dentira (Rejected), UsefulBI Corporation (Rejected).
 * **Primary Skill Pillars:** Data Operations Leadership (14+ Yrs), Power BI DAX & Semantic Modeling, Advanced SQL & Query Tuning, Snowflake Medallion Architecture, Python & Agentic AI Workflows.
+
+---
+
+## 🗂️ Future Implementation Tasks (Backlog)
+
+> Valid ideas — deferred until job search stabilizes or book gains traction. Review weekly.
+
+| # | Task | Category | Priority | Why Deferred |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | **LinkedIn → Amazon Redirect Page** (`/book` page on portfolio fires GA4 event then redirects to Amazon) | Analytics | 🟡 Medium | Low traffic right now. Revisit after 30 days. |
+| 2 | **KDP Book Analytics — Google Sheets Weekly Tracker** (Manual weekly log: Units Sold, KENP Pages Read, Royalties ₹) | Analytics | 🟡 Medium | Book just launched. Start tracking from Week 2. |
+| 3 | **Amazon Author Page URL** (`amazon.com/author/hareshkumar`) | Branding | 🔴 High | Server error on Aug 4. **Retry tonight after 8 PM.** |
+| 4 | **Portfolio Dedicated Book Section** (`#publications` section with full book details and Amazon link) | Portfolio | 🟡 Medium | Book banner added to hero. Full section after job search. |
+| 5 | **GA4 Conversion Event** (Mark `book_click` as conversion goal in GA4 after 24 hrs) | Analytics | 🟢 Low | Events already firing. Mark once event appears in GA4. |
+| 6 | **LinkedIn Insight Tag** (Add LinkedIn pixel to portfolio for tracking visitor job titles) | Analytics | 🟢 Low | Requires LinkedIn Campaign Manager. |
+| 7 | **DBT Hands-On Practice** (Build 2-3 DBT models locally with Snowflake trial to move beyond "Working Knowledge") | Skills | 🔴 High | **Critical before Persistent AI interview. Start tonight.** |
+| 8 | **NIOS 12th Exam Preparation** (Structured study plan for Data Entry Operations + Computer Science) | Education | 🔴 High | Ongoing — required for direct payroll eligibility. |
