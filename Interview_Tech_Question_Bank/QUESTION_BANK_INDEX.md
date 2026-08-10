@@ -38,3 +38,33 @@ This repository acts as your personal "technical interview cupboard", organized 
 ---
 
 *Last Updated: Saturday, August 8, 2026*
+
+---
+
+## 🏛️ SCENARIO 5: Data Documentation & Business Requirements (BRD vs. FRS & KPI vs. KRI)
+* **Real-World Challenge:** Translating business stakeholder expectations into technical data engineering and reporting specifications.
+* **Key Definitions & Explanations:**
+  - **BRD (Business Requirements Document):** High-level document created with business owners defining *WHAT* the business wants to achieve (e.g. "We need to track daily revenue across 20 countries").
+  - **FRS (Functional Requirements Specification):** Detailed technical document created for data engineers/developers defining *HOW* the system will build it (e.g. "Table schema, SQL join logic, API endpoints, refresh frequencies").
+  - **KPI (Key Performance Indicator):** Business growth metric (e.g. Monthly Revenue, Active Users).
+  - **KRI (Key Risk Indicator):** Data quality risk metric (e.g. Data Error Rate, Missing Null %, SLA Breaches).
+  - **KIS / SLA (Key Indicator Specs / Service Level Agreement):** Delivery uptime and turnaround standards (e.g. 99.9% report refresh uptime).
+
+---
+
+## 🏛️ SCENARIO 6: Power BI Workspace Roles & Data Access Control
+* **Real-World Challenge:** Managing security, dataset publishing, and access permissions across enterprise Power BI workspaces.
+* **The 4 Official Power BI Workspace Roles:**
+  1. **Admin:** Full workspace control (add/remove users, delete workspace, manage permissions).
+  2. **Member:** Can add users with lower permissions, publish reports, edit items, and create reports from workspace datasets.
+  3. **Contributor:** Can create, edit, and delete reports/datasets inside the workspace (cannot add users or modify workspace settings).
+  4. **Viewer:** Read-only access to view reports and dashboards (cannot edit or download semantic models).
+
+---
+
+## 🏛️ SCENARIO 7: Data Masking & PII Security Protection
+* **Real-World Challenge:** Protecting sensitive customer data (SSN, Credit Card numbers, Phone numbers) from unauthorized viewing.
+* **Types of Data Masking:**
+  1. **Dynamic Data Masking (DDM):** Obfuscates sensitive data on-the-fly when queried (e.g. showing `XXXX-XXXX-1234` for credit cards while leaving underlying data intact).
+  2. **Static Data Masking:** Permanently scrambles sensitive columns in non-production test/dev databases.
+  3. **SQL Implementation:** Using `MASKING POLICY` in Snowflake or Dynamic Data Masking (`MASKED WITH (FUNCTION = 'partial(...)')`) in SQL Server.
