@@ -127,3 +127,18 @@ This repository acts as your personal "technical interview cupboard", organized 
      - Enforcing **Data Quality Rules**, primary key deduplication (`ROW_NUMBER() OVER`), and exception logging into Audit tables.
   3. **Semantic / Power BI Layer (Metric & Definition Governance):**
      - Enforcing **Metric Governance** (single-source-of-truth DAX measures) and Object-Level Security (OLS) on business scorecards so executive leadership sees identical KPIs.
+
+---
+
+## 📊 SCENARIO 12: Power BI DAX Query View Native Measure Documentation (`///` Syntax & TMDL)
+* **Real-World Challenge:** Documenting DAX measures natively inside semantic models for AI Copilot context, metadata Q&A engines, and Git source control.
+* **The New DAX Query View Syntax:**
+  - Using `///` comments directly above `DEFINE MEASURE` saves metadata directly into the Tabular Model Definition Language (TMDL).
+  ```dax
+  /// Calculates total net sales revenue excluding returned items and applies explicit date filters
+  DEFINE MEASURE 'Sales'[Net Revenue] = SUMX('Sales', 'Sales'[Quantity] * 'Sales'[Unit_Price])
+  ```
+* **Why This Matters for Enterprise Governance:**
+  1. **Copilot & AI Context:** Prevents LLM hallucinations when querying semantic models by providing explicit business definitions.
+  2. **Metadata Enriched Q&A:** Allows executive leadership to ask natural language Q&A questions with 100% accurate measure matching.
+  3. **TMDL & Git Integration:** Enables automated documentation, CI/CD pipeline deployment, and version control across data teams.
