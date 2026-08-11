@@ -68,3 +68,62 @@ This repository acts as your personal "technical interview cupboard", organized 
   1. **Dynamic Data Masking (DDM):** Obfuscates sensitive data on-the-fly when queried (e.g. showing `XXXX-XXXX-1234` for credit cards while leaving underlying data intact).
   2. **Static Data Masking:** Permanently scrambles sensitive columns in non-production test/dev databases.
   3. **SQL Implementation:** Using `MASKING POLICY` in Snowflake or Dynamic Data Masking (`MASKED WITH (FUNCTION = 'partial(...)')`) in SQL Server.
+
+---
+
+## 🐍 SCENARIO 8: Processing Large Data Files in Python (Memory Optimization)
+* **Real-World Challenge:** Reading giant multi-gigabyte CSV or JSON data files (5GB – 50GB+) that exceed available RAM without causing Out-Of-Memory (OOM) crashes.
+* **The 4 Practical Python Approaches:**
+  1. **Pandas `chunksize` (Chunking):** Process the file in smaller batches (e.g. 50,000 rows at a time).
+     ```python
+     import pandas as pd
+     for chunk in pd.read_csv('large_file.csv', chunksize=50000):
+         # Process each chunk independently
+         process(chunk)
+     ```
+  2. **PySpark / Databricks (Distributed Processing):** Use PySpark DataFrame reader to process files across parallel worker nodes.
+     ```python
+     df = spark.read.csv('large_file.csv', header=True)
+     ```
+  3. **Polars / Dask (Out-of-Core Execution):** Use modern high-performance libraries like `polars.scan_csv()` or `dask.dataframe` for lazy evaluation.
+  4. **Line-by-Line Generator Iteration:** Use native Python line generators for lightweight stream parsing.
+
+---
+
+## 📊 SCENARIO 9: Data Quality KPIs & Dashboard Visualizations
+* **Real-World Challenge:** Defining practical data validation KPIs and choosing the right Power BI visuals for executive reporting.
+* **Haresh's Operational KPI Formula:**
+  - **Missing Email Variance:** `Total_Emails - Valid_Emails = Missing_Email_Count`
+  - **Data Quality Variance %:** `(Total_Records - Valid_Records) / Total_Records * 100`
+* **Recommended Power BI Visualizations:**
+  - **Clustered Column Chart / Bar Chart:** Comparing Valid vs. Missing records across source batches.
+  - **Time Series Line Chart:** Tracking data quality variance and error trends over time.
+  - **KPI Cards:** Displaying Total Record Count and Data Quality Pass Rate %.
+
+---
+
+## 🏛️ SCENARIO 10: Medallion Architecture Layers (Bronze, Silver, Gold Data Engineering)
+* **Real-World Challenge:** Structuring enterprise data pipelines into multi-stage Medallion architecture layers for storage, transformation, and BI consumption.
+* **The 3 Core Medallion Layers:**
+  1. **Bronze Layer (Raw Ingestion / Landing):**
+     - **Purpose:** Raw data landing zone.
+     - **What Happens Here:** Ingesting raw CSV/JSON/Kafka streams as-is from source systems without modification. Retains full history and append-only raw structure.
+  2. **Silver Layer (Cleaned & Enriched / Validation):**
+     - **Purpose:** Curated, cleaned, and validated data layer.
+     - **What Happens Here:** Data Quality checks, primary key deduplication (`ROW_NUMBER() OVER`), null handling, data type casting, and schema enforcement. Bad records are routed to Exception tables.
+  3. **Gold Layer (Business Aggregations / Semantic Model):**
+     - **Purpose:** Star-Schema business reporting layer for Power BI / Fabric / Snowflake.
+     - **What Happens Here:** Creating Fact and Dimension tables, pre-aggregated business KPIs, and single-source-of-truth semantic models for executive dashboards.
+
+---
+
+## 🏛️ SCENARIO 11: Governance Enforcement Across Data Architecture Layers
+* **Real-World Challenge:** Where to enforce specific Data Governance rules (PII Masking, Access Security, Quality Controls, Metric Governance) across system layers.
+* **Layer-by-Layer Data Governance Enforcement:**
+  1. **Ingestion / Database Layer (Security & PII Governance):**
+     - Enforcing **Dynamic Data Masking (DDM)** on PII columns (`Credit_Card`, `SSN`) using Snowflake Masking Policies or SQL Server Masking.
+     - Enforcing **Row-Level Security (RLS)** and Role-Based Access Control (RBAC) at the database schema level.
+  2. **Transformation / ETL Layer (Quality & Audit Governance):**
+     - Enforcing **Data Quality Rules**, primary key deduplication (`ROW_NUMBER() OVER`), and exception logging into Audit tables.
+  3. **Semantic / Power BI Layer (Metric & Definition Governance):**
+     - Enforcing **Metric Governance** (single-source-of-truth DAX measures) and Object-Level Security (OLS) on business scorecards so executive leadership sees identical KPIs.
