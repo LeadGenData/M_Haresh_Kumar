@@ -358,3 +358,32 @@ RETURN
 2. **`CALENDAR()` vs `CALENDARAUTO()`:** `CALENDAR(StartDate, EndDate)` creates a continuous date table between specific bounds. `CALENDARAUTO()` scans the entire model for the min/max dates automatically.
 3. **`FILTER()` on Tables:** `FILTER(Table, Expression)` evaluates conditions row-by-row to return a filtered table subset.
 4. **Disabling Auto Date/Time:** Always disable Power BI's default "Auto Date/Time" setting in options to prevent hidden automatic date tables from bloating model memory.
+
+---
+
+## ⚡ SCENARIO 20: Row Context vs. Filter Context & Context Transition in DAX
+* **Real-World Challenge:** Explaining the foundational mechanics of DAX calculation engines (Row Context vs. Filter Context) and how `CALCULATE` triggers Context Transition.
+
+### 1. 🔄 Row Context (Row-by-Row Iteration)
+- **What It Is:** Evaluates expressions row-by-row within a specific table. It does NOT automatically filter other tables.
+- **Where It Exists:**
+  1. **Calculated Columns:** Evaluates for each row in the table automatically.
+  2. **Iterating Functions (`SUMX`, `AVERAGEX`, `FILTER`):** Loops through a table row-by-row.
+- **Example:** `Calculated Column = Sales[Quantity] * Sales[Unit_Price]` (Evaluated row-by-row).
+
+### 2. 🎯 Filter Context (The Active Filter Environment)
+- **What It Is:** The total set of filters applied to the data model before a measure is calculated.
+- **Where It Comes From:**
+  1. Report Slicers & Filters Pane.
+  2. Rows/Columns of a Matrix or Bar Chart.
+  3. Modified filters inside `CALCULATE(Measure, Table[Region] = "India")`.
+
+### 3. ⚡ Context Transition (Row Context $\rightarrow$ Filter Context)
+- **The Secret:** `CALCULATE()` converts an existing Row Context into an equivalent Filter Context!
+- **Example:** Calling a measure `[Total Sales]` inside a Calculated Column automatically wraps it in `CALCULATE()`, turning the current row into a filter context!
+
+### 📊 Summary Matrix for Interviews:
+| Concept | Definition | Created By | Does it filter other tables? |
+| :--- | :--- | :--- | :--- |
+| **Row Context** | Current row being evaluated | Calculated Columns, `SUMX` iterators | ❌ NO (Unless wrapped in `CALCULATE`) |
+| **Filter Context** | Active dataset subset filtered | Slicers, Visual Rows, `CALCULATE()` | ✅ YES (Passes through relationships) |
