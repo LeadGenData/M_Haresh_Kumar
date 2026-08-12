@@ -325,3 +325,36 @@ AS
 - `dbt run`: Compiles and runs all SQL models inside Snowflake.
 - `dbt test`: Executes data quality assertions (unique, not_null, accepted_values).
 - `dbt docs generate`: Automatically builds a visual interactive data lineage graph.
+
+---
+
+## 📅 SCENARIO 19: Building Custom DAX Date Tables using Variables (`VAR`/`RETURN`), `ADDCOLUMNS`, `CALENDARAUTO`, and `FILTER`
+* **Real-World Challenge:** Creating a robust, continuous, corporate Date Dimension table in Power BI without relying on auto-date/time hierarchies, optimizing VertiPaq compression.
+
+### 💡 The Exact DAX Date Table Code:
+
+```dax
+Dim_Date = 
+VAR MinYear = YEAR(MIN(Fact_Sales[Order_Date]))
+VAR MaxYear = YEAR(MAX(Fact_Sales[Order_Date]))
+VAR BaseCalendar = CALENDAR(DATE(MinYear, 1, 1), DATE(MaxYear, 12, 31))
+
+RETURN
+    ADDCOLUMNS(
+        BaseCalendar,
+        "Year", YEAR([Date]),
+        "Month_Number", MONTH([Date]),
+        "Month_Name", FORMAT([Date], "MMM"),
+        "Year_Month", FORMAT([Date], "YYYY-MM"),
+        "Quarter", "Q" & FORMAT([Date], "Q"),
+        "Day_of_Week", FORMAT([Date], "DDD"),
+        "Day_Number", WEEKDAY([Date], 2), -- 1 for Monday to 7 for Sunday
+        "Is_Weekend", IF(WEEKDAY([Date], 2) >= 6, "Weekend", "Weekday")
+    )
+```
+
+### 🧠 Key Concepts & Interview Answers:
+1. **Why Use `VAR` / `RETURN`:** `VAR` stores temporary scalar or table values in memory, improving DAX execution speed and code readability.
+2. **`CALENDAR()` vs `CALENDARAUTO()`:** `CALENDAR(StartDate, EndDate)` creates a continuous date table between specific bounds. `CALENDARAUTO()` scans the entire model for the min/max dates automatically.
+3. **`FILTER()` on Tables:** `FILTER(Table, Expression)` evaluates conditions row-by-row to return a filtered table subset.
+4. **Disabling Auto Date/Time:** Always disable Power BI's default "Auto Date/Time" setting in options to prevent hidden automatic date tables from bloating model memory.
