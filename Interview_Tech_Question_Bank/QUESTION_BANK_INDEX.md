@@ -418,7 +418,9 @@ ADDCOLUMNS(
 3. **Columns:** `Dim_Hour[Hour_Label]` (00:00 to 23:00) - Sorted by `Hour_Number`.
 4. **Values:** `[Total_Ticket_Volume]` or `[Avg_Response_Time_Sec]`.
 5. **Conditional Formatting (Heat Map):**
-   - Right-click `[Total_Ticket_Volume]` in Values $ightarrow$ **Conditional Formatting** $ightarrow$ **Background Color**.
+   - Right-click `[Total_Ticket_Volume]` in Values $
+ightarrow$ **Conditional Formatting** $
+ightarrow$ **Background Color**.
    - Format style: **Gradient**.
    - Lowest value: Light Blue / Neutral.
    - Highest value: Deep Red / Coral.
@@ -426,3 +428,45 @@ ADDCOLUMNS(
 ### 🧠 Operational Value (What This Solves for Leadership):
 - Instantly highlights operational peak hours (e.g. **Hour 10: 10:00 AM Local Time** across multi-country support teams).
 - Allows Data Operations Managers to re-allocate analyst shift rosters and prevent SLA breaches.
+
+---
+
+## 🔗 SCENARIO 22: Virtual Relationships in DAX using `USERELATIONSHIP()` and `TREATAS()`
+* **Real-World Challenge:** Joining tables dynamically in DAX without creating physical model relationships (or activating inactive relationships) to solve role-playing dimensions and disconnected tables.
+
+### 💡 Technique 1: Activating Inactive Relationships with `USERELATIONSHIP()`
+- **The Problem:** A `Fact_Sales` table has multiple date columns (`Order_Date`, `Ship_Date`, `Delivery_Date`), but only 1 active relationship to `Dim_Date[Date]` is allowed in the physical model.
+- **The Solution:** Create secondary inactive relationships in the model UI, then activate them on-demand inside DAX measures using `USERELATIONSHIP()`.
+
+```dax
+-- Active Relationship Measure (Order Date)
+Sales_by_Order_Date = SUM(Fact_Sales[Amount])
+
+-- Inactive Relationship Measure (Ship Date via USERELATIONSHIP)
+Sales_by_Ship_Date = 
+CALCULATE(
+    SUM(Fact_Sales[Amount]),
+    USERELATIONSHIP(Fact_Sales[Ship_Date], Dim_Date[Date])
+)
+```
+
+### 💡 Technique 2: Disconnected Virtual Relationships using `TREATAS()`
+- **The Problem:** Two tables have no physical relationship in the data model, but you need to filter Table B based on values in Table A dynamically.
+- **The Solution:** Use `TREATAS(Table_or_Column, Target_Column)` to pass filter context virtually without altering the physical schema.
+
+```dax
+-- Virtual Relationship Filter using TREATAS
+Sales_for_Selected_Regions = 
+VAR SelectedRegions = VALUES(Dim_Region_Disconnected[Region_Name])
+RETURN
+    CALCULATE(
+        SUM(Fact_Sales[Amount]),
+        TREATAS(SelectedRegions, Dim_Customer[Customer_Region])
+    )
+```
+
+### 🧠 Interview Comparison Matrix:
+| Function | Required Physical Relationship? | Primary Use Case |
+| :--- | :--- | :--- |
+| **`USERELATIONSHIP()`** | ✅ YES (Must exist as an Inactive Line in Model UI) | Role-playing dates (`Order_Date` vs `Ship_Date`) |
+| **`TREATAS()`** | ❌ NO (Works on completely Disconnected Tables) | Dynamic slicers, virtual mapping tables, target vs actuals |
