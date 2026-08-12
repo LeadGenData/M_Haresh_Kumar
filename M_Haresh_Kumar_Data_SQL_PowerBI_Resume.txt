@@ -1,0 +1,37 @@
+M. HARESH KUMAR
+Data Operations Lead & Senior Analytics Specialist (15 Years Experience)
+Bengaluru, India | +91-9663683773 | hareshmkumar9@gmail.com | Portfolio: https://leadgendata.github.io/M_Haresh_Kumar/
+
+PROFESSIONAL SUMMARY
+Data and Analytics professional with 15 years of experience leading B2B data operations, Data Governance frameworks, high-volume reporting delivery, and business intelligence pipelines. Expert at translating business requirements into automated data workflows using SQL, Snowflake, and Power BI. Proven leadership of cross-functional execution teams of 15+ members, driving strict data quality, metadata management, and SLA-focused delivery, with demonstrated achievements reducing manual reporting cycle times from 5 days down to 1 day. Actively implements modern AI automation workflows and Agentic AI tools to streamline enterprise data quality and governance processes.
+
+CORE TECHNICAL SKILLS
+• Business Intelligence & SQL: Power BI, DAX, Power Query ETL, Advanced SQL (CTEs, QUALIFY ROW_NUMBER(), Window Functions), Data Modeling (Star/Snowflake Schemas)
+• Data Governance & Quality: Enterprise Data Governance, Data Quality Audits, Metadata Management, Data Lineage, PII Masking & Access Controls
+• Cloud & Warehousing: Snowflake Medallion Architecture (Bronze->Silver->Gold), Streams & Tasks (CDC), Dynamic PII Masking, Cost Tuning, dbt (Data Build Tool - Working Knowledge)
+• Automation & Scripting: Python (pandas, openpyxl, pywin32), Process Automation, REST APIs, Claude, Agentic AI Workflows, PowerShell
+
+CERTIFICATIONS & VERIFIED BADGES
+• Snowflake Academy Certified: Hands-On Essentials (Data Applications | Data Engineering Workshop | Collaboration, Marketplace & Cost Estimation | Data Warehousing Workshop)
+• HackerRank Verified Badge: Querying Data with Transact-SQL
+• Coursera Verified Certificate: Preparing Data for Analysis with Microsoft Excel
+
+PROFESSIONAL EXPERIENCE
+Data Consultant | Ariviga Technologies Pvt Ltd | July 2025 – Present | Bengaluru, India
+• Pipeline Architecture & Governance: Built and optimized automated, incremental data pipelines using SQL, Snowflake Streams, and Tasks while enforcing strict data governance and validation checks.
+• Business Intelligence: Developed comprehensive Power BI dashboards to track strategic KPIs and improve executive business performance visibility.
+• Workflow Optimization: Integrated multiple data sources and implemented strong data quality checks across transformation layers to maximize reporting accuracy.
+
+Manager – Data & Delivery | Innovays Business Services | August 2010 – January 2025 | India
+• Team Leadership: Led, trained, and allocated daily tasks for a core data operation and reporting delivery team of 15+ members handling large enterprise client accounts.
+• Scale Data Operations: Managed, processed, and verified large-scale datasets of 200K–300K+ records monthly using deep web research, extraction, and advanced Excel modelling.
+• Data Governance & Audits: Established enterprise Data Governance rules, metadata tracking, and regular internal audit processes to completely eliminate final output delivery errors.
+• Process Automation: Built advanced Excel-based automation frameworks and macros, successfully reducing team manual reporting cycle times from 5 days down to 1 day.
+
+INDEPENDENT TECHNICAL PROJECTS
+• Revenue Leakage Calculator & Dynamic PDF Engine: Architected a web utility computing operational/financial leakage across 6 B2B niches using serverless Google Apps Script API loggers.
+• Executive Leads CRM Dashboard: Deployed a responsive admin panel in React and Vite routed through a Cloudflare Workers API Proxy for CORS security and backend masking.
+• Outlook Sent Campaign Scraper: Developed custom backend automation utility scripts in Python and PowerShell to parse communication logs, deduplicate records, and sweep email bounces.
+
+ADDITIONAL INFORMATION
+Languages: English, Telugu, Marathi, Hindi, Kannada
