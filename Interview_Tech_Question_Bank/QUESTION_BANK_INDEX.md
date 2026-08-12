@@ -387,3 +387,42 @@ RETURN
 | :--- | :--- | :--- | :--- |
 | **Row Context** | Current row being evaluated | Calculated Columns, `SUMX` iterators | ❌ NO (Unless wrapped in `CALCULATE`) |
 | **Filter Context** | Active dataset subset filtered | Slicers, Visual Rows, `CALCULATE()` | ✅ YES (Passes through relationships) |
+
+---
+
+## 🗺️ SCENARIO 21: Building a Custom Hour Table & Matrix Heat Map for Peak Roster SLAs
+* **Real-World Challenge:** Creating a continuous 24-hour dimension table (`Dim_Hour`) and constructing a Matrix Heat Map visualization in Power BI to identify peak operational hours and prevent SLA breaches.
+
+### 💡 Step 1: DAX Code for Custom Hour Dimension Table (`Dim_Hour`)
+
+```dax
+Dim_Hour = 
+ADDCOLUMNS(
+    GENERATESERIES(0, 23, 1),
+    "Hour_Number", [Value],
+    "Hour_Label", FORMAT(TIME([Value], 0, 0), "hh:00 AM/PM"), -- e.g. "09:00 AM", "10:00 AM"
+    "Time_Slot", 
+        SWITCH(
+            TRUE(),
+            [Value] >= 6 && [Value] < 12, "Morning Peak",
+            [Value] >= 12 && [Value] < 17, "Afternoon Shift",
+            [Value] >= 17 && [Value] < 22, "Evening Shift",
+            "Night Shift"
+        )
+)
+```
+
+### 📊 Step 2: Creating the Matrix Heat Map in Power BI Visuals
+1. **Visual Selected:** **Matrix Visual**.
+2. **Rows:** `Dim_Date[Day_of_Week]` (Monday, Tuesday, ... Sunday) - Sorted by `Day_of_Week_Number`.
+3. **Columns:** `Dim_Hour[Hour_Label]` (00:00 to 23:00) - Sorted by `Hour_Number`.
+4. **Values:** `[Total_Ticket_Volume]` or `[Avg_Response_Time_Sec]`.
+5. **Conditional Formatting (Heat Map):**
+   - Right-click `[Total_Ticket_Volume]` in Values $ightarrow$ **Conditional Formatting** $ightarrow$ **Background Color**.
+   - Format style: **Gradient**.
+   - Lowest value: Light Blue / Neutral.
+   - Highest value: Deep Red / Coral.
+
+### 🧠 Operational Value (What This Solves for Leadership):
+- Instantly highlights operational peak hours (e.g. **Hour 10: 10:00 AM Local Time** across multi-country support teams).
+- Allows Data Operations Managers to re-allocate analyst shift rosters and prevent SLA breaches.
