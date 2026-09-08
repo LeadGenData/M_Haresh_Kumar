@@ -135,7 +135,7 @@ Built a Python desktop script using Outlook COM API (`pywin32`) and Google Sheet
 
 * **Status:** ✅ Completed
 * **Tech Stack:** `HTML5` | `CSS3` | `JavaScript` | `Google Apps Script` | `Google Sheets API`
-* **Links:** 🌐 [Live Calculator](https://bdl.dataconnectmail.com/) | 📂 [Source Code](https://github.com/jamescluster35/revenue-leakage-calculator)
+* **Links:** 🌐 [Live Calculator](https://leadgendata.github.io/M_Haresh_Kumar/calculator.html) | 📂 [Source Code](https://github.com/jamescluster35/revenue-leakage-calculator)
 
 **Business Problem:**
 
