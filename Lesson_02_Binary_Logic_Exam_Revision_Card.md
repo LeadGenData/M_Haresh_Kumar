@@ -1,5 +1,7 @@
 # 🎓 NIOS Senior Secondary (Class 12) — Computer Science (Code 330)
+
 ## 📌 Fast-Track Exam Revision Card — Lesson 2: Binary Logic
+
 *Weightage in Theory Board Exam: 5 to 8 Marks | Expected Question Types: 1-Mark Definitions, 2-Mark Truth Tables, Universal Gates*
 
 ---
@@ -19,6 +21,7 @@
 ### ⚡ 2. The 3 Primary Logic Gates (Definitions, Formulas & Tables)
 
 #### 1. AND Gate (`Y = A · B`)
+
 * **Rule:** Output is **1 ONLY when ALL inputs are 1**.
 | Input A | Input B | Output Y (A · B) |
 | :---: | :---: | :---: |
@@ -30,6 +33,7 @@
 ---
 
 #### 2. OR Gate (`Y = A + B`)
+
 * **Rule:** Output is **1 if AT LEAST ONE input is 1**.
 | Input A | Input B | Output Y (A + B) |
 | :---: | :---: | :---: |
@@ -41,6 +45,7 @@
 ---
 
 #### 3. NOT Gate (Inverter) (`Y = A'` or `Y = ~A`)
+
 * **Rule:** Output is the **opposite** of the input (flips 0 to 1, and 1 to 0).
 | Input A | Output Y (A') |
 | :---: | :---: |
@@ -62,6 +67,7 @@
 ---
 
 ### 🔀 4. XOR Gate (Exclusive OR) (`Y = A ⊕ B`)
+
 * **Rule:** Output is **1 ONLY when inputs are DIFFERENT**. If inputs are identical, output is 0.
 | Input A | Input B | Output Y (A ⊕ B) |
 | :---: | :---: | :---: |
