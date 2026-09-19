@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turnkey Contractor Operating System | Job-Costing & Cash-Flow for Commercial Trades</title>
+  <meta name="description" content="100% Company-Owned Commercial Contractor Job-Costing & Gross Margin Operating System in Excel & Power BI. Eliminate 4% to 8% margin leakage without monthly Procore/software fees.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --card-border: #1f293d;
+      --accent: #0284c7;
+      --accent-glow: #38bdf8;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navbar */
+    .nav {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-brand {
+      font-weight: 800;
+      font-size: 18px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge-pill {
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--accent-glow);
+      color: var(--accent-glow);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      margin-left: 20px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+
+    /* Hero Section */
+    .hero {
+      padding: 64px 0 40px;
+      text-align: center;
+    }
+    .hero-tag {
+      display: inline-block;
+      color: var(--warning);
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: #fff;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero h1 span {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 740px;
+      margin: 0 auto 36px;
+    }
+
+    .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 20px rgba(2, 132, 199, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(2, 132, 199, 0.5);
+    }
+    .btn-secondary {
+      background: #1e293b;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      border: 1px solid #334155;
+      transition: background 0.2s;
+    }
+    .btn-secondary:hover { background: #334155; }
+
+    /* Dashboard Visual Showcase */
+    .dashboard-showcase {
+      margin: 40px auto 60px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      max-width: 1000px;
+    }
+    .dashboard-showcase img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      border: 1px solid #1f293d;
+    }
+    .showcase-caption {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px 6px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .showcase-caption strong { color: #fff; }
+
+    /* The Problem & Solution Grid */
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 28px;
+      position: relative;
+    }
+    .feature-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .feature-badge {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .badge-blue { background: rgba(56, 189, 248, 0.1); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.2); }
+    .badge-green { background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.2); }
+    .badge-amber { background: rgba(245, 158, 11, 0.1); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.2); }
+
+    /* The Offer / Comparison Box */
+    .comparison-box {
+      background: linear-gradient(180deg, #111827 0%, #0c121e 100%);
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 40px;
+      margin: 60px 0;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+    }
+    .comparison-table th, .comparison-table td {
+      padding: 16px 20px;
+      text-align: left;
+      border-bottom: 1px solid #1e293b;
+      font-size: 14px;
+    }
+    .comparison-table th {
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+    .check-yes { color: var(--success); font-weight: 700; }
+    .check-no { color: var(--danger); font-weight: 700; }
+
+    /* Pricing Card */
+    .pricing-card {
+      background: #131d31;
+      border: 2px solid #0284c7;
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      max-width: 580px;
+      margin: 0 auto 60px;
+      box-shadow: 0 10px 30px rgba(2, 132, 199, 0.2);
+    }
+    .pricing-price {
+      font-size: 48px;
+      font-weight: 800;
+      color: #fff;
+      margin: 16px 0 8px;
+    }
+    .pricing-term {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .pricing-features {
+      list-style: none;
+      text-align: left;
+      margin: 24px 0 32px;
+    }
+    .pricing-features li {
+      padding: 10px 0;
+      border-bottom: 1px solid #1e293b;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pricing-features li::before {
+      content: "✔";
+      color: var(--success);
+      font-weight: 800;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--card-border);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+    .footer a { color: var(--text-muted); text-decoration: none; }
+    .footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="container">
+    <nav class="nav">
+      <div class="nav-brand">
+        <span>Turnkey Contractor OS</span>
+        <span class="badge-pill">Excel + Power BI</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Main Portfolio</a>
+        <a href="https://www.linkedin.com/in/haresh-kumar-data-lead/" target="_blank">LinkedIn</a>
+        <a href="mailto:jamescluster35@gmail.com">Direct Inquiry</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-tag">For Commercial HVAC, Mechanical, Roofing & Trade Contractors</div>
+      <h1>Stop <span>4% to 8% Gross Margin Drift</span> Between Takeoff & Final Billing</h1>
+      <p class="hero-sub">
+        A 100% company-owned, automated Job-Costing & Cash-Flow Operating System built directly in Excel & Power BI. Get live plan-to-field cost tracking without recurring enterprise software bloat.
+      </p>
+      <div class="cta-group">
+        <a href="mailto:jamescluster35@gmail.com?subject=Contractor%20OS%20Demo%20Request&body=Hi%20Haresh,%20I'm%20interested%20in%20reviewing%20the%20Turnkey%20Contractor%20OS%20working%20template%20for%20our%20jobs." class="btn-primary">
+          <span>Request 2-Minute Demo & Working Template</span>
+          <span>→</span>
+        </a>
+        <a href="https://upwork.com/services/product/2100557815053137892" target="_blank" class="btn-secondary">
+          View Upwork Catalog ($500 Fixed)
+        </a>
+      </div>
+    </section>
+
+    <!-- Visual Dashboard Showcase -->
+    <section class="dashboard-showcase">
+      <img src="assets/turnkey_contractor_os_dashboard.png" alt="Commercial Contractor Job-Costing & Cash-Flow Dashboard" onerror="this.src='https://via.placeholder.com/1000x550/111827/38bdf8?text=Turnkey+Contractor+Job+Costing+Operating+System'">
+      <div class="showcase-caption">
+        <span><strong>Live Production Architecture:</strong> 7 Relational Tables • Automated 3-Way Match • Live WIP Schedule</span>
+        <span>Runs on Microsoft 365 / Google Workspace</span>
+      </div>
+    </section>
+
+    <!-- The 3 Profit Leaks Solved -->
+    <section>
+      <div class="section-title">
+        <h2>The 3 Operational Blind Spots We Eliminate</h2>
+        <p>Most trade businesses don't fail from lack of work. They struggle because job costs aren't visible until 30 days after the project closes.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-badge badge-amber">Problem #1 Solved</span>
+          <h3>Plan-to-Field Traceability Drift</h3>
+          <p>
+            Estimators build the bid takeoff, but purchase orders drift without a locked baseline. Our <strong>Plan-to-Field BOM Table</strong> locks committed equipment specs against actual field purchase orders so quantity creep is flagged immediately.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-badge badge-blue">Problem #2 Solved</span>
+          <h3>Blind Supplier Pricing Games</h3>
+          <p>
+            Relying on a single vendor's quote quietly bleeds margins. Our automated <strong>3-Way Supplier Quote Comparison Engine</strong> highlights material price variance across distributors (Ferguson, Winsupply, ABC) before your team cuts a PO.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-badge badge-green">Problem #3 Solved</span>
+          <h3>Lagging Job Cost & Over/Under Billing</h3>
+          <p>
+            Learning a job lost money at month-end tax filing is too late. Our <strong>Live WIP & Margin Dashboard</strong> gives ownership real-time crew labor burn, committed material draw, and AIA billing milestones on one screen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enterprise Software vs Turnkey OS -->
+    <section class="comparison-box">
+      <div class="section-title" style="margin-bottom: 20px;">
+        <h2>Enterprise Software vs. Turnkey Contractor OS</h2>
+        <p>Why commercial trade owners are choosing company-owned frameworks over bloated subscriptions.</p>
+      </div>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature / Capability</th>
+            <th>Traditional Software (Procore / Sage)</th>
+            <th>Turnkey Contractor OS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Recurring Cost</strong></td>
+            <td class="check-no">$10,000 – $25,000 / year recurring</td>
+            <td class="check-yes">Flat $500 Setup (Zero recurring fees)</td>
+          </tr>
+          <tr>
+            <td><strong>Data Ownership & IP</strong></td>
+            <td class="check-no">Locked in vendor's proprietary cloud</td>
+            <td class="check-yes">100% Owned by Your Company (Excel / M365)</td>
+          </tr>
+          <tr>
+            <td><strong>Learning Curve</strong></td>
+            <td class="check-no">Months of staff training & complex setup</td>
+            <td class="check-yes">Familiar Excel & Power BI interface (Deploy in 5 Days)</td>
+          </tr>
+          <tr>
+            <td><strong>Field-to-Finance Traceability</strong></td>
+            <td>Complex multi-tab navigation</td>
+            <td class="check-yes">1-Screen Executive Variance & WIP Dashboard</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- The Productized Offer -->
+    <section class="pricing-card">
+      <span class="feature-badge badge-blue">Complete Productized System</span>
+      <h2>Turnkey Operating System Package</h2>
+      <div class="pricing-price">$500 <span style="font-size: 18px; font-weight: 500; color: #94a3b8;">flat</span></div>
+      <p class="pricing-term">One-time setup • 100% Company-Owned • Zero Monthly Software Fees</p>
+
+      <ul class="pricing-features">
+        <li><strong>7-Table Relational Excel Model</strong> (Jobs, Estimates, BOM, Quotes, Field Draw, POs, WIP)</li>
+        <li><strong>Automated 3-Way Supplier Price Match</strong> across distributors</li>
+        <li><strong>Executive Power BI Dashboard</strong> (.pbix file with Star-Schema & DAX KPI measures)</li>
+        <li><strong>Pre-configured for your team's jobs</strong> and existing vendor catalogs</li>
+        <li><strong>14 Days Post-Delivery Technical Support</strong> & Handover</li>
+      </ul>
+
+      <a href="mailto:jamescluster35@gmail.com?subject=Turnkey%20Contractor%20OS%20Inquiry&body=Hi%20Haresh,%20I'd%20like%20to%20review%20how%20the%20$500%20Turnkey%20Contractor%20OS%20fits%20our%20commercial%20projects." class="btn-primary" style="width: 100%; justify-content: center;">
+        Direct Email Inquiry (Fast Response)
+      </a>
+      <div style="margin-top: 14px; font-size: 13px; color: var(--text-muted);">
+        Or book via <a href="https://upwork.com/services/product/2100557815053137892" target="_blank" style="color: var(--accent-glow);">Upwork Escrow Protection</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <p>© 2026 M. Haresh Kumar. Lead Data Operations Specialist & Author.</p>
+    <p style="margin-top: 6px;">
+      Serving US Commercial Trade Contractors, Estimators & CFOs • 
+      <a href="https://leadgendata.github.io/M_Haresh_Kumar/">Web Portfolio</a> • 
+      <a href="https://www.linkedin.com/in/haresh-kumar-data-lead/">LinkedIn Profile</a>
+    </p>
+  </footer>
+
+</body>
+</html>
