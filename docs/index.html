@@ -762,10 +762,130 @@
       font-weight: 500;
     }
 
+    /* INTERACTIVE OPERATIONS SIMULATOR */
+    .simulator-container {
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(254, 215, 170, 0.4);
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
+      margin-top: 2rem;
+    }
+    .sim-toggle-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .sim-btn {
+      padding: 0.85rem 1.8rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid rgba(254, 215, 170, 0.3);
+      background: rgba(30, 41, 59, 0.7);
+      color: #94a3b8;
+    }
+    .sim-btn:hover {
+      color: #fff;
+      border-color: rgba(254, 215, 170, 0.6);
+      transform: translateY(-2px);
+    }
+    .sim-btn.active-legacy {
+      background: rgba(239, 68, 68, 0.18);
+      border-color: #ef4444;
+      color: #fca5a5;
+      box-shadow: 0 0 22px rgba(239, 68, 68, 0.45);
+    }
+    .sim-btn.active-auto {
+      background: rgba(16, 185, 129, 0.18);
+      border-color: #10b981;
+      color: #6ee7b7;
+      box-shadow: 0 0 22px rgba(16, 185, 129, 0.45);
+    }
+    .sim-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .sim-metric-card {
+      background: rgba(30, 41, 59, 0.65);
+      border: 1px solid rgba(254, 215, 170, 0.25);
+      border-radius: 1rem;
+      padding: 1.2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .sim-metric-label {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+    .sim-metric-val {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin: 0.4rem 0;
+      font-family: 'JetBrains Mono', monospace;
+      transition: color 0.3s ease;
+    }
+    .sim-flow-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .sim-flow-step {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(254, 215, 170, 0.25);
+      border-radius: 0.9rem;
+      padding: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    .sim-step-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .sim-step-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.4rem;
+    }
+    .sim-step-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+    .sim-star-box {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.98));
+      border-left: 4px solid #10b981;
+      border-radius: 0 0.9rem 0.9rem 0;
+      padding: 1.6rem;
+      font-size: 0.92rem;
+      line-height: 1.75;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; }
       .hero-right { order: -1; margin-bottom: 2rem; }
       .nav-right { display: none; }
+      .simulator-container { padding: 1.5rem; }
     }
   </style>
 </head>
@@ -1091,6 +1211,59 @@
     </div>
   </section>
 
+  <!-- PRODUCTION SIMULATOR: 5-DAY TO 1-DAY AUTOMATION -->
+  <section class="section" id="production-case-study">
+    <h2 class="section-title">Production Operations <span>Simulator</span></h2>
+    <p class="section-subtitle">
+      Interactive Architecture Model: Real-world operational reporting overhaul implemented across 14+ years of data operations leadership at Innovays & Mailing Data Solutions.
+    </p>
+
+    <div class="simulator-container">
+      <div class="sim-toggle-wrapper">
+        <button id="btnLegacy" class="sim-btn active-legacy" onclick="setSimMode('legacy')">
+          <span>🔴</span> Mode A: 5-Day Legacy Manual Cycle (Before)
+        </button>
+        <button id="btnAuto" class="sim-btn" onclick="setSimMode('auto')">
+          <span>🟢</span> Mode B: 1-Day Automated Architecture (After)
+        </button>
+      </div>
+
+      <!-- Real-Time Dynamic Metrics Board -->
+      <div class="sim-metrics-grid">
+        <div class="sim-metric-card">
+          <div class="sim-metric-label">Reporting Turnaround</div>
+          <div class="sim-metric-val" id="metricTurnaround" style="color: #ef4444;">5 Days</div>
+          <div class="sim-metric-sub" id="subTurnaround" style="color: #fca5a5; font-size: 0.8rem; font-weight: 600;">Lagging & past-due decisions</div>
+        </div>
+        <div class="sim-metric-card">
+          <div class="sim-metric-label">Ingestion Architecture</div>
+          <div class="sim-metric-val" id="metricIngest" style="color: #fb923c; font-size: 1.25rem;">Manual CSVs</div>
+          <div class="sim-metric-sub" id="subIngest" style="color: #fdba74; font-size: 0.8rem; font-weight: 600;">Scattered local spreadsheets</div>
+        </div>
+        <div class="sim-metric-card">
+          <div class="sim-metric-label">Human Error Risk</div>
+          <div class="sim-metric-val" id="metricRisk" style="color: #ef4444;">14 Points</div>
+          <div class="sim-metric-sub" id="subRisk" style="color: #fca5a5; font-size: 0.8rem; font-weight: 600;">Manual VLOOKUP failure points</div>
+        </div>
+        <div class="sim-metric-card">
+          <div class="sim-metric-label">Data Quality & Audit</div>
+          <div class="sim-metric-val" id="metricAudit" style="color: #eab308; font-size: 1.25rem;">Spot Checks</div>
+          <div class="sim-metric-sub" id="subAudit" style="color: #fef08a; font-size: 0.8rem; font-weight: 600;">Undetected discrepancy gaps</div>
+        </div>
+      </div>
+
+      <!-- 4-Stage Workflow Comparison Pipeline -->
+      <div class="sim-flow-grid" id="simFlowGrid">
+        <!-- Dynamically rendered via JS -->
+      </div>
+
+      <!-- STAR Implementation Breakdown -->
+      <div class="sim-star-box" id="simStarBox">
+        <!-- Dynamically updated STAR narrative -->
+      </div>
+    </div>
+  </section>
+
   <!-- AI ASSISTANCE STATEMENT -->
   <section class="section" id="ai-statement">
     <h2 class="section-title">🤖 AI Assistance <span>Statement</span></h2>
@@ -1191,6 +1364,172 @@ CREATE OR REPLACE MASKING POLICY mask_card_number AS (val string) ->
           document.body.style.overflow = 'auto';
         }
       });
+    });
+
+    // -------------------------------------------------------------
+    // INTERACTIVE OPERATIONS SIMULATOR LOGIC
+    // -------------------------------------------------------------
+    const simData = {
+      legacy: {
+        turnaround: "5 Days",
+        subTurnaround: "Lagging & past-due decisions",
+        turnaroundColor: "#ef4444",
+        ingest: "Manual CSVs",
+        subIngest: "Scattered local spreadsheets",
+        ingestColor: "#fb923c",
+        risk: "14 Points",
+        subRisk: "Manual VLOOKUP failure points",
+        riskColor: "#ef4444",
+        audit: "Spot Checks",
+        subAudit: "Undetected discrepancy gaps",
+        auditColor: "#eab308",
+        steps: [
+          {
+            badge: "STAGE 1 • DAYS 1–2",
+            badgeBg: "rgba(239, 68, 68, 0.2)",
+            badgeColor: "#fca5a5",
+            title: "Fragmented Data Intake",
+            desc: "15+ operations staff manually downloading isolated CSVs, ERP extracts, and client logs across desktop folders."
+          },
+          {
+            badge: "STAGE 2 • DAY 3",
+            badgeBg: "rgba(249, 115, 22, 0.2)",
+            badgeColor: "#fdba74",
+            title: "Manual Excel Stitching",
+            desc: "Complex local VLOOKUPs, formula breaks, duplicated rows, and missing client IDs causing recurring recalculation lags."
+          },
+          {
+            badge: "STAGE 3 • DAY 4",
+            badgeBg: "rgba(234, 179, 8, 0.2)",
+            badgeColor: "#fde047",
+            title: "Reactive Error Hunting",
+            desc: "Managers cross-checking billing figures manually over email to trace discrepancy variances between operations and finance."
+          },
+          {
+            badge: "STAGE 4 • DAY 5",
+            badgeBg: "rgba(239, 68, 68, 0.2)",
+            badgeColor: "#fca5a5",
+            title: "Static Stale Delivery",
+            desc: "Static PDFs and spreadsheets delivered to executive leadership; data is already 5 days stale before decisions are executed."
+          }
+        ],
+        star: `
+          <strong style="color: #fca5a5; font-size: 1.05rem;">⚠️ The Operational Bottleneck (Before):</strong><br>
+          <span style="color: #cbd5e1;">
+            Managing data workflows across multi-client accounts was constrained by manual intake routines. Operations leaders spent 80% of their work week cleaning, formatting, and emailing disparate spreadsheets rather than analyzing performance. Executive decision-making suffered a 5-day blindspot, leading to delayed campaign deliveries and billing reconciliation friction.
+          </span>
+        `,
+        starBorder: "#ef4444"
+      },
+      auto: {
+        turnaround: "1 Day (80% ⚡)",
+        subTurnaround: "Same-day operational clarity",
+        turnaroundColor: "#10b981",
+        ingest: "Automated Gateway",
+        subIngest: "Scheduled SQL ETL staging",
+        ingestColor: "#38bdf8",
+        risk: "Near Zero",
+        subRisk: "Schema & constraint validation",
+        riskColor: "#10b981",
+        audit: "100% Verified",
+        subAudit: "Automated discrepancy logs",
+        auditColor: "#10b981",
+        steps: [
+          {
+            badge: "STAGE 1 • 06:00 AM",
+            badgeBg: "rgba(56, 189, 248, 0.2)",
+            badgeColor: "#7dd3fc",
+            title: "Centralized Automated Intake",
+            desc: "Scheduled database extracts automatically land into unified SQL staging tables with strict schema & type enforcement."
+          },
+          {
+            badge: "STAGE 2 • 07:30 AM",
+            badgeBg: "rgba(16, 185, 129, 0.2)",
+            badgeColor: "#6ee7b7",
+            title: "SQL Transformation & Cleaning",
+            desc: "Automated deduplication (Window QUALIFY / ROW_NUMBER), surrogate key mapping, and standardized business metrics."
+          },
+          {
+            badge: "STAGE 3 • 08:30 AM",
+            badgeBg: "rgba(16, 185, 129, 0.2)",
+            badgeColor: "#6ee7b7",
+            title: "Automated 3-Tier Reconciliation",
+            desc: "SQL audit rules verify source vs. target record counts, sum totals, and null integrity, instantly flagging variances."
+          },
+          {
+            badge: "STAGE 4 • LIVE 09:00 AM",
+            badgeBg: "rgba(56, 189, 248, 0.2)",
+            badgeColor: "#7dd3fc",
+            title: "Power BI Live Semantic Layer",
+            desc: "Interactive dashboards refresh via On-Premises Gateway; executives and operations managers access live KPIs on demand."
+          }
+        ],
+        star: `
+          <strong style="color: #6ee7b7; font-size: 1.05rem;">✅ The 1-Day Automated Impact (After):</strong><br>
+          <span style="color: #cbd5e1;">
+            <strong style="color: #fbd5a5;">SITUATION:</strong> Operational reporting at Innovays & Mailing Data Solutions was consuming 5 business days per cycle, causing leadership delays.<br>
+            <strong style="color: #fbd5a5;">TASK:</strong> Overhaul and automate the entire data ingestion, reconciliation, and reporting pipeline for all operational accounts.<br>
+            <strong style="color: #fbd5a5;">ACTION:</strong> Designed an automated SQL ETL pipeline, built an enterprise Star-Schema semantic layer in Power BI connected via live gateway, and instituted automated reconciliation rules.<br>
+            <strong style="color: #fbd5a5;">RESULT:</strong> Slashed reporting turnaround from <strong>5 days to 1 day (80% faster)</strong>, eliminated 14 manual human error points, and gave executive leadership instant operational visibility.
+          </span>
+        `,
+        starBorder: "#10b981"
+      }
+    };
+
+    function setSimMode(mode) {
+      const btnLegacy = document.getElementById('btnLegacy');
+      const btnAuto = document.getElementById('btnAuto');
+      const data = simData[mode];
+
+      if (mode === 'legacy') {
+        btnLegacy.className = 'sim-btn active-legacy';
+        btnAuto.className = 'sim-btn';
+      } else {
+        btnAuto.className = 'sim-btn active-auto';
+        btnLegacy.className = 'sim-btn';
+      }
+
+      // Update KPI Cards
+      const tVal = document.getElementById('metricTurnaround');
+      tVal.innerText = data.turnaround;
+      tVal.style.color = data.turnaroundColor;
+      document.getElementById('subTurnaround').innerText = data.subTurnaround;
+
+      const iVal = document.getElementById('metricIngest');
+      iVal.innerText = data.ingest;
+      iVal.style.color = data.ingestColor;
+      document.getElementById('subIngest').innerText = data.subIngest;
+
+      const rVal = document.getElementById('metricRisk');
+      rVal.innerText = data.risk;
+      rVal.style.color = data.riskColor;
+      document.getElementById('subRisk').innerText = data.subRisk;
+
+      const aVal = document.getElementById('metricAudit');
+      aVal.innerText = data.audit;
+      aVal.style.color = data.auditColor;
+      document.getElementById('subAudit').innerText = data.subAudit;
+
+      // Update Flow Grid
+      const flowGrid = document.getElementById('simFlowGrid');
+      flowGrid.innerHTML = data.steps.map(s => `
+        <div class="sim-flow-step">
+          <span class="sim-step-badge" style="background: ${s.badgeBg}; color: ${s.badgeColor};">${s.badge}</span>
+          <div class="sim-step-title">${s.title}</div>
+          <p class="sim-step-desc">${s.desc}</p>
+        </div>
+      `).join('');
+
+      // Update STAR Box
+      const starBox = document.getElementById('simStarBox');
+      starBox.innerHTML = data.star;
+      starBox.style.borderLeftColor = data.starBorder;
+    }
+
+    // Initialize Simulator in Automated Mode on Page Load
+    document.addEventListener('DOMContentLoaded', () => {
+      setSimMode('auto');
     });
   </script>
 </body>
