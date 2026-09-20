@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contractor OS v2.0 — Executive Architecture Blueprint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy-900: #0B192C;
+      --navy-800: #1E3E62;
+      --navy-700: #1B365D;
+      --emerald-600: #059669;
+      --emerald-500: #10B981;
+      --emerald-50: #ECFDF5;
+      --amber-500: #F59E0B;
+      --amber-50: #FFFBEB;
+      --slate-900: #0F172A;
+      --slate-800: #1E293B;
+      --slate-600: #475569;
+      --slate-400: #94A3B8;
+      --slate-100: #F1F5F9;
+      --slate-50: #F8FAFC;
+      --white: #FFFFFF;
+      --border: #E2E8F0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #0A0F1D;
+      color: var(--slate-900);
+      line-height: 1.5;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .blueprint-page {
+      background: var(--white);
+      width: 100%;
+      max-width: 960px;
+      border-radius: 12px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+      padding: 36px 44px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .blueprint-page::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #1B365D 0%, #059669 50%, #3B82F6 100%);
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--slate-100);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .brand-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--navy-900);
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: var(--slate-600);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--emerald-50);
+      color: var(--emerald-600);
+      border: 1px solid rgba(5, 150, 105, 0.2);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Value Prop Banner */
+    .banner {
+      background: var(--slate-50);
+      border-left: 4px solid var(--emerald-600);
+      padding: 12px 18px;
+      border-radius: 6px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .banner-text {
+      font-size: 12px;
+      color: var(--slate-800);
+      font-weight: 600;
+    }
+
+    .banner-sub {
+      font-size: 11px;
+      color: var(--slate-600);
+    }
+
+    .banner-stat {
+      text-align: right;
+    }
+
+    .stat-val {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--emerald-600);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .stat-lbl {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: var(--slate-600);
+      font-weight: 600;
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--navy-700);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* Table Grid */
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .table-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: var(--white);
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .table-card.featured {
+      border-color: rgba(5, 150, 105, 0.4);
+      background: #FAFCFB;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .card-code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--navy-800);
+    }
+
+    .card-tag {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    .tag-blue { background: #EBF5FF; color: #1E40AF; }
+    .tag-green { background: var(--emerald-50); color: var(--emerald-600); }
+    .tag-amber { background: var(--amber-50); color: #B45309; }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-bottom: 4px;
+    }
+
+    .card-desc {
+      font-size: 11px;
+      color: var(--slate-600);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+
+    .card-fields {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      color: var(--slate-600);
+      background: var(--slate-100);
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    /* 3 Audit Pillars */
+    .pillars-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .pillar-card {
+      background: var(--slate-50);
+      border-radius: 8px;
+      padding: 14px;
+      border: 1px solid var(--border);
+    }
+
+    .pillar-num {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--emerald-600);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .pillar-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--navy-900);
+      margin-bottom: 4px;
+    }
+
+    .pillar-desc {
+      font-size: 10.5px;
+      color: var(--slate-600);
+      line-height: 1.4;
+    }
+
+    /* Footer Specs */
+    .footer-specs {
+      border-top: 2px solid var(--slate-100);
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: var(--slate-600);
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .spec-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--emerald-600);
+    }
+
+    .author-sign {
+      font-weight: 700;
+      color: var(--navy-900);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blueprint-page">
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <div class="brand-title">Contractor Operating System (OS) v2.0</div>
+        <div class="brand-subtitle">Commercial Trade & Specialty Subcontractor Data Architecture Blueprint</div>
+      </div>
+      <div class="badge-pill">
+        <span>●</span> Turnkey Setup | $0 Recurring
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+      <div>
+        <div class="banner-text">Target Outcome: Close the 4% to 8% Profit Margin Leak</div>
+        <div class="banner-sub">Bridges the gap between blueprint estimating takeoffs, committed supplier POs, and final job closeout.</div>
+      </div>
+      <div class="banner-stat">
+        <div class="stat-val">100%</div>
+        <div class="stat-lbl">Client Data Ownership</div>
+      </div>
+    </div>
+
+    <!-- 7 Relational Tables Pipeline -->
+    <div class="section-title">The 7-Table Relational Operating Schema</div>
+
+    <div class="pipeline-grid">
+      <!-- Tab 1 -->
+      <div class="table-card">
+        <div class="card-top">
+          <span class="card-code">01_Dim_Jobs</span>
+          <span class="card-tag tag-blue">Project Anchor</span>
+        </div>
+        <div class="card-title">Master Project & Margin Register</div>
+        <div class="card-desc">Universal thread linking every downstream quote, PO, labor timesheet, and equipment warranty back to the contract baseline.</div>
+        <div class="card-fields">Job_ID • Client • Scope • Contract_Value • Est_Budget • Live_Margin%</div>
+      </div>
+
+      <!-- Tab 2 -->
+      <div class="table-card">
+        <div class="card-top">
+          <span class="card-code">02_Dim_Takeoff_BOM</span>
+          <span class="card-tag tag-blue">Estimating WBS</span>
+        </div>
+        <div class="card-title">Scope of Work & Bill of Materials</div>
+        <div class="card-desc">Every part, pipe stick, unit, or valve estimated from drawings logged with phase WBS and baseline budget unit price.</div>
+        <div class="card-fields">BOM_Line_ID • Phase_WBS • Part_Number • Req_Qty • Baseline_Est</div>
+      </div>
+
+      <!-- Tab 3 -->
+      <div class="table-card featured">
+        <div class="card-top">
+          <span class="card-code">03_Fact_3Way_Quotes</span>
+          <span class="card-tag tag-green">Margin Protection</span>
+        </div>
+        <div class="card-title">3-Way Distributor Bidding Matrix</div>
+        <div class="card-desc">Compares 3 competitive supply houses side-by-side on Price, Lead Time (Days), and Payment Terms (e.g. 2% 10 Net 30).</div>
+        <div class="card-fields">Quote_ID • Dist_A • Dist_B • Dist_C • Winning_Vendor • Margin_Savings</div>
+      </div>
+
+      <!-- Tab 4 -->
+      <div class="table-card featured">
+        <div class="card-top">
+          <span class="card-code">04_Fact_Purchase_Orders</span>
+          <span class="card-tag tag-green">Audit Trail</span>
+        </div>
+        <div class="card-title">PO Commitment & Versioned Baseline</div>
+        <div class="card-desc">Immutable audit record tracking Original PO vs Change Orders. Prevents field personnel from silently wiping out variance history.</div>
+        <div class="card-fields">PO_Number • Original_Baseline • PO_Change_Amt • Revised_Committed • Reason</div>
+      </div>
+
+      <!-- Tab 5 -->
+      <div class="table-card">
+        <div class="card-top">
+          <span class="card-code">05_Fact_Receiving_&_Credits</span>
+          <span class="card-tag tag-amber">Cash Recovery</span>
+        </div>
+        <div class="card-title">Damaged Shipments & Vendor Credit Memos</div>
+        <div class="card-desc">Verifies ordered vs good vs damaged quantities on jobsite flatbed delivery. Reconciles vendor credits & restocking fees.</div>
+        <div class="card-fields">Receipt_ID • Good_Qty • Damaged_Qty • Credit_Memo_No • Net_Credit</div>
+      </div>
+
+      <!-- Tab 6 -->
+      <div class="table-card">
+        <div class="card-top">
+          <span class="card-code">06_Fact_Job_Costing</span>
+          <span class="card-tag tag-blue">Variance Engine</span>
+        </div>
+        <div class="card-title">Labor, Material & Sub Job Cost Variance</div>
+        <div class="card-desc">Real-time comparison of Estimated Budget vs Committed POs vs Invoiced Actuals across all 4 cost categories.</div>
+        <div class="card-fields">Cost_Entry_ID • Cost_Code • Category • Committed • Invoiced • Variance</div>
+      </div>
+    </div>
+
+    <!-- Tab 7 Full Width -->
+    <div class="table-card featured" style="margin-bottom: 24px;">
+      <div class="card-top">
+        <span class="card-code">07_Dim_Equipment_Master</span>
+        <span class="card-tag tag-green">Recurring Revenue</span>
+      </div>
+      <div class="card-title">Installed Asset Register & Automated PM Service Intervals</div>
+      <div class="card-desc">Turns project closeout data into recurring service revenue. Logs unit serial numbers, model specs, 5-year manufacturer warranties, and auto-calculates Next_Service_Due dates (Quarterly, Semi-Annual, Annual).</div>
+      <div class="card-fields">Equipment_Asset_ID • Client • Equipment_Type • Serial_No • Warranty_End • PM_Interval • Next_Service_Due</div>
+    </div>
+
+    <!-- 3 Core Audit Checkpoints -->
+    <div class="section-title">The 3 Operational Guardrails</div>
+    <div class="pillars-container">
+      <div class="pillar-card">
+        <div class="pillar-num">Guardrail 01</div>
+        <div class="pillar-title">3-Way Bidding Discipline</div>
+        <div class="pillar-desc">Forces side-by-side comparison between distributors before issuing a PO, saving 3% to 6% on equipment procurement.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">Guardrail 02</div>
+        <div class="pillar-title">Locked Committed Costs</div>
+        <div class="pillar-desc">Captures the liability the second a PO is signed—not 30 days later when the accounting bill arrives.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">Guardrail 03</div>
+        <div class="pillar-title">Credit Memo Enforcement</div>
+        <div class="pillar-desc">Tracks short deliveries and transit damage directly back to the vendor so you never pay for materials you didn’t receive.</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-specs">
+      <div class="spec-item">
+        <div class="spec-dot"></div>
+        <span>Environment: <strong>Microsoft 365 / Excel / Power BI</strong></span>
+      </div>
+      <div class="spec-item">
+        <div class="spec-dot"></div>
+        <span>Hosting: <strong>100% Inside Client Cloud (Zero Third-Party Servers)</strong></span>
+      </div>
+      <div>
+        Designed by: <span class="author-sign">M. Haresh Kumar</span> | Senior Data Operations Lead
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
