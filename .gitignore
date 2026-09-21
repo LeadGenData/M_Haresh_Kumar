@@ -12,8 +12,8 @@ Job_Application_Tracker_Updated.xlsx
 B2B_*.xlsx
 Lesson_*.md
 *.xlsx
-!assets/*.xlsx
-!docs/assets/*.xlsx
+!assets/Subcontractor_&_Supplier_3_Way_Quote_Comparison_Model.xlsx
+!docs/assets/Subcontractor_&_Supplier_3_Way_Quote_Comparison_Model.xlsx
 *.csv
 *.xls
 *.pdf
