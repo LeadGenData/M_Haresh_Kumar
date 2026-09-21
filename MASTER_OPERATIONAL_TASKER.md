@@ -121,7 +121,7 @@
 | Asset / System | Current Status | Verification / Location | Next Action |
 | :--- | :--- | :--- | :--- |
 | **Contra US Engine** | 🟢 **100% Live Service** | `contra.com/s/AgvLqmrP-turnkey-contractor-operating-system-job-costing-and-cash-flow` | 1-Click $500 escrow checkout active (Credit Card, Apple Pay, US ACH). |
-| **US Payout Rails** | 🟢 **Active & Verified** | W-8BEN Form Certified (0% US Tax withholding) + Wells Fargo Checking | Ready for direct US ACH & escrow payouts. |
+| **Direct Bank Payout Rail** | 🟢 **Active & Verified** | ICICI Bank Limited (•••• 2860 - Default) + W-8BEN (0% US Withholding) | Direct INR deposits into bank account upon project milestone completion. |
 | **Interactive Blueprint** | 🟢 **Live & Hosted** | `leadgendata.github.io/M_Haresh_Kumar/contractor-os-blueprint.html` | Maintain as live visual proof of commercial trade costing. |
 | **Phone Hardware** | ⚠️ **Battery Fragile** | OPPO A9 2020 (Model BLP727) | **Keep plugged into wall socket**; avoid PC USB charging; replace battery (~₹800–₹1200) on roadmap. |
 | **NIOS 12th Studies** | 📚 **In Progress** | Data Entry Operations & Computer Science | Regular review to maintain academic compliance baseline. |
