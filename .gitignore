@@ -6,18 +6,21 @@ Thumbs.db
 
 # Local Private Data & Trackers (Local Only)
 JOB_TRACKER.md
+MASTER_OPERATIONAL_TASKER.md
 Job_Applications_Tracker.csv
 Job_Application_Tracker_Updated.xlsx
 B2B_*.xlsx
+Lesson_*.md
 *.xlsx
+!assets/*.xlsx
+!docs/assets/*.xlsx
 *.csv
 *.xls
 *.pdf
-
-# Local Python Scripts & Temp Data
+*.txt
 *.py
-messy_sales_data*
 
 # Internal Playbooks & Question Banks
 scripts/
 Interview_Tech_Question_Bank/
+scratch/
