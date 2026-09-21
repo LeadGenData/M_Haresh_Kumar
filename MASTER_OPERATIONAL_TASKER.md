@@ -10,7 +10,7 @@
 | Time Block | Focus Area | Key Tasks & Status | Action Needed |
 | :--- | :--- | :--- | :--- |
 | **09:00 AM – 12:00 PM** | **Morning Foundation & Submissions** | Applied Applicantz (`JOB-207`) + DM to Saurabh Goyal; Applied Precision Medicine Group (`JOB-208`) + Greenhouse receipt + direct email to Zeta Larcon; Greeted fresh acceptances: Sylwia Kapuscinski, Michael Carlo, Janet Irwin. | **COMPLETED** |
-| **12:30 PM – 04:30 PM** *(ACTIVE NOW)* | **Domestic Recruiter Standby & Continuous Prep** | Phone `+91 9663683773` unmuted on wall charger (avoid PC USB drain); Standby for Naukri calls (Anlage Infotech, Cygnus, Ensoft, Talent Potential); Defend Form 16 Part A (`UTNJOKA`), 15-day notice, ₹16L–₹18L expected; Finalize Tuesday authority post draft. | **ACTIVE MONITORING** |
+| **12:30 PM – 04:30 PM** *(ACTIVE NOW)* | **Domestic Recruiter Standby & Continuous Prep** | Phone `+91 9663683773` unmuted on wall charger (avoid PC USB drain); Standby for Naukri calls (Anlage Infotech, Cygnus, Talent Potential); Defend Form 16 Part A (`UTNJOKA`), 15-day notice, ₹16L–₹18L expected; Finalize Tuesday authority post draft. | **ACTIVE MONITORING** |
 | **05:30 PM – 07:00 PM** *(QUEUED)* | **Texas HVAC Afternoon Sprint** | Send **Rows 22 to 36** (15 verified HVAC Owners) from `linked.xlsx`; Sourced directly via URL links (no LinkedIn search bar); Notes pre-verified <290 characters. | **QUEUED FOR 5:30 PM** |
 | **07:00 PM – 08:30 PM** | **US Inbound Review, Follow-ups & Comment Marketing** | Monitor replies from Clarence Yates ($500 review), Jordan Henry, Tim Bryant; Leave 2 high-value comments on target executive posts; Review Contra inquiries & Upwork messages. | **SCHEDULED** |
 | **08:30 PM** | **Daily Hard Stop & Sync** | Sync `linked.xlsx` and `Job_Application_Tracker_Updated.xlsx`; Close screen, rest, and mental recovery. | **NIGHT CLOSING** |
@@ -44,7 +44,6 @@
 * **Comment 2 (QUEUED):** Target Fractional CFO / Construction Finance post.
 * Goal: Drive profile clicks from high-intent decision-makers at zero cost.
 
-
 ---
 
 ## 🔄 3. ACTIVE OPEN FOLLOW-UPS & RELATIONSHIPS TRACKER
@@ -52,7 +51,8 @@
 | Contact | Role / Company | Context & Channel | Status | Next Scheduled Follow-up |
 | :--- | :--- | :--- | :--- | :--- |
 | **Prasad Parkar** | Global Fabric & Power BI Platform Owner, Galderma | Enterprise Analytics Platform Lead; LinkedIn 1st Degree DM | 🟢 **DM Sent (Sep 21)** | Congratulated on Galderma SMI listing; highlighted 14+ yrs and Power BI Handbook authorship; monitor response for enterprise Fabric/BI openings. |
-| **Jordan Henry** | Pres/CEO, Texas Air Maint | Commercial HVAC (Row 2, `HVAC-TX-001`); LinkedIn 1st Degree | 🟢 **Connected** | Send warm acknowledgement highlighting commercial job-costing insights (Tuesday morning). |
+| **Nathan Gampel** | Founder & CEO, Transformation Insights | SaaS & Platform Analytics (Edison, NJ); Direct Email `nathan@transformationinsights.io` | 🟢 **Pitched (Sep 21 @ 5:03 PM)** | Sourced via Upwork $60/hr job listing; bypassed 50+ applicants directly to CEO inbox; pitched 14+ yrs Star-Schema/DAX & Power BI Handbook; monitor response. |
+| **Jordan Henry** | Pres/CEO, Texas Air Maint | Commercial HVAC (Row 2, `HVAC-TX-001`); LinkedIn 1st Degree | 🟢 **Greeted (Sun 9:37 PM)** | Warm acknowledgement sent Sunday night; awaiting reply before sending commercial job-costing model link. |
 
 | **Clarence A. Yates Jr.** | Founder, Legacy Construction | US Roofing Contractor; LinkedIn DM | ⏳ **Awaiting Review** | Check inbox tonight (07:00 PM IST) for feedback on interactive blueprint; alternative $250 pilot ready if needed. |
 | **Tim Bryant** | Fractional CFO, FRKTL | Executive Fractional Finance; Connection + Comment | ⏳ **Pending Acceptance** | Check when connection accepted; share contractor cashflow reconciliation template. |
@@ -96,10 +96,6 @@
 
 * **Locked until Tuesday:** Monty Jones, Paul Ogonowski, John Merlo, Rick Thornton, Robert Shelton, Luis SanJuan.
 
-
-
-
-
 ---
 
 ## 💼 5. CORPORATE DOMESTIC JOB PIPELINE (188+ LOGGED)
@@ -110,7 +106,7 @@
 * **`JOB-208` (Precision Medicine Group):** Reporting Analyst (Remote, 12 PM - 9 PM IST) — Greenhouse ATS confirmation received (`no-reply@us.greenhouse-mail.io`) + direct email delivered to Talent Lead Zeta Larcon (`zeta.larcon@precisionmedicinegrp.com`).
 * **`JOB-206` (Link Title / Link Terra):** Operations Lead / QA Manager (Bengaluru) — Direct outreach sent to VP Operations Vikram Jain.
 * **`JOB-205` (Mphasis):** Payment Domain Reconciliation & Analytics — Direct email delivered to Recruiter Reena Kumari.
-* **Naukri Active Calls Standby:** Anlage Infotech, Cygnus Professionals, Ensoft Consulting, Talent Potential.
+* **Naukri Active Calls Standby:** Anlage Infotech, Cygnus Professionals, Talent Potential (Ensoft Consulting marked Rejected/Not Interested on Sep 18).
 
 ### B. Standard Pitch Parameters
 
@@ -124,7 +120,7 @@
 
 | Asset / System | Current Status | Verification / Location | Next Action |
 | :--- | :--- | :--- | :--- |
-| **Contra US Engine** | 🟢 **100% High Impact** | `contra.com/haresh_kumar_km9sf5lv` | Turnkey $500 project draft saved; link to prospective clients. |
+| **Contra US Engine** | 🟢 **100% Live Service** | `contra.com/s/AgvLqmrP-turnkey-contractor-operating-system-job-costing-and-cash-flow` | 1-Click $500 escrow checkout active (Credit Card, Apple Pay, US ACH). |
 | **US Payout Rails** | 🟢 **Active & Verified** | W-8BEN Form Certified (0% US Tax withholding) + Wells Fargo Checking | Ready for direct US ACH & escrow payouts. |
 | **Interactive Blueprint** | 🟢 **Live & Hosted** | `leadgendata.github.io/M_Haresh_Kumar/contractor-os-blueprint.html` | Maintain as live visual proof of commercial trade costing. |
 | **Phone Hardware** | ⚠️ **Battery Fragile** | OPPO A9 2020 (Model BLP727) | **Keep plugged into wall socket**; avoid PC USB charging; replace battery (~₹800–₹1200) on roadmap. |
